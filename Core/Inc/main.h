@@ -31,7 +31,11 @@ extern "C" {
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "usart.h"
+#include "app.h"
+#include "modbus.h"
+#include "mmodbus_hal.h"
+#include "smodbus_hal.h"
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
