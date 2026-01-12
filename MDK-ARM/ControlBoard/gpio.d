@@ -57,6 +57,7 @@ controlboard\gpio.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrap
 controlboard\gpio.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
 controlboard\gpio.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
 controlboard\gpio.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h
+controlboard\gpio.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
 controlboard\gpio.o: ../Core/Inc/usart.h
 controlboard\gpio.o: ../Core/Inc/main.h
 controlboard\gpio.o: ../App/app.h

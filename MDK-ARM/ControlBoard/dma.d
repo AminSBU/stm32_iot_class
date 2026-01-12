@@ -57,6 +57,7 @@ controlboard\dma.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrapp
 controlboard\dma.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
 controlboard\dma.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
 controlboard\dma.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h
+controlboard\dma.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
 controlboard\dma.o: ../Core/Inc/usart.h
 controlboard\dma.o: ../Core/Inc/main.h
 controlboard\dma.o: ../App/app.h

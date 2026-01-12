@@ -21,6 +21,7 @@
 #include "FreeRTOS.h"
 #include "task.h"
 #include "main.h"
+#include "queue.h"
 #include "cmsis_os.h"
 
 /* Private includes ----------------------------------------------------------*/
@@ -53,6 +54,11 @@ const osThreadAttr_t defaultTask_attributes = {
   .name = "defaultTask",
   .stack_size = 128 * 4,
   .priority = (osPriority_t) osPriorityNormal,
+};
+/* Definitions for myQueue01 */
+osMessageQueueId_t myQueue01Handle;
+const osMessageQueueAttr_t myQueue01_attributes = {
+  .name = "myQueue01"
 };
 
 /* Private function prototypes -----------------------------------------------*/
@@ -87,6 +93,10 @@ TaskFunction_t xTaskLED;
   /* start timers, add new ones, ... */
   /* USER CODE END RTOS_TIMERS */
 
+  /* Create the queue(s) */
+  /* creation of myQueue01 */
+  myQueue01Handle = osMessageQueueNew (16, sizeof(uint16_t), &myQueue01_attributes);
+
   /* USER CODE BEGIN RTOS_QUEUES */
   /* add queues, ... */
   /* USER CODE END RTOS_QUEUES */
@@ -120,6 +130,7 @@ void StartDefaultTask(void *argument)
   {
 //	  HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
 //	  osDelay(pdMS_TO_TICKS(1000));
+	  
   }
   /* USER CODE END StartDefaultTask */
 }

@@ -1,7 +1,8 @@
 #include "main.h"
 
 osThreadId_t TaskHandle;
-osThreadId_t UARTTaskHandle;
+osThreadId_t UARTTransmitTaskHandle;
+osThreadId_t UARTReceiveTaskHandle;
 
 uint8_t aTxStartMessage[] = "\n\r ****UART-Hyperterminal communication based on DMA****\n\r Enter 10 characters using keyboard :\n\r";
 uint8_t aTxEndMessage[] = "\n\r Example Finished\n\r";
@@ -17,14 +18,27 @@ const osThreadAttr_t ledTask_attributes = {
   .priority = (osPriority_t) osPriorityNormal,
 };
 
-const osThreadAttr_t uartTask_attributes = {
+const osThreadAttr_t uartTransmitTask_attributes = {
   .name = "uartTask",
   .stack_size = 128 * 4,
   .priority = (osPriority_t) osPriorityNormal,
 };
 
+const osThreadAttr_t uartReceiveTask_attributes = {
+  .name = "uartReceiveTask",
+  .stack_size = 128 * 4,
+  .priority = (osPriority_t) osPriorityNormal,
+};
+
+/* Definitions for myQueueUart */
+osMessageQueueId_t myQueueUartHandle;
+const osMessageQueueAttr_t myQueueUart_attributes = {
+  .name = "myQueueUart"
+};
+
 void StartLEDTask(void *argument);
-void StartUartTask(void *argument);
+void StartUartTransmitTask(void *argument);
+void StartUartReceiveTask(void *argument);
 
 void app_init(void)
 {
@@ -32,7 +46,11 @@ void app_init(void)
 	
 	/* create thread new */
 	TaskHandle = osThreadNew(StartLEDTask, NULL, &ledTask_attributes);
-	UARTTaskHandle = osThreadNew(StartUartTask, NULL, &uartTask_attributes);
+	UARTTransmitTaskHandle = osThreadNew(StartUartTransmitTask, NULL, &uartTransmitTask_attributes);
+	UARTReceiveTaskHandle = osThreadNew(StartUartReceiveTask, NULL, &uartReceiveTask_attributes);
+	
+	/* Create queue */
+	myQueueUartHandle = osMessageQueueNew (16, sizeof(uint16_t), &myQueueUart_attributes);
 	
 	HAL_GPIO_WritePin(GPIOC, GPIO_PIN_8, GPIO_PIN_SET);
 	
@@ -43,11 +61,19 @@ void app_init(void)
 	}
 }
 
-void StartUartTask(void *argument)
+void StartUartTransmitTask(void *argument)
 {
 	for(;;)
 	{
 		HAL_UART_Transmit_DMA(&huart5, (uint8_t*)aTxStartMessage, 20);
+		osDelay(pdMS_TO_TICKS(1000));
+	}
+}
+
+void StartUartReceiveTask(void *argument)
+{
+	for(;;)
+	{
 		osDelay(pdMS_TO_TICKS(1000));
 	}
 }
