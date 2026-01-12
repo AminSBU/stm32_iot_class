@@ -56,8 +56,9 @@ controlboard\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrap
 controlboard\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
 controlboard\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
 controlboard\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h
-controlboard\main.o: ..\App\app.h
+controlboard\main.o: ../Core/Inc/usart.h
 controlboard\main.o: ../Core/Inc/main.h
+controlboard\main.o: ../App/app.h
 controlboard\main.o: ../Core/Inc/adc.h
 controlboard\main.o: ../Core/Inc/dma.h
 controlboard\main.o: ../Core/Inc/fdcan.h
@@ -65,5 +66,4 @@ controlboard\main.o: ../Core/Inc/iwdg.h
 controlboard\main.o: ../Core/Inc/rtc.h
 controlboard\main.o: ../Core/Inc/spi.h
 controlboard\main.o: ../Core/Inc/tim.h
-controlboard\main.o: ../Core/Inc/usart.h
 controlboard\main.o: ../Core/Inc/gpio.h

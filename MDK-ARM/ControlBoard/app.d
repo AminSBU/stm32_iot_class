@@ -56,5 +56,6 @@ controlboard\app.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrapp
 controlboard\app.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
 controlboard\app.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
 controlboard\app.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h
-controlboard\app.o: ..\App\app.h
+controlboard\app.o: ../Core/Inc/usart.h
 controlboard\app.o: ../Core/Inc/main.h
+controlboard\app.o: ../App/app.h

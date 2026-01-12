@@ -57,5 +57,6 @@ controlboard\fdcan.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wra
 controlboard\fdcan.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
 controlboard\fdcan.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
 controlboard\fdcan.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h
-controlboard\fdcan.o: ..\App\app.h
+controlboard\fdcan.o: ../Core/Inc/usart.h
 controlboard\fdcan.o: ../Core/Inc/main.h
+controlboard\fdcan.o: ../App/app.h

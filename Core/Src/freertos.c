@@ -118,8 +118,8 @@ void StartDefaultTask(void *argument)
   /* Infinite loop */
   for(;;)
   {
-	  HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
-	  osDelay(pdMS_TO_TICKS(1000));
+//	  HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
+//	  osDelay(pdMS_TO_TICKS(1000));
   }
   /* USER CODE END StartDefaultTask */
 }

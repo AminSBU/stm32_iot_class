@@ -57,5 +57,6 @@ controlboard\iwdg.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrap
 controlboard\iwdg.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
 controlboard\iwdg.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
 controlboard\iwdg.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h
-controlboard\iwdg.o: ..\App\app.h
+controlboard\iwdg.o: ../Core/Inc/usart.h
 controlboard\iwdg.o: ../Core/Inc/main.h
+controlboard\iwdg.o: ../App/app.h

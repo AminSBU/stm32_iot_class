@@ -56,5 +56,6 @@ controlboard\stm32h7xx_hal_msp.o: ../Middlewares/Third_Party/FreeRTOS/Source/inc
 controlboard\stm32h7xx_hal_msp.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
 controlboard\stm32h7xx_hal_msp.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
 controlboard\stm32h7xx_hal_msp.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h
-controlboard\stm32h7xx_hal_msp.o: ..\App\app.h
+controlboard\stm32h7xx_hal_msp.o: ../Core/Inc/usart.h
 controlboard\stm32h7xx_hal_msp.o: ../Core/Inc/main.h
+controlboard\stm32h7xx_hal_msp.o: ../App/app.h

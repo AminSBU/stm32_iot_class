@@ -57,5 +57,6 @@ controlboard\i2c.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrapp
 controlboard\i2c.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
 controlboard\i2c.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
 controlboard\i2c.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h
-controlboard\i2c.o: ..\App\app.h
+controlboard\i2c.o: ../Core/Inc/usart.h
 controlboard\i2c.o: ../Core/Inc/main.h
+controlboard\i2c.o: ../App/app.h

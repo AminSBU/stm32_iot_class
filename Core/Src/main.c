@@ -127,7 +127,7 @@ int main(void)
   MX_TIM5_Init();
   MX_RTC_Init();
   /* USER CODE BEGIN 2 */
-
+	app_init();
   /* USER CODE END 2 */
 
   /* Init scheduler */
@@ -141,7 +141,7 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  app_init();
+  
   while (1)
   {
     /* USER CODE END WHILE */
