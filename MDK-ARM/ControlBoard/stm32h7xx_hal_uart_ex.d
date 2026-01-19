@@ -22,6 +22,8 @@ controlboard\stm32h7xx_hal_uart_ex.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h
 controlboard\stm32h7xx_hal_uart_ex.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma.h
 controlboard\stm32h7xx_hal_uart_ex.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma_ex.h
 controlboard\stm32h7xx_hal_uart_ex.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h
+controlboard\stm32h7xx_hal_uart_ex.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_eth.h
+controlboard\stm32h7xx_hal_uart_ex.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_eth_ex.h
 controlboard\stm32h7xx_hal_uart_ex.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h
 controlboard\stm32h7xx_hal_uart_ex.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h
 controlboard\stm32h7xx_hal_uart_ex.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h

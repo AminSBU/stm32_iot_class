@@ -23,6 +23,7 @@
 #include "dma.h"
 #include "fdcan.h"
 #include "iwdg.h"
+#include "lwip.h"
 #include "rtc.h"
 #include "spi.h"
 #include "tim.h"
