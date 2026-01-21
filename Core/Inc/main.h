@@ -31,10 +31,7 @@ extern "C" {
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "cmsis_os.h"
-#include "queue.h"
-#include "usart.h"
-#include "app.h"
+
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
