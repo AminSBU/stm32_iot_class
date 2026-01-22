@@ -36,6 +36,8 @@
 01_stm32_dadashi\mem.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c_ex.h
 01_stm32_dadashi\mem.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h
 01_stm32_dadashi\mem.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h
+01_stm32_dadashi\mem.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h
+01_stm32_dadashi\mem.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h
 01_stm32_dadashi\mem.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/debug.h
 01_stm32_dadashi\mem.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/arch.h
 01_stm32_dadashi\mem.o: ../Middlewares/Third_Party/LwIP/system/arch/cc.h
@@ -49,6 +51,22 @@
 01_stm32_dadashi\mem.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/mem.h
 01_stm32_dadashi\mem.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/def.h
 01_stm32_dadashi\mem.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/sys.h
+01_stm32_dadashi\mem.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/err.h
+01_stm32_dadashi\mem.o: ../Middlewares/Third_Party/LwIP/system/arch/sys_arch.h
+01_stm32_dadashi\mem.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
+01_stm32_dadashi\mem.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+01_stm32_dadashi\mem.o: ../Core/Inc/FreeRTOSConfig.h
+01_stm32_dadashi\mem.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+01_stm32_dadashi\mem.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+01_stm32_dadashi\mem.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+01_stm32_dadashi\mem.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h
+01_stm32_dadashi\mem.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+01_stm32_dadashi\mem.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+01_stm32_dadashi\mem.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
+01_stm32_dadashi\mem.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
+01_stm32_dadashi\mem.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
+01_stm32_dadashi\mem.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
+01_stm32_dadashi\mem.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
 01_stm32_dadashi\mem.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/stats.h
 01_stm32_dadashi\mem.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/memp.h
 01_stm32_dadashi\mem.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/priv/memp_std.h
@@ -56,5 +74,4 @@
 01_stm32_dadashi\mem.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/priv/memp_priv.h
 01_stm32_dadashi\mem.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/priv/mem_priv.h
 01_stm32_dadashi\mem.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/stats.h
-01_stm32_dadashi\mem.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/err.h
 01_stm32_dadashi\mem.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h

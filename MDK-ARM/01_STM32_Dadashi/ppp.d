@@ -37,6 +37,8 @@
 01_stm32_dadashi\ppp.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c_ex.h
 01_stm32_dadashi\ppp.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h
 01_stm32_dadashi\ppp.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h
+01_stm32_dadashi\ppp.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h
+01_stm32_dadashi\ppp.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h
 01_stm32_dadashi\ppp.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/debug.h
 01_stm32_dadashi\ppp.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/arch.h
 01_stm32_dadashi\ppp.o: ../Middlewares/Third_Party/LwIP/system/arch/cc.h

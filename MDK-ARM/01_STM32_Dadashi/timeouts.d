@@ -36,6 +36,8 @@
 01_stm32_dadashi\timeouts.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c_ex.h
 01_stm32_dadashi\timeouts.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h
 01_stm32_dadashi\timeouts.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h
+01_stm32_dadashi\timeouts.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h
+01_stm32_dadashi\timeouts.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h
 01_stm32_dadashi\timeouts.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/debug.h
 01_stm32_dadashi\timeouts.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/arch.h
 01_stm32_dadashi\timeouts.o: ../Middlewares/Third_Party/LwIP/system/arch/cc.h
@@ -48,6 +50,22 @@
 01_stm32_dadashi\timeouts.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/opt.h
 01_stm32_dadashi\timeouts.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/timeouts.h
 01_stm32_dadashi\timeouts.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/err.h
+01_stm32_dadashi\timeouts.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/sys.h
+01_stm32_dadashi\timeouts.o: ../Middlewares/Third_Party/LwIP/system/arch/sys_arch.h
+01_stm32_dadashi\timeouts.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
+01_stm32_dadashi\timeouts.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+01_stm32_dadashi\timeouts.o: ../Core/Inc/FreeRTOSConfig.h
+01_stm32_dadashi\timeouts.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+01_stm32_dadashi\timeouts.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+01_stm32_dadashi\timeouts.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+01_stm32_dadashi\timeouts.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h
+01_stm32_dadashi\timeouts.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+01_stm32_dadashi\timeouts.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+01_stm32_dadashi\timeouts.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
+01_stm32_dadashi\timeouts.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
+01_stm32_dadashi\timeouts.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
+01_stm32_dadashi\timeouts.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
+01_stm32_dadashi\timeouts.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
 01_stm32_dadashi\timeouts.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/priv/tcp_priv.h
 01_stm32_dadashi\timeouts.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/tcp.h
 01_stm32_dadashi\timeouts.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/tcpbase.h
@@ -74,6 +92,7 @@
 01_stm32_dadashi\timeouts.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/prot/icmp.h
 01_stm32_dadashi\timeouts.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/prot/tcp.h
 01_stm32_dadashi\timeouts.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/priv/tcpip_priv.h
+01_stm32_dadashi\timeouts.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/tcpip.h
 01_stm32_dadashi\timeouts.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/ip4_frag.h
 01_stm32_dadashi\timeouts.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/etharp.h
 01_stm32_dadashi\timeouts.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/prot/ethernet.h
@@ -87,4 +106,3 @@
 01_stm32_dadashi\timeouts.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/ip6_frag.h
 01_stm32_dadashi\timeouts.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/mld6.h
 01_stm32_dadashi\timeouts.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/dhcp6.h
-01_stm32_dadashi\timeouts.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/sys.h
