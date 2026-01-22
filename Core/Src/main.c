@@ -23,7 +23,9 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "lwip/sockets.h"
+#include "lwip/inet.h"
+#include "lwip/netdb.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -230,6 +232,25 @@ static void MX_GPIO_Init(void)
   * @retval None
   */
 /* USER CODE END Header_StartDefaultTask */
+void send_data_tcp(void)
+{
+    int sock;
+    struct sockaddr_in server_addr;
+
+    sock = socket(AF_INET, SOCK_STREAM, IPPROTO_IP);
+
+    server_addr.sin_family = AF_INET;
+    server_addr.sin_port = htons(5000);                // PC port
+    server_addr.sin_addr.s_addr = inet_addr("192.168.10.20"); // PC IP
+
+    connect(sock, (struct sockaddr *)&server_addr, sizeof(server_addr));
+
+    char msg[] = "Hello from STM32H7\r\n";
+    send(sock, msg, sizeof(msg)-1, 0);
+
+    closesocket(sock);
+}
+
 void StartDefaultTask(void const * argument)
 {
   /* init code for LWIP */
@@ -238,7 +259,8 @@ void StartDefaultTask(void const * argument)
   /* Infinite loop */
   for(;;)
   {
-    osDelay(1);
+    send_data_tcp();   // ? safe place
+    osDelay(1000);
   }
   /* USER CODE END 5 */
 }

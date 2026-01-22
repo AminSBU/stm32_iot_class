@@ -94,3 +94,8 @@
 01_stm32_dadashi\main.o: ../LWIP/Target/ethernetif.h
 01_stm32_dadashi\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
 01_stm32_dadashi\main.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/tcpip.h
+01_stm32_dadashi\main.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/sockets.h
+01_stm32_dadashi\main.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/inet.h
+01_stm32_dadashi\main.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/errno.h
+01_stm32_dadashi\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+01_stm32_dadashi\main.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/netdb.h
