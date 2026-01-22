@@ -232,21 +232,25 @@ static void MX_GPIO_Init(void)
   * @retval None
   */
 /* USER CODE END Header_StartDefaultTask */
+uint16_t counter = 0;
 void send_data_tcp(void)
 {
     int sock;
     struct sockaddr_in server_addr;
+    char buf[64];
 
     sock = socket(AF_INET, SOCK_STREAM, IPPROTO_IP);
+    if (sock < 0) return;
 
     server_addr.sin_family = AF_INET;
-    server_addr.sin_port = htons(5000);                // PC port
-    server_addr.sin_addr.s_addr = inet_addr("192.168.10.20"); // PC IP
+    server_addr.sin_port = htons(5000);
+    server_addr.sin_addr.s_addr = inet_addr("192.168.10.20");
 
-    connect(sock, (struct sockaddr *)&server_addr, sizeof(server_addr));
-
-    char msg[] = "Hello from STM32H7\r\n";
-    send(sock, msg, sizeof(msg)-1, 0);
+    if (connect(sock, (struct sockaddr *)&server_addr, sizeof(server_addr)) == 0)
+    {
+        int len = sprintf(buf, "Hello from STM32H7 %u\r\n", counter++);
+        send(sock, buf, len, 0);
+    }
 
     closesocket(sock);
 }
