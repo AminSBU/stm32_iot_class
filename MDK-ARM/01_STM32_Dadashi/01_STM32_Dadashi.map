@@ -2784,6 +2784,96 @@ Section Cross References
     port.o(i.xPortStartScheduler) refers to port.o(i.vPortSetupTimerInterrupt) for vPortSetupTimerInterrupt
     port.o(i.xPortStartScheduler) refers to port.o(.emb_text) for __asm___6_port_c_39a90d8d__prvEnableVFP
     port.o(i.xPortStartScheduler) refers to port.o(.data) for ucMaxSysCallPriority
+    segger_rtt.o(i.SEGGER_RTT_AllocDownBuffer) refers to segger_rtt.o(i._DoInit) for _DoInit
+    segger_rtt.o(i.SEGGER_RTT_AllocDownBuffer) refers to segger_rtt.o(.bss) for _SEGGER_RTT
+    segger_rtt.o(i.SEGGER_RTT_AllocUpBuffer) refers to segger_rtt.o(i._DoInit) for _DoInit
+    segger_rtt.o(i.SEGGER_RTT_AllocUpBuffer) refers to segger_rtt.o(.bss) for _SEGGER_RTT
+    segger_rtt.o(i.SEGGER_RTT_ConfigDownBuffer) refers to segger_rtt.o(i._DoInit) for _DoInit
+    segger_rtt.o(i.SEGGER_RTT_ConfigDownBuffer) refers to segger_rtt.o(.bss) for _SEGGER_RTT
+    segger_rtt.o(i.SEGGER_RTT_ConfigUpBuffer) refers to segger_rtt.o(i._DoInit) for _DoInit
+    segger_rtt.o(i.SEGGER_RTT_ConfigUpBuffer) refers to segger_rtt.o(.bss) for _SEGGER_RTT
+    segger_rtt.o(i.SEGGER_RTT_GetAvailWriteSpace) refers to segger_rtt.o(i._GetAvailWriteSpace) for _GetAvailWriteSpace
+    segger_rtt.o(i.SEGGER_RTT_GetAvailWriteSpace) refers to segger_rtt.o(.bss) for _SEGGER_RTT
+    segger_rtt.o(i.SEGGER_RTT_GetBytesInBuffer) refers to segger_rtt.o(.bss) for _SEGGER_RTT
+    segger_rtt.o(i.SEGGER_RTT_GetKey) refers to segger_rtt.o(i.SEGGER_RTT_Read) for SEGGER_RTT_Read
+    segger_rtt.o(i.SEGGER_RTT_HasData) refers to segger_rtt.o(.bss) for _SEGGER_RTT
+    segger_rtt.o(i.SEGGER_RTT_HasDataUp) refers to segger_rtt.o(.bss) for _SEGGER_RTT
+    segger_rtt.o(i.SEGGER_RTT_HasKey) refers to segger_rtt.o(i._DoInit) for _DoInit
+    segger_rtt.o(i.SEGGER_RTT_HasKey) refers to segger_rtt.o(.bss) for _SEGGER_RTT
+    segger_rtt.o(i.SEGGER_RTT_Init) refers to segger_rtt.o(i._DoInit) for _DoInit
+    segger_rtt.o(i.SEGGER_RTT_PutChar) refers to segger_rtt.o(i._DoInit) for _DoInit
+    segger_rtt.o(i.SEGGER_RTT_PutChar) refers to segger_rtt.o(.bss) for _SEGGER_RTT
+    segger_rtt.o(i.SEGGER_RTT_PutCharSkip) refers to segger_rtt.o(i._DoInit) for _DoInit
+    segger_rtt.o(i.SEGGER_RTT_PutCharSkip) refers to segger_rtt.o(.bss) for _SEGGER_RTT
+    segger_rtt.o(i.SEGGER_RTT_PutCharSkipNoLock) refers to segger_rtt.o(.bss) for _SEGGER_RTT
+    segger_rtt.o(i.SEGGER_RTT_Read) refers to segger_rtt.o(i.SEGGER_RTT_ReadNoLock) for SEGGER_RTT_ReadNoLock
+    segger_rtt.o(i.SEGGER_RTT_ReadNoLock) refers to segger_rtt.o(i._DoInit) for _DoInit
+    segger_rtt.o(i.SEGGER_RTT_ReadNoLock) refers to memmovea.o(.text) for __aeabi_memcpy
+    segger_rtt.o(i.SEGGER_RTT_ReadNoLock) refers to segger_rtt.o(.bss) for _SEGGER_RTT
+    segger_rtt.o(i.SEGGER_RTT_ReadUpBuffer) refers to segger_rtt.o(i.SEGGER_RTT_ReadUpBufferNoLock) for SEGGER_RTT_ReadUpBufferNoLock
+    segger_rtt.o(i.SEGGER_RTT_ReadUpBufferNoLock) refers to segger_rtt.o(i._DoInit) for _DoInit
+    segger_rtt.o(i.SEGGER_RTT_ReadUpBufferNoLock) refers to memmovea.o(.text) for __aeabi_memcpy
+    segger_rtt.o(i.SEGGER_RTT_ReadUpBufferNoLock) refers to segger_rtt.o(.bss) for _SEGGER_RTT
+    segger_rtt.o(i.SEGGER_RTT_SetFlagsDownBuffer) refers to segger_rtt.o(i._DoInit) for _DoInit
+    segger_rtt.o(i.SEGGER_RTT_SetFlagsDownBuffer) refers to segger_rtt.o(.bss) for _SEGGER_RTT
+    segger_rtt.o(i.SEGGER_RTT_SetFlagsUpBuffer) refers to segger_rtt.o(i._DoInit) for _DoInit
+    segger_rtt.o(i.SEGGER_RTT_SetFlagsUpBuffer) refers to segger_rtt.o(.bss) for _SEGGER_RTT
+    segger_rtt.o(i.SEGGER_RTT_SetNameDownBuffer) refers to segger_rtt.o(i._DoInit) for _DoInit
+    segger_rtt.o(i.SEGGER_RTT_SetNameDownBuffer) refers to segger_rtt.o(.bss) for _SEGGER_RTT
+    segger_rtt.o(i.SEGGER_RTT_SetNameUpBuffer) refers to segger_rtt.o(i._DoInit) for _DoInit
+    segger_rtt.o(i.SEGGER_RTT_SetNameUpBuffer) refers to segger_rtt.o(.bss) for _SEGGER_RTT
+    segger_rtt.o(i.SEGGER_RTT_SetTerminal) refers to segger_rtt.o(i._DoInit) for _DoInit
+    segger_rtt.o(i.SEGGER_RTT_SetTerminal) refers to segger_rtt.o(i._WriteBlocking) for _WriteBlocking
+    segger_rtt.o(i.SEGGER_RTT_SetTerminal) refers to segger_rtt.o(i._GetAvailWriteSpace) for _GetAvailWriteSpace
+    segger_rtt.o(i.SEGGER_RTT_SetTerminal) refers to segger_rtt.o(i._WriteNoCheck) for _WriteNoCheck
+    segger_rtt.o(i.SEGGER_RTT_SetTerminal) refers to segger_rtt.o(.bss) for _SEGGER_RTT
+    segger_rtt.o(i.SEGGER_RTT_SetTerminal) refers to segger_rtt.o(.constdata) for _aTerminalId
+    segger_rtt.o(i.SEGGER_RTT_SetTerminal) refers to segger_rtt.o(.data) for _ActiveTerminal
+    segger_rtt.o(i.SEGGER_RTT_TerminalOut) refers to segger_rtt.o(i._DoInit) for _DoInit
+    segger_rtt.o(i.SEGGER_RTT_TerminalOut) refers to strlen.o(.text) for strlen
+    segger_rtt.o(i.SEGGER_RTT_TerminalOut) refers to segger_rtt.o(i._GetAvailWriteSpace) for _GetAvailWriteSpace
+    segger_rtt.o(i.SEGGER_RTT_TerminalOut) refers to segger_rtt.o(i._PostTerminalSwitch) for _PostTerminalSwitch
+    segger_rtt.o(i.SEGGER_RTT_TerminalOut) refers to segger_rtt.o(i._WriteBlocking) for _WriteBlocking
+    segger_rtt.o(i.SEGGER_RTT_TerminalOut) refers to segger_rtt.o(.bss) for _SEGGER_RTT
+    segger_rtt.o(i.SEGGER_RTT_TerminalOut) refers to segger_rtt.o(.data) for _ActiveTerminal
+    segger_rtt.o(i.SEGGER_RTT_WaitKey) refers to segger_rtt.o(i.SEGGER_RTT_GetKey) for SEGGER_RTT_GetKey
+    segger_rtt.o(i.SEGGER_RTT_Write) refers to segger_rtt.o(i._DoInit) for _DoInit
+    segger_rtt.o(i.SEGGER_RTT_Write) refers to segger_rtt.o(i.SEGGER_RTT_WriteNoLock) for SEGGER_RTT_WriteNoLock
+    segger_rtt.o(i.SEGGER_RTT_Write) refers to segger_rtt.o(.bss) for _SEGGER_RTT
+    segger_rtt.o(i.SEGGER_RTT_WriteDownBuffer) refers to segger_rtt.o(i._DoInit) for _DoInit
+    segger_rtt.o(i.SEGGER_RTT_WriteDownBuffer) refers to segger_rtt.o(i.SEGGER_RTT_WriteDownBufferNoLock) for SEGGER_RTT_WriteDownBufferNoLock
+    segger_rtt.o(i.SEGGER_RTT_WriteDownBuffer) refers to segger_rtt.o(.bss) for _SEGGER_RTT
+    segger_rtt.o(i.SEGGER_RTT_WriteDownBufferNoLock) refers to segger_rtt.o(i._GetAvailWriteSpace) for _GetAvailWriteSpace
+    segger_rtt.o(i.SEGGER_RTT_WriteDownBufferNoLock) refers to segger_rtt.o(i._WriteNoCheck) for _WriteNoCheck
+    segger_rtt.o(i.SEGGER_RTT_WriteDownBufferNoLock) refers to segger_rtt.o(i._WriteBlocking) for _WriteBlocking
+    segger_rtt.o(i.SEGGER_RTT_WriteDownBufferNoLock) refers to segger_rtt.o(.bss) for _SEGGER_RTT
+    segger_rtt.o(i.SEGGER_RTT_WriteNoLock) refers to segger_rtt.o(i._GetAvailWriteSpace) for _GetAvailWriteSpace
+    segger_rtt.o(i.SEGGER_RTT_WriteNoLock) refers to segger_rtt.o(i._WriteNoCheck) for _WriteNoCheck
+    segger_rtt.o(i.SEGGER_RTT_WriteNoLock) refers to segger_rtt.o(i._WriteBlocking) for _WriteBlocking
+    segger_rtt.o(i.SEGGER_RTT_WriteNoLock) refers to segger_rtt.o(.bss) for _SEGGER_RTT
+    segger_rtt.o(i.SEGGER_RTT_WriteSkipNoLock) refers to memmovea.o(.text) for __aeabi_memcpy
+    segger_rtt.o(i.SEGGER_RTT_WriteSkipNoLock) refers to segger_rtt.o(.bss) for _SEGGER_RTT
+    segger_rtt.o(i.SEGGER_RTT_WriteString) refers to strlen.o(.text) for strlen
+    segger_rtt.o(i.SEGGER_RTT_WriteString) refers to segger_rtt.o(i.SEGGER_RTT_Write) for SEGGER_RTT_Write
+    segger_rtt.o(i.SEGGER_RTT_WriteWithOverwriteNoLock) refers to memmovea.o(.text) for __aeabi_memcpy
+    segger_rtt.o(i.SEGGER_RTT_WriteWithOverwriteNoLock) refers to segger_rtt.o(.bss) for _SEGGER_RTT
+    segger_rtt.o(i._DoInit) refers to memseta.o(.text) for __aeabi_memclr4
+    segger_rtt.o(i._DoInit) refers to segger_rtt.o(.bss) for _SEGGER_RTT
+    segger_rtt.o(i._DoInit) refers to segger_rtt.o(.constdata) for _aInitStr
+    segger_rtt.o(i._PostTerminalSwitch) refers to segger_rtt.o(i._WriteBlocking) for _WriteBlocking
+    segger_rtt.o(i._PostTerminalSwitch) refers to segger_rtt.o(.constdata) for _aTerminalId
+    segger_rtt.o(i._WriteBlocking) refers to memmovea.o(.text) for __aeabi_memcpy
+    segger_rtt.o(i._WriteNoCheck) refers to memmovea.o(.text) for __aeabi_memcpy
+    segger_rtt_printf.o(i.SEGGER_RTT_printf) refers to segger_rtt_printf.o(i.SEGGER_RTT_vprintf) for SEGGER_RTT_vprintf
+    segger_rtt_printf.o(i.SEGGER_RTT_vprintf) refers to segger_rtt_printf.o(i._StoreChar) for _StoreChar
+    segger_rtt_printf.o(i.SEGGER_RTT_vprintf) refers to segger_rtt_printf.o(i._PrintInt) for _PrintInt
+    segger_rtt_printf.o(i.SEGGER_RTT_vprintf) refers to segger_rtt_printf.o(i._PrintUnsigned) for _PrintUnsigned
+    segger_rtt_printf.o(i.SEGGER_RTT_vprintf) refers to segger_rtt.o(i.SEGGER_RTT_Write) for SEGGER_RTT_Write
+    segger_rtt_printf.o(i._PrintInt) refers to segger_rtt_printf.o(i._StoreChar) for _StoreChar
+    segger_rtt_printf.o(i._PrintInt) refers to segger_rtt_printf.o(i._PrintUnsigned) for _PrintUnsigned
+    segger_rtt_printf.o(i._PrintUnsigned) refers to segger_rtt_printf.o(i._StoreChar) for _StoreChar
+    segger_rtt_printf.o(i._PrintUnsigned) refers to segger_rtt_printf.o(.constdata) for _aV2C
+    segger_rtt_printf.o(i._StoreChar) refers to segger_rtt.o(i.SEGGER_RTT_Write) for SEGGER_RTT_Write
     entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000F) for __rt_final_cpp
     entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$00000011) for __rt_final_exit
     entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry12b.o(.ARM.Collect$$$$0000000E) for __rt_lib_shutdown_fini
@@ -4289,6 +4379,52 @@ Removing Unused input sections from the image.
     Removing heap_4.o(i.xPortGetFreeHeapSize), (12 bytes).
     Removing heap_4.o(i.xPortGetMinimumEverFreeHeapSize), (12 bytes).
     Removing port.o(i.vPortEndScheduler), (48 bytes).
+    Removing segger_rtt.o(i.SEGGER_RTT_AllocDownBuffer), (200 bytes).
+    Removing segger_rtt.o(i.SEGGER_RTT_AllocUpBuffer), (200 bytes).
+    Removing segger_rtt.o(i.SEGGER_RTT_ConfigDownBuffer), (120 bytes).
+    Removing segger_rtt.o(i.SEGGER_RTT_ConfigUpBuffer), (120 bytes).
+    Removing segger_rtt.o(i.SEGGER_RTT_GetAvailWriteSpace), (28 bytes).
+    Removing segger_rtt.o(i.SEGGER_RTT_GetBytesInBuffer), (68 bytes).
+    Removing segger_rtt.o(i.SEGGER_RTT_GetKey), (32 bytes).
+    Removing segger_rtt.o(i.SEGGER_RTT_HasData), (28 bytes).
+    Removing segger_rtt.o(i.SEGGER_RTT_HasDataUp), (28 bytes).
+    Removing segger_rtt.o(i.SEGGER_RTT_HasKey), (48 bytes).
+    Removing segger_rtt.o(i.SEGGER_RTT_Init), (8 bytes).
+    Removing segger_rtt.o(i.SEGGER_RTT_PutChar), (128 bytes).
+    Removing segger_rtt.o(i.SEGGER_RTT_PutCharSkip), (116 bytes).
+    Removing segger_rtt.o(i.SEGGER_RTT_PutCharSkipNoLock), (56 bytes).
+    Removing segger_rtt.o(i.SEGGER_RTT_Read), (56 bytes).
+    Removing segger_rtt.o(i.SEGGER_RTT_ReadNoLock), (172 bytes).
+    Removing segger_rtt.o(i.SEGGER_RTT_ReadUpBuffer), (56 bytes).
+    Removing segger_rtt.o(i.SEGGER_RTT_ReadUpBufferNoLock), (172 bytes).
+    Removing segger_rtt.o(i.SEGGER_RTT_SetFlagsDownBuffer), (96 bytes).
+    Removing segger_rtt.o(i.SEGGER_RTT_SetFlagsUpBuffer), (96 bytes).
+    Removing segger_rtt.o(i.SEGGER_RTT_SetNameDownBuffer), (96 bytes).
+    Removing segger_rtt.o(i.SEGGER_RTT_SetNameUpBuffer), (96 bytes).
+    Removing segger_rtt.o(i.SEGGER_RTT_SetTerminal), (160 bytes).
+    Removing segger_rtt.o(i.SEGGER_RTT_TerminalOut), (260 bytes).
+    Removing segger_rtt.o(i.SEGGER_RTT_WaitKey), (14 bytes).
+    Removing segger_rtt.o(i.SEGGER_RTT_Write), (76 bytes).
+    Removing segger_rtt.o(i.SEGGER_RTT_WriteDownBuffer), (76 bytes).
+    Removing segger_rtt.o(i.SEGGER_RTT_WriteDownBufferNoLock), (132 bytes).
+    Removing segger_rtt.o(i.SEGGER_RTT_WriteNoLock), (132 bytes).
+    Removing segger_rtt.o(i.SEGGER_RTT_WriteSkipNoLock), (160 bytes).
+    Removing segger_rtt.o(i.SEGGER_RTT_WriteString), (26 bytes).
+    Removing segger_rtt.o(i.SEGGER_RTT_WriteWithOverwriteNoLock), (180 bytes).
+    Removing segger_rtt.o(i._DoInit), (112 bytes).
+    Removing segger_rtt.o(i._GetAvailWriteSpace), (28 bytes).
+    Removing segger_rtt.o(i._PostTerminalSwitch), (36 bytes).
+    Removing segger_rtt.o(i._WriteBlocking), (118 bytes).
+    Removing segger_rtt.o(i._WriteNoCheck), (88 bytes).
+    Removing segger_rtt.o(.bss), (1208 bytes).
+    Removing segger_rtt.o(.constdata), (33 bytes).
+    Removing segger_rtt.o(.data), (1 bytes).
+    Removing segger_rtt_printf.o(i.SEGGER_RTT_printf), (34 bytes).
+    Removing segger_rtt_printf.o(i.SEGGER_RTT_vprintf), (592 bytes).
+    Removing segger_rtt_printf.o(i._PrintInt), (236 bytes).
+    Removing segger_rtt_printf.o(i._PrintUnsigned), (236 bytes).
+    Removing segger_rtt_printf.o(i._StoreChar), (68 bytes).
+    Removing segger_rtt_printf.o(.constdata), (16 bytes).
     Removing dadd.o(.text), (334 bytes).
     Removing dmul.o(.text), (228 bytes).
     Removing ddiv.o(.text), (222 bytes).
@@ -4296,7 +4432,7 @@ Removing Unused input sections from the image.
     Removing cdrcmple.o(.text), (48 bytes).
     Removing depilogue.o(.text), (186 bytes).
 
-1215 unused section(s) (total 131233 bytes) removed from the image.
+1261 unused section(s) (total 137275 bytes) removed from the image.
 
 ==============================================================================
 
@@ -4427,50 +4563,50 @@ Image Symbol Table
     ../Middlewares/Third_Party/LwIP/src/netif/zepif.c 0x00000000   Number         0  zepif.o ABSOLUTE
     ../Middlewares/Third_Party/LwIP/system/OS/sys_arch.c 0x00000000   Number         0  sys_arch.o ABSOLUTE
     ../clib/../cmprslib/zerorunl2.c          0x00000000   Number         0  __dczerorl2.o ABSOLUTE
+    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  isdigit_o.o ABSOLUTE
     ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  iscntrl_o.o ABSOLUTE
-    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  ispunct_o.o ABSOLUTE
-    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  isspace_o.o ABSOLUTE
-    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  ctype_o.o ABSOLUTE
-    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  isupper_o.o ABSOLUTE
     ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  isxdigit_o.o ABSOLUTE
     ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  isalnum_o.o ABSOLUTE
-    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  isalpha_o.o ABSOLUTE
-    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  isblank_o.o ABSOLUTE
-    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  isdigit_o.o ABSOLUTE
-    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  isgraph_o.o ABSOLUTE
-    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  islower_o.o ABSOLUTE
+    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  isupper_o.o ABSOLUTE
+    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  isspace_o.o ABSOLUTE
+    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  ispunct_o.o ABSOLUTE
     ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  isprint_o.o ABSOLUTE
-    ../clib/microlib/division.c              0x00000000   Number         0  uidiv.o ABSOLUTE
+    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  isalpha_o.o ABSOLUTE
+    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  islower_o.o ABSOLUTE
+    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  isgraph_o.o ABSOLUTE
+    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  ctype_o.o ABSOLUTE
+    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  isblank_o.o ABSOLUTE
     ../clib/microlib/division.c              0x00000000   Number         0  uldiv.o ABSOLUTE
+    ../clib/microlib/division.c              0x00000000   Number         0  uidiv.o ABSOLUTE
     ../clib/microlib/errno.c                 0x00000000   Number         0  errno.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry12b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry12a.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry12b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry12a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
-    ../clib/microlib/longlong.c              0x00000000   Number         0  llushr.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
     ../clib/microlib/longlong.c              0x00000000   Number         0  llshl.o ABSOLUTE
     ../clib/microlib/longlong.c              0x00000000   Number         0  llsshr.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf2.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf1.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf0.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printfb.o ABSOLUTE
+    ../clib/microlib/longlong.c              0x00000000   Number         0  llushr.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf4.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf5.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf6.o ABSOLUTE
     ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf7.o ABSOLUTE
     ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf8.o ABSOLUTE
     ../clib/microlib/printf/printf.c         0x00000000   Number         0  printfa.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf6.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf4.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf5.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf1.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf0.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printfb.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf2.o ABSOLUTE
     ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf3.o ABSOLUTE
     ../clib/microlib/printf/stubs.s          0x00000000   Number         0  stubs.o ABSOLUTE
     ../clib/microlib/stdio/fputc.c           0x00000000   Number         0  fputc.o ABSOLUTE
@@ -4479,24 +4615,26 @@ Image Symbol Table
     ../clib/microlib/stdlib/rand.c           0x00000000   Number         0  rand.o ABSOLUTE
     ../clib/microlib/string/memcmp.c         0x00000000   Number         0  memcmp.o ABSOLUTE
     ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpyb.o ABSOLUTE
+    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memmoveb.o ABSOLUTE
     ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memmovea.o ABSOLUTE
     ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpya.o ABSOLUTE
-    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memmoveb.o ABSOLUTE
     ../clib/microlib/string/memset.c         0x00000000   Number         0  memseta.o ABSOLUTE
     ../clib/microlib/string/memset.c         0x00000000   Number         0  memset.o ABSOLUTE
     ../clib/microlib/string/strlen.c         0x00000000   Number         0  strlen.o ABSOLUTE
     ../clib/microlib/string/strncmp.c        0x00000000   Number         0  strncmp.o ABSOLUTE
-    ../clib/microlib/stubs.s                 0x00000000   Number         0  iusefp.o ABSOLUTE
     ../clib/microlib/stubs.s                 0x00000000   Number         0  iusesemip.o ABSOLUTE
+    ../clib/microlib/stubs.s                 0x00000000   Number         0  iusefp.o ABSOLUTE
     ../clib/scanf.c                          0x00000000   Number         0  _strtoul.o ABSOLUTE
-    ../clib/scanf.c                          0x00000000   Number         0  _chval.o ABSOLUTE
     ../clib/scanf.c                          0x00000000   Number         0  strtol.o ABSOLUTE
+    ../clib/scanf.c                          0x00000000   Number         0  _chval.o ABSOLUTE
     ../clib/scanf.c                          0x00000000   Number         0  atoi.o ABSOLUTE
     ../fplib/microlib/fpadd.c                0x00000000   Number         0  dadd.o ABSOLUTE
     ../fplib/microlib/fpdiv.c                0x00000000   Number         0  ddiv.o ABSOLUTE
     ../fplib/microlib/fpepilogue.c           0x00000000   Number         0  depilogue.o ABSOLUTE
     ../fplib/microlib/fpfix.c                0x00000000   Number         0  dfixul.o ABSOLUTE
     ../fplib/microlib/fpmul.c                0x00000000   Number         0  dmul.o ABSOLUTE
+    ..\App\RTT-main\RTT\SEGGER_RTT.c         0x00000000   Number         0  segger_rtt.o ABSOLUTE
+    ..\App\RTT-main\RTT\SEGGER_RTT_printf.c  0x00000000   Number         0  segger_rtt_printf.o ABSOLUTE
     ..\Core\Src\freertos.c                   0x00000000   Number         0  freertos.o ABSOLUTE
     ..\Core\Src\main.c                       0x00000000   Number         0  main.o ABSOLUTE
     ..\Core\Src\stm32h7xx_hal_msp.c          0x00000000   Number         0  stm32h7xx_hal_msp.o ABSOLUTE
@@ -4636,9 +4774,9 @@ Image Symbol Table
     .text                                    0x0800042c   Section        0  memcmp.o(.text)
     .text                                    0x08000446   Section        0  uidiv.o(.text)
     .text                                    0x08000474   Section       36  init.o(.text)
-    .text                                    0x08000498   Section        0  semi.o(.text)
     .text                                    0x08000498   Section        0  iusesemip.o(.text)
     .text                                    0x08000498   Section        0  __dczerorl2.o(.text)
+    .text                                    0x08000498   Section        0  semi.o(.text)
     i.BusFault_Handler                       0x080004ee   Section        0  stm32h7xx_it.o(i.BusFault_Handler)
     i.DebugMon_Handler                       0x080004f2   Section        0  stm32h7xx_it.o(i.DebugMon_Handler)
     i.ETH_DMARxDescListInit                  0x080004f4   Section        0  stm32h7xx_hal_eth.o(i.ETH_DMARxDescListInit)
@@ -6081,30 +6219,30 @@ Memory Map of the image
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
     0x08000000   0x08000000   0x00000298   Data   RO            3    RESET               startup_stm32h750xx.o
-    0x08000298   0x08000298   0x00000000   Code   RO        11187  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
-    0x08000298   0x08000298   0x00000004   Code   RO        11502    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
-    0x0800029c   0x0800029c   0x00000004   Code   RO        11505    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
-    0x080002a0   0x080002a0   0x00000000   Code   RO        11507    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
-    0x080002a0   0x080002a0   0x00000000   Code   RO        11509    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
-    0x080002a0   0x080002a0   0x00000008   Code   RO        11510    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
-    0x080002a8   0x080002a8   0x00000004   Code   RO        11517    .ARM.Collect$$$$0000000E  mc_w.l(entry12b.o)
-    0x080002ac   0x080002ac   0x00000000   Code   RO        11512    .ARM.Collect$$$$0000000F  mc_w.l(entry10a.o)
-    0x080002ac   0x080002ac   0x00000000   Code   RO        11514    .ARM.Collect$$$$00000011  mc_w.l(entry11a.o)
-    0x080002ac   0x080002ac   0x00000004   Code   RO        11503    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
+    0x08000298   0x08000298   0x00000000   Code   RO        11462  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
+    0x08000298   0x08000298   0x00000004   Code   RO        11777    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
+    0x0800029c   0x0800029c   0x00000004   Code   RO        11780    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
+    0x080002a0   0x080002a0   0x00000000   Code   RO        11782    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
+    0x080002a0   0x080002a0   0x00000000   Code   RO        11784    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
+    0x080002a0   0x080002a0   0x00000008   Code   RO        11785    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
+    0x080002a8   0x080002a8   0x00000004   Code   RO        11792    .ARM.Collect$$$$0000000E  mc_w.l(entry12b.o)
+    0x080002ac   0x080002ac   0x00000000   Code   RO        11787    .ARM.Collect$$$$0000000F  mc_w.l(entry10a.o)
+    0x080002ac   0x080002ac   0x00000000   Code   RO        11789    .ARM.Collect$$$$00000011  mc_w.l(entry11a.o)
+    0x080002ac   0x080002ac   0x00000004   Code   RO        11778    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
     0x080002b0   0x080002b0   0x000000be   Code   RO        11110    .emb_text           port.o
     0x0800036e   0x0800036e   0x00000002   PAD
     0x08000370   0x08000370   0x0000002c   Code   RO            4    .text               startup_stm32h750xx.o
-    0x0800039c   0x0800039c   0x00000008   Code   RO        11190    .text               mc_w.l(ctype_o.o)
-    0x080003a4   0x080003a4   0x00000024   Code   RO        11218    .text               mc_w.l(rand.o)
-    0x080003c8   0x080003c8   0x00000040   Code   RO        11223    .text               mc_w.l(memmovea.o)
-    0x08000408   0x08000408   0x00000024   Code   RO        11227    .text               mc_w.l(memseta.o)
-    0x0800042c   0x0800042c   0x0000001a   Code   RO        11231    .text               mc_w.l(memcmp.o)
-    0x08000446   0x08000446   0x0000002c   Code   RO        11521    .text               mc_w.l(uidiv.o)
+    0x0800039c   0x0800039c   0x00000008   Code   RO        11465    .text               mc_w.l(ctype_o.o)
+    0x080003a4   0x080003a4   0x00000024   Code   RO        11493    .text               mc_w.l(rand.o)
+    0x080003c8   0x080003c8   0x00000040   Code   RO        11498    .text               mc_w.l(memmovea.o)
+    0x08000408   0x08000408   0x00000024   Code   RO        11502    .text               mc_w.l(memseta.o)
+    0x0800042c   0x0800042c   0x0000001a   Code   RO        11506    .text               mc_w.l(memcmp.o)
+    0x08000446   0x08000446   0x0000002c   Code   RO        11796    .text               mc_w.l(uidiv.o)
     0x08000472   0x08000472   0x00000002   PAD
-    0x08000474   0x08000474   0x00000024   Code   RO        11545    .text               mc_w.l(init.o)
-    0x08000498   0x08000498   0x00000000   Code   RO        11547    .text               mc_w.l(semi.o)
-    0x08000498   0x08000498   0x00000000   Code   RO        11556    .text               mc_w.l(iusesemip.o)
-    0x08000498   0x08000498   0x00000056   Code   RO        11569    .text               mc_w.l(__dczerorl2.o)
+    0x08000474   0x08000474   0x00000024   Code   RO        11820    .text               mc_w.l(init.o)
+    0x08000498   0x08000498   0x00000000   Code   RO        11822    .text               mc_w.l(semi.o)
+    0x08000498   0x08000498   0x00000000   Code   RO        11831    .text               mc_w.l(iusesemip.o)
+    0x08000498   0x08000498   0x00000056   Code   RO        11844    .text               mc_w.l(__dczerorl2.o)
     0x080004ee   0x080004ee   0x00000004   Code   RO          418    i.BusFault_Handler  stm32h7xx_it.o
     0x080004f2   0x080004f2   0x00000002   Code   RO          419    i.DebugMon_Handler  stm32h7xx_it.o
     0x080004f4   0x080004f4   0x00000060   Code   RO         1569    i.ETH_DMARxDescListInit  stm32h7xx_hal_eth.o
@@ -6204,18 +6342,18 @@ Memory Map of the image
     0x0800386c   0x0800386c   0x00000010   Code   RO          424    i.TIM1_UP_IRQHandler  stm32h7xx_it.o
     0x0800387c   0x0800387c   0x000000d4   Code   RO          646    i.TIM_Base_SetConfig  stm32h7xx_hal_tim.o
     0x08003950   0x08003950   0x00000004   Code   RO          425    i.UsageFault_Handler  stm32h7xx_it.o
-    0x08003954   0x08003954   0x00000020   Code   RO        11394    i.__0printf$6       mc_w.l(printf6.o)
-    0x08003974   0x08003974   0x00000028   Code   RO        11396    i.__0sprintf$6      mc_w.l(printf6.o)
+    0x08003954   0x08003954   0x00000020   Code   RO        11669    i.__0printf$6       mc_w.l(printf6.o)
+    0x08003974   0x08003974   0x00000028   Code   RO        11671    i.__0sprintf$6      mc_w.l(printf6.o)
     0x0800399c   0x0800399c   0x00000010   Code   RO         3491    i.__NVIC_GetPriorityGrouping  stm32h7xx_hal_cortex.o
     0x080039ac   0x080039ac   0x00000028   Code   RO         3492    i.__NVIC_SetPriority  stm32h7xx_hal_cortex.o
-    0x080039d4   0x080039d4   0x0000000e   Code   RO        11563    i.__scatterload_copy  mc_w.l(handlers.o)
-    0x080039e2   0x080039e2   0x00000002   Code   RO        11564    i.__scatterload_null  mc_w.l(handlers.o)
-    0x080039e4   0x080039e4   0x0000000e   Code   RO        11565    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x080039d4   0x080039d4   0x0000000e   Code   RO        11838    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x080039e2   0x080039e2   0x00000002   Code   RO        11839    i.__scatterload_null  mc_w.l(handlers.o)
+    0x080039e4   0x080039e4   0x0000000e   Code   RO        11840    i.__scatterload_zeroinit  mc_w.l(handlers.o)
     0x080039f2   0x080039f2   0x00000002   PAD
-    0x080039f4   0x080039f4   0x000002f0   Code   RO        11401    i._printf_core      mc_w.l(printf6.o)
-    0x08003ce4   0x08003ce4   0x00000024   Code   RO        11402    i._printf_post_padding  mc_w.l(printf6.o)
-    0x08003d08   0x08003d08   0x0000002e   Code   RO        11403    i._printf_pre_padding  mc_w.l(printf6.o)
-    0x08003d36   0x08003d36   0x0000000a   Code   RO        11405    i._sputc            mc_w.l(printf6.o)
+    0x080039f4   0x080039f4   0x000002f0   Code   RO        11676    i._printf_core      mc_w.l(printf6.o)
+    0x08003ce4   0x08003ce4   0x00000024   Code   RO        11677    i._printf_post_padding  mc_w.l(printf6.o)
+    0x08003d08   0x08003d08   0x0000002e   Code   RO        11678    i._printf_pre_padding  mc_w.l(printf6.o)
+    0x08003d36   0x08003d36   0x0000000a   Code   RO        11680    i._sputc            mc_w.l(printf6.o)
     0x08003d40   0x08003d40   0x00000124   Code   RO         6493    i.alloc_socket      sockets.o
     0x08003e64   0x08003e64   0x000000bc   Code   RO         7357    i.do_memp_free_pool  memp.o
     0x08003f20   0x08003f20   0x000000c8   Code   RO         7358    i.do_memp_malloc_pool  memp.o
@@ -6241,7 +6379,7 @@ Memory Map of the image
     0x08005394   0x08005394   0x00000098   Code   RO         4595    i.ethernetif_init   ethernetif.o
     0x0800542c   0x0800542c   0x00000040   Code   RO         4596    i.ethernetif_input  ethernetif.o
     0x0800546c   0x0800546c   0x00000174   Code   RO         6494    i.event_callback    sockets.o
-    0x080055e0   0x080055e0   0x00000012   Code   RO        11518    i.fputc             mc_w.l(fputc.o)
+    0x080055e0   0x080055e0   0x00000012   Code   RO        11793    i.fputc             mc_w.l(fputc.o)
     0x080055f2   0x080055f2   0x00000032   Code   RO         6495    i.free_socket       sockets.o
     0x08005624   0x08005624   0x00000026   Code   RO         6496    i.free_socket_free_elements  sockets.o
     0x0800564a   0x0800564a   0x00000018   Code   RO         6497    i.free_socket_locked  sockets.o
@@ -6637,9 +6775,9 @@ Memory Map of the image
     0x08017388   0x08017388   0x0000001c   Data   RO         8580    .constdata          timeouts.o
     0x080173a4   0x080173a4   0x00000008   Data   RO         9083    .constdata          ip4_addr.o
     0x080173ac   0x080173ac   0x00000018   Data   RO         9475    .constdata          sys_arch.o
-    0x080173c4   0x080173c4   0x00000081   Data   RO        11191    .constdata          mc_w.l(ctype_o.o)
+    0x080173c4   0x080173c4   0x00000081   Data   RO        11466    .constdata          mc_w.l(ctype_o.o)
     0x08017445   0x08017445   0x00000003   PAD
-    0x08017448   0x08017448   0x00000004   Data   RO        11192    .constdata          mc_w.l(ctype_o.o)
+    0x08017448   0x08017448   0x00000004   Data   RO        11467    .constdata          mc_w.l(ctype_o.o)
     0x0801744c   0x0801744c   0x0000000c   Data   RO           22    .conststring        main.o
     0x08017458   0x08017458   0x00000006   Data   RO         4607    .conststring        ethernetif.o
     0x0801745e   0x0801745e   0x00000002   PAD
@@ -6652,7 +6790,7 @@ Memory Map of the image
     0x08017579   0x08017579   0x00000003   PAD
     0x0801757c   0x0801757c   0x00000041   Data   RO         8855    .conststring        etharp.o
     0x080175bd   0x080175bd   0x00000003   PAD
-    0x080175c0   0x080175c0   0x00000020   Data   RO        11561    Region$$Table       anon$$obj.o
+    0x080175c0   0x080175c0   0x00000020   Data   RO        11836    Region$$Table       anon$$obj.o
 
 
     Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x080175e0, Size: 0x00000000, Max: 0x00020000, ABSOLUTE)
@@ -6693,8 +6831,8 @@ Memory Map of the image
     0x24004ab0   COMPRESSED   0x0000003c   Data   RW        10399    .data               tasks.o
     0x24004aec   COMPRESSED   0x00000020   Data   RW        11052    .data               heap_4.o
     0x24004b0c   COMPRESSED   0x0000000c   Data   RW        11120    .data               port.o
-    0x24004b18   COMPRESSED   0x00000004   Data   RW        11219    .data               mc_w.l(rand.o)
-    0x24004b1c   COMPRESSED   0x00000004   Data   RW        11520    .data               mc_w.l(stdout.o)
+    0x24004b18   COMPRESSED   0x00000004   Data   RW        11494    .data               mc_w.l(rand.o)
+    0x24004b1c   COMPRESSED   0x00000004   Data   RW        11795    .data               mc_w.l(stdout.o)
     0x24004b20        -       0x00000254   Zero   RW          381    .bss                freertos.o
     0x24004d74        -       0x0000004c   Zero   RW          515    .bss                stm32h7xx_hal_timebase_tim.o
     0x24004dc0        -       0x00000108   Zero   RW         4605    .bss                ethernetif.o

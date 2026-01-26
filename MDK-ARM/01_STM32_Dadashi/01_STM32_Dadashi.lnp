@@ -120,6 +120,8 @@
 "01_stm32_dadashi\cmsis_os.o"
 "01_stm32_dadashi\heap_4.o"
 "01_stm32_dadashi\port.o"
+"01_stm32_dadashi\segger_rtt.o"
+"01_stm32_dadashi\segger_rtt_printf.o"
 --library_type=microlib --strict --scatter "01_STM32_Dadashi\01_STM32_Dadashi.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
