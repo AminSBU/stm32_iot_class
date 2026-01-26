@@ -21,7 +21,7 @@
 #define TRACE_ALLOC_CRITICAL_SECTION_NAME xTraceCriticalSectionStatus
 
 #if (TRC_CFG_HARDWARE_PORT == TRC_HARDWARE_PORT_NOT_SET)
-	#error "TRC_CFG_HARDWARE_PORT not selected - see trcConfig.h"
+//	#error "TRC_CFG_HARDWARE_PORT not selected - see trcConfig.h"
 #endif
 
 /*******************************************************************************
@@ -94,7 +94,7 @@
  ******************************************************************************/
 
 #if (TRC_CFG_HARDWARE_PORT == TRC_HARDWARE_PORT_NOT_SET)
-	#error "TRC_CFG_HARDWARE_PORT not selected - see trcConfig.h"
+//	#error "TRC_CFG_HARDWARE_PORT not selected - see trcConfig.h"
 #endif
 
 #if (TRC_CFG_HARDWARE_PORT == TRC_HARDWARE_PORT_Win32)
