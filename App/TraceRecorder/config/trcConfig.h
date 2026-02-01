@@ -23,7 +23,6 @@ extern "C" {
  * required at least for the ARM Cortex-M port, that uses the ARM CMSIS API.
  * Try that in case of build problems. Otherwise, remove the #error line below.
  *****************************************************************************/
-//#error "Trace Recorder: Please include your processor's header file here and remove this line."
 
 /**
  * @def TRC_CFG_HARDWARE_PORT
@@ -42,7 +41,7 @@ extern "C" {
  * See trcHardwarePort.h for available ports and information on how to
  * define your own port, if not already present.
  */
-#define TRC_CFG_HARDWARE_PORT TRC_HARDWARE_PORT_NOT_SET
+#define TRC_CFG_HARDWARE_PORT TRC_HARDWARE_PORT_ARM_Cortex_M
 
 /**
  * @def TRC_CFG_SCHEDULING_ONLY
