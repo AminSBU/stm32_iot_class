@@ -48,6 +48,7 @@
 /* Private variables ---------------------------------------------------------*/
 
 osThreadId defaultTaskHandle;
+osThreadId ledTaskHandle;
 /* USER CODE BEGIN PV */
 
 volatile int _Cnt;
@@ -59,6 +60,7 @@ void SystemClock_Config(void);
 static void MPU_Config(void);
 static void MX_GPIO_Init(void);
 void StartDefaultTask(void const * argument);
+void ledStartTask(void const * argument);
 
 /* USER CODE BEGIN PFP */
 
@@ -221,6 +223,10 @@ int main(void)
   osThreadDef(defaultTask, StartDefaultTask, osPriorityNormal, 0, 256);
   defaultTaskHandle = osThreadCreate(osThread(defaultTask), NULL);
 
+  /* definition and creation of ledTask */
+  osThreadDef(ledTask, ledStartTask, osPriorityIdle, 0, 256);
+  ledTaskHandle = osThreadCreate(osThread(ledTask), NULL);
+
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
   /* USER CODE END RTOS_THREADS */
@@ -298,6 +304,7 @@ void SystemClock_Config(void)
   */
 static void MX_GPIO_Init(void)
 {
+  GPIO_InitTypeDef GPIO_InitStruct = {0};
   /* USER CODE BEGIN MX_GPIO_Init_1 */
 
   /* USER CODE END MX_GPIO_Init_1 */
@@ -306,6 +313,16 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOC_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
   __HAL_RCC_GPIOB_CLK_ENABLE();
+
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_3, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin : PA3 */
+  GPIO_InitStruct.Pin = GPIO_PIN_3;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
   /* USER CODE BEGIN MX_GPIO_Init_2 */
 
@@ -353,11 +370,30 @@ void StartDefaultTask(void const * argument)
   for(;;)
   {
 //    send_data_tcp();   // ? safe place
-	  RTT_Test();
-	  counter_rtt++;
+//	  RTT_Test();
+//	  counter_rtt++;
     osDelay(1000);
   }
   /* USER CODE END 5 */
+}
+
+/* USER CODE BEGIN Header_ledStartTask */
+/**
+* @brief Function implementing the ledTask thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_ledStartTask */
+void ledStartTask(void const * argument)
+{
+  /* USER CODE BEGIN ledStartTask */
+  /* Infinite loop */
+  for(;;)
+  {
+	  HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_3);
+    osDelay(1000);
+  }
+  /* USER CODE END ledStartTask */
 }
 
  /* MPU Configuration */
