@@ -34,7 +34,7 @@
 #include "lwip/def.h"
 #include "lwip/apps/fs.h"
 #include <string.h>
-#include "main.h"
+
 
 #include HTTPD_FSDATA_FILE
 
@@ -56,21 +56,39 @@ int fs_read_custom(struct fs_file *file, char *buffer, int count);
 err_t
 fs_open(struct fs_file *file, const char *name)
 {
-    static char buf[64];   // static buffer for response
-    memset(file, 0, sizeof(struct fs_file));
+  const struct fsdata_file *f;
 
-    // Dynamic URI
-    if(strcmp(name, "/data") == 0)
-    {
-        sprintf(buf, "{\"counter\"}\r\n");
-        file->data = (const char*)buf;
-        file->len = strlen(buf);
-        file->index = 0;
-        return file;
+  if ((file == NULL) || (name == NULL)) {
+    return ERR_ARG;
+  }
+
+#if LWIP_HTTPD_CUSTOM_FILES
+  if (fs_open_custom(file, name)) {
+    file->is_custom_file = 1;
+    return ERR_OK;
+  }
+  file->is_custom_file = 0;
+#endif /* LWIP_HTTPD_CUSTOM_FILES */
+
+  for (f = FS_ROOT; f != NULL; f = f->next) {
+    if (!strcmp(name, (const char *)f->name)) {
+      file->data = (const char *)f->data;
+      file->len = f->len;
+      file->index = f->len;
+      file->pextension = NULL;
+      file->flags = f->flags;
+#if HTTPD_PRECALCULATED_CHECKSUM
+      file->chksum_count = f->chksum_count;
+      file->chksum = f->chksum;
+#endif /* HTTPD_PRECALCULATED_CHECKSUM */
+#if LWIP_HTTPD_FILE_STATE
+      file->state = fs_state_init(file, name);
+#endif /* #if LWIP_HTTPD_FILE_STATE */
+      return ERR_OK;
     }
-
-    // No file found (optional: return NULL)
-    return NULL;
+  }
+  /* file not found */
+  return ERR_VAL;
 }
 
 /*-----------------------------------------------------------------------------------*/
