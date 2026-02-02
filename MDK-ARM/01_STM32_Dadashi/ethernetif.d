@@ -52,7 +52,7 @@
 01_stm32_dadashi\ethernetif.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/err.h
 01_stm32_dadashi\ethernetif.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/sys.h
 01_stm32_dadashi\ethernetif.o: ../Middlewares/Third_Party/LwIP/system/arch/sys_arch.h
-01_stm32_dadashi\ethernetif.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
+01_stm32_dadashi\ethernetif.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h
 01_stm32_dadashi\ethernetif.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
 01_stm32_dadashi\ethernetif.o: ../Core/Inc/FreeRTOSConfig.h
 01_stm32_dadashi\ethernetif.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
@@ -62,10 +62,7 @@
 01_stm32_dadashi\ethernetif.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
 01_stm32_dadashi\ethernetif.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
 01_stm32_dadashi\ethernetif.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
-01_stm32_dadashi\ethernetif.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
-01_stm32_dadashi\ethernetif.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
-01_stm32_dadashi\ethernetif.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
-01_stm32_dadashi\ethernetif.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
+01_stm32_dadashi\ethernetif.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h
 01_stm32_dadashi\ethernetif.o: ../Middlewares/Third_Party/LwIP/src/include/netif/ethernet.h
 01_stm32_dadashi\ethernetif.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/pbuf.h
 01_stm32_dadashi\ethernetif.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/netif.h
@@ -90,8 +87,6 @@
 01_stm32_dadashi\ethernetif.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/prot/etharp.h
 01_stm32_dadashi\ethernetif.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/ethip6.h
 01_stm32_dadashi\ethernetif.o: ../LWIP/Target/ethernetif.h
-01_stm32_dadashi\ethernetif.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
 01_stm32_dadashi\ethernetif.o: ../Drivers/BSP/Components/lan8742/lan8742.h
 01_stm32_dadashi\ethernetif.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
-01_stm32_dadashi\ethernetif.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
 01_stm32_dadashi\ethernetif.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/tcpip.h

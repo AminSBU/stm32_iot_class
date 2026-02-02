@@ -28,6 +28,7 @@
 #include "lwip/netdb.h"
 #include <stdio.h>
 #include "SEGGER_RTT.h"
+#include "trcRecorder.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -47,8 +48,20 @@
 
 /* Private variables ---------------------------------------------------------*/
 
-osThreadId defaultTaskHandle;
-osThreadId ledTaskHandle;
+/* Definitions for defaultTask */
+osThreadId_t defaultTaskHandle;
+const osThreadAttr_t defaultTask_attributes = {
+  .name = "defaultTask",
+  .stack_size = 256 * 4,
+  .priority = (osPriority_t) osPriorityNormal,
+};
+/* Definitions for ledTask */
+osThreadId_t ledTaskHandle;
+const osThreadAttr_t ledTask_attributes = {
+  .name = "ledTask",
+  .stack_size = 256 * 4,
+  .priority = (osPriority_t) osPriorityLow,
+};
 /* USER CODE BEGIN PV */
 
 volatile int _Cnt;
@@ -59,8 +72,8 @@ uint32_t counter_rtt = 0;
 void SystemClock_Config(void);
 static void MPU_Config(void);
 static void MX_GPIO_Init(void);
-void StartDefaultTask(void const * argument);
-void ledStartTask(void const * argument);
+void StartDefaultTask(void *argument);
+void ledStartTask(void *argument);
 
 /* USER CODE BEGIN PFP */
 
@@ -186,14 +199,14 @@ int main(void)
   HAL_Init();
 
   /* USER CODE BEGIN Init */
-
+xTraceInitialize();
   /* USER CODE END Init */
 
   /* Configure the system clock */
   SystemClock_Config();
 
   /* USER CODE BEGIN SysInit */
-
+	
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
@@ -201,6 +214,9 @@ int main(void)
   /* USER CODE BEGIN 2 */
 	RTT_start();
   /* USER CODE END 2 */
+
+  /* Init scheduler */
+  osKernelInitialize();
 
   /* USER CODE BEGIN RTOS_MUTEX */
   /* add mutexes, ... */
@@ -219,17 +235,19 @@ int main(void)
   /* USER CODE END RTOS_QUEUES */
 
   /* Create the thread(s) */
-  /* definition and creation of defaultTask */
-  osThreadDef(defaultTask, StartDefaultTask, osPriorityNormal, 0, 256);
-  defaultTaskHandle = osThreadCreate(osThread(defaultTask), NULL);
+  /* creation of defaultTask */
+  defaultTaskHandle = osThreadNew(StartDefaultTask, NULL, &defaultTask_attributes);
 
-  /* definition and creation of ledTask */
-  osThreadDef(ledTask, ledStartTask, osPriorityIdle, 0, 256);
-  ledTaskHandle = osThreadCreate(osThread(ledTask), NULL);
+  /* creation of ledTask */
+  ledTaskHandle = osThreadNew(ledStartTask, NULL, &ledTask_attributes);
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
   /* USER CODE END RTOS_THREADS */
+
+  /* USER CODE BEGIN RTOS_EVENTS */
+  /* add events, ... */
+  /* USER CODE END RTOS_EVENTS */
 
   /* Start scheduler */
   osKernelStart();
@@ -361,7 +379,7 @@ void send_data_tcp(void)
   * @retval None
   */
 /* USER CODE END Header_StartDefaultTask */
-void StartDefaultTask(void const * argument)
+void StartDefaultTask(void *argument)
 {
   /* init code for LWIP */
   MX_LWIP_Init();
@@ -370,7 +388,7 @@ void StartDefaultTask(void const * argument)
   for(;;)
   {
 //    send_data_tcp();   // ? safe place
-//	  RTT_Test();
+	  RTT_Test();
 //	  counter_rtt++;
     osDelay(1000);
   }
@@ -384,7 +402,7 @@ void StartDefaultTask(void const * argument)
 * @retval None
 */
 /* USER CODE END Header_ledStartTask */
-void ledStartTask(void const * argument)
+void ledStartTask(void *argument)
 {
   /* USER CODE BEGIN ledStartTask */
   /* Infinite loop */

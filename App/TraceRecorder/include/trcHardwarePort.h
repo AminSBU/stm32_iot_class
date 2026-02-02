@@ -12,7 +12,7 @@
 #define TRC_HARDWARE_PORT_H
 
 #include <trcDefines.h>
-
+#include "stm32h7xx_hal.h"
 /*
  * @brief
  * This macro must be used as name for the variable in the critical section allocation.

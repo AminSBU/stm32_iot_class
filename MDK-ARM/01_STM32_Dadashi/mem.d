@@ -53,7 +53,7 @@
 01_stm32_dadashi\mem.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/sys.h
 01_stm32_dadashi\mem.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/err.h
 01_stm32_dadashi\mem.o: ../Middlewares/Third_Party/LwIP/system/arch/sys_arch.h
-01_stm32_dadashi\mem.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
+01_stm32_dadashi\mem.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h
 01_stm32_dadashi\mem.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
 01_stm32_dadashi\mem.o: ../Core/Inc/FreeRTOSConfig.h
 01_stm32_dadashi\mem.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
@@ -63,10 +63,7 @@
 01_stm32_dadashi\mem.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
 01_stm32_dadashi\mem.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
 01_stm32_dadashi\mem.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
-01_stm32_dadashi\mem.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
-01_stm32_dadashi\mem.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
-01_stm32_dadashi\mem.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
-01_stm32_dadashi\mem.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
+01_stm32_dadashi\mem.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h
 01_stm32_dadashi\mem.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/stats.h
 01_stm32_dadashi\mem.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/memp.h
 01_stm32_dadashi\mem.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/priv/memp_std.h
