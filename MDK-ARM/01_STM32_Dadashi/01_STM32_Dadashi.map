@@ -40,9 +40,9 @@ Section Cross References
     main.o(i.SystemClock_Config) refers to stm32h7xx_hal_rcc.o(i.HAL_RCC_ClockConfig) for HAL_RCC_ClockConfig
     main.o(i.ledStartTask) refers to stm32h7xx_hal_gpio.o(i.HAL_GPIO_TogglePin) for HAL_GPIO_TogglePin
     main.o(i.ledStartTask) refers to cmsis_os2.o(i.osDelay) for osDelay
+    main.o(i.main) refers to trcstreamingrecorder.o(i.xTraceInitialize) for xTraceInitialize
     main.o(i.main) refers to main.o(i.MPU_Config) for MPU_Config
     main.o(i.main) refers to stm32h7xx_hal.o(i.HAL_Init) for HAL_Init
-    main.o(i.main) refers to trcstreamingrecorder.o(i.xTraceInitialize) for xTraceInitialize
     main.o(i.main) refers to main.o(i.SystemClock_Config) for SystemClock_Config
     main.o(i.main) refers to main.o(i.MX_GPIO_Init) for MX_GPIO_Init
     main.o(i.main) refers to main.o(i.RTT_start) for RTT_start
