@@ -116,7 +116,7 @@
 01_stm32_dadashi\main.o: ../App/TraceRecorder/include/trcTimestamp.h
 01_stm32_dadashi\main.o: ../App/TraceRecorder/include/trcEntryTable.h
 01_stm32_dadashi\main.o: ../App/TraceRecorder/streamports/Jlink_RTT/include/trcStreamPort.h
-01_stm32_dadashi\main.o: ..\App\TraceRecorder\streamports\Jlink_RTT\config\trcStreamPortConfig.h
+01_stm32_dadashi\main.o: ../App/TraceRecorder/streamports/Jlink_RTT/config/trcStreamPortConfig.h
 01_stm32_dadashi\main.o: ../App/TraceRecorder/include/trcISR.h
 01_stm32_dadashi\main.o: ../App/TraceRecorder/include/trcTask.h
 01_stm32_dadashi\main.o: ../App/TraceRecorder/include/trcObject.h

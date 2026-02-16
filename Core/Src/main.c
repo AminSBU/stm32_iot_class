@@ -387,8 +387,8 @@ void StartDefaultTask(void *argument)
   /* Infinite loop */
   for(;;)
   {
-//    send_data_tcp();   // ? safe place
-	  RTT_Test();
+    send_data_tcp();   // ? safe place
+//	  RTT_Test();
 //	  counter_rtt++;
     osDelay(1000);
   }

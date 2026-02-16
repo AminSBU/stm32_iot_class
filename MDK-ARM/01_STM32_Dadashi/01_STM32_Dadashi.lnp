@@ -62,8 +62,6 @@
 "01_stm32_dadashi\slipif.o"
 "01_stm32_dadashi\zepif.o"
 "01_stm32_dadashi\ecp.o"
-"01_stm32_dadashi\httpd.o"
-"01_stm32_dadashi\fs.o"
 "01_stm32_dadashi\api_lib.o"
 "01_stm32_dadashi\api_msg.o"
 "01_stm32_dadashi\err.o"
