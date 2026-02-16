@@ -44,15 +44,19 @@
 /* Private macro -------------------------------------------------------------*/
 /* USER CODE BEGIN PM */
 
+
+ 
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
+
+UART_HandleTypeDef huart1;
 
 /* Definitions for defaultTask */
 osThreadId_t defaultTaskHandle;
 const osThreadAttr_t defaultTask_attributes = {
   .name = "defaultTask",
-  .stack_size = 256 * 4,
+  .stack_size = 2048 * 4,
   .priority = (osPriority_t) osPriorityNormal,
 };
 /* Definitions for ledTask */
@@ -72,11 +76,25 @@ uint32_t counter_rtt = 0;
 void SystemClock_Config(void);
 static void MPU_Config(void);
 static void MX_GPIO_Init(void);
+static void MX_USART1_UART_Init(void);
 void StartDefaultTask(void *argument);
 void ledStartTask(void *argument);
 
 /* USER CODE BEGIN PFP */
+UBaseType_t uxHighWaterMark; 
+#ifdef __GNUC__
+      #define PUTCHAR_PROTOTYPE int __io_putchar(int ch)
+#else
+      #define PUTCHAR_PROTOTYPE int fputc(int ch, FILE *f)
+#endif
 
+      PUTCHAR_PROTOTYPE
+      {
+            HAL_UART_Transmit(&huart1, (uint8_t*)&ch, 1, 0xFFFF);
+//          SEGGER_RTT_Write(0, (const char*)&ch, 1);
+
+            return ch;
+	  }
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -211,6 +229,7 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
 	RTT_start();
   /* USER CODE END 2 */
@@ -284,6 +303,10 @@ void SystemClock_Config(void)
 
   while(!__HAL_PWR_GET_FLAG(PWR_FLAG_VOSRDY)) {}
 
+  /** Macro to configure the PLL clock source
+  */
+  __HAL_RCC_PLL_PLLSOURCE_CONFIG(RCC_PLLSOURCE_HSI);
+
   /** Initializes the RCC Oscillators according to the specified parameters
   * in the RCC_OscInitTypeDef structure.
   */
@@ -313,6 +336,54 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
+}
+
+/**
+  * @brief USART1 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_USART1_UART_Init(void)
+{
+
+  /* USER CODE BEGIN USART1_Init 0 */
+
+  /* USER CODE END USART1_Init 0 */
+
+  /* USER CODE BEGIN USART1_Init 1 */
+
+  /* USER CODE END USART1_Init 1 */
+  huart1.Instance = USART1;
+  huart1.Init.BaudRate = 115200;
+  huart1.Init.WordLength = UART_WORDLENGTH_8B;
+  huart1.Init.StopBits = UART_STOPBITS_1;
+  huart1.Init.Parity = UART_PARITY_NONE;
+  huart1.Init.Mode = UART_MODE_TX_RX;
+  huart1.Init.HwFlowCtl = UART_HWCONTROL_NONE;
+  huart1.Init.OverSampling = UART_OVERSAMPLING_16;
+  huart1.Init.OneBitSampling = UART_ONE_BIT_SAMPLE_DISABLE;
+  huart1.Init.ClockPrescaler = UART_PRESCALER_DIV1;
+  huart1.AdvancedInit.AdvFeatureInit = UART_ADVFEATURE_NO_INIT;
+  if (HAL_UART_Init(&huart1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  if (HAL_UARTEx_SetTxFifoThreshold(&huart1, UART_TXFIFO_THRESHOLD_1_8) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  if (HAL_UARTEx_SetRxFifoThreshold(&huart1, UART_RXFIFO_THRESHOLD_1_8) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  if (HAL_UARTEx_DisableFifoMode(&huart1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN USART1_Init 2 */
+
+  /* USER CODE END USART1_Init 2 */
+
 }
 
 /**
@@ -364,8 +435,12 @@ void send_data_tcp(void)
 
     if (connect(sock, (struct sockaddr *)&server_addr, sizeof(server_addr)) == 0)
     {
-        int len = sprintf(buf, "Hello from STM32H7 %u\r\n", counter++);
-        send(sock, buf, len, 0);
+		int len = sprintf(buf, "Hello from STM32H7 %u\r\n", counter++);
+		send(sock, buf, len, 0);
+        int len2 = sprintf(buf, "uxHighWaterMark %u\r\n", (int)uxHighWaterMark);
+        send(sock, buf, len2, 0);
+        int len3 = sprintf(buf, "-----------------------\r\n");
+        send(sock, buf, len3, 0);
     }
 
     closesocket(sock);
@@ -388,8 +463,10 @@ void StartDefaultTask(void *argument)
   for(;;)
   {
     send_data_tcp();   // ? safe place
+	  uxHighWaterMark = uxTaskGetStackHighWaterMark( NULL ); 
 //	  RTT_Test();
 //	  counter_rtt++;
+//	  printf( "Hello from STM32H7 %u\r\n", counter++);
     osDelay(1000);
   }
   /* USER CODE END 5 */

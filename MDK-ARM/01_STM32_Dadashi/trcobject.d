@@ -41,6 +41,8 @@
 01_stm32_dadashi\trcobject.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h
 01_stm32_dadashi\trcobject.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h
 01_stm32_dadashi\trcobject.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h
+01_stm32_dadashi\trcobject.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h
+01_stm32_dadashi\trcobject.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h
 01_stm32_dadashi\trcobject.o: ../App/TraceRecorder/config/trcStreamingConfig.h
 01_stm32_dadashi\trcobject.o: ../App/TraceRecorder/config/trcKernelPortStreamingConfig.h
 01_stm32_dadashi\trcobject.o: ../App/TraceRecorder/include/trcKernelPort.h

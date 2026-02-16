@@ -36,6 +36,8 @@
 01_stm32_dadashi\main.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h
 01_stm32_dadashi\main.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h
 01_stm32_dadashi\main.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h
+01_stm32_dadashi\main.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h
+01_stm32_dadashi\main.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h
 01_stm32_dadashi\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h
 01_stm32_dadashi\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
 01_stm32_dadashi\main.o: ../Core/Inc/FreeRTOSConfig.h
