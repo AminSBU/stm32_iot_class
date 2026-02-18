@@ -27,11 +27,29 @@ Project File Date:  02/16/2026
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target '01_STM32_Dadashi'
+compiling mongoose_glue.c...
+compiling mongoose_fs.c...
+compiling mongoose.c...
+..\App\mongoose\mongoose.c(3391): warning:  #550-D: variable "eth"  was set but never used
+    struct eth *eth = (struct eth *) frame;
+..\App\mongoose\mongoose.c(9139): error:  #18: expected a ")"
+    MG_ARM_DISABLE_IRQ();
+..\App\mongoose\mongoose.c(9153): error:  #18: expected a ")"
+    if (!s_flash_irq_disabled) MG_ARM_ENABLE_IRQ();
+..\App\mongoose\mongoose.c(26857): warning:  #111-D: statement is unreachable
+    (void) ifp;
+..\App\mongoose\mongoose.c: 2 warnings, 2 errors
+compiling mongoose_impl.c...
 compiling main.c...
-linking...
-Program Size: Code=113520 RO-data=1776 RW-data=19340 ZI-data=43220  
-FromELF: creating hex file...
-"01_STM32_Dadashi\01_STM32_Dadashi.axf" - 0 Error(s), 0 Warning(s).
+../Core/Src/main.c(627): warning:  #128-D: loop is not reachable
+    for(;;)
+../Core/Src/main.c(175): warning:  #177-D: function "ev_handler"  was declared but never referenced
+  static void ev_handler(struct mg_connection *c, int ev, void *ev_data) {
+../Core/Src/main.c: 2 warnings, 0 errors
+compiling stm32h7xx_it.c...
+compiling stm32h7xx_hal_msp.c...
+compiling freertos.c...
+"01_STM32_Dadashi\01_STM32_Dadashi.axf" - 2 Error(s), 4 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -55,7 +73,8 @@ Package Vendor: Keil
 
    * Component: ARM::CMSIS:CORE:5.4.0
       Include file:  CMSIS\Core\Include\tz_context.h
-Build Time Elapsed:  00:00:02
+Target not created.
+Build Time Elapsed:  00:00:01
 </pre>
 </body>
 </html>
