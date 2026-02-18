@@ -19,7 +19,6 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "string.h"
-#include "cmsis_os.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -101,8 +100,8 @@ ETH_DMADescTypeDef  DMATxDscrTab[ETH_TX_DESC_CNT]; /* Ethernet Tx DMA Descriptor
 
 #elif defined ( __CC_ARM )  /* MDK ARM Compiler */
 
-//__attribute__((at(0x30040000))) ETH_DMADescTypeDef  DMARxDscrTab[ETH_RX_DESC_CNT]; /* Ethernet Rx DMA Descriptors */
-//__attribute__((at(0x30040060))) ETH_DMADescTypeDef  DMATxDscrTab[ETH_TX_DESC_CNT]; /* Ethernet Tx DMA Descriptors */
+__attribute__((at(0x30040000))) ETH_DMADescTypeDef  DMARxDscrTab[ETH_RX_DESC_CNT]; /* Ethernet Rx DMA Descriptors */
+__attribute__((at(0x30040060))) ETH_DMADescTypeDef  DMATxDscrTab[ETH_TX_DESC_CNT]; /* Ethernet Tx DMA Descriptors */
 
 #elif defined ( __GNUC__ ) /* GNU Compiler */
 
@@ -118,20 +117,6 @@ RNG_HandleTypeDef hrng;
 
 UART_HandleTypeDef huart1;
 
-/* Definitions for defaultTask */
-//osThreadId_t defaultTaskHandle;
-//const osThreadAttr_t defaultTask_attributes = {
-//  .name = "defaultTask",
-//  .stack_size = 2048 * 4,
-//  .priority = (osPriority_t) osPriorityNormal,
-//};
-///* Definitions for ledTask */
-//osThreadId_t ledTaskHandle;
-//const osThreadAttr_t ledTask_attributes = {
-//  .name = "ledTask",
-//  .stack_size = 256 * 4,
-//  .priority = (osPriority_t) osPriorityLow,
-//};
 /* USER CODE BEGIN PV */
 
 volatile int _Cnt;
@@ -145,9 +130,6 @@ static void MX_GPIO_Init(void);
 static void MX_USART1_UART_Init(void);
 static void MX_ETH_Init(void);
 static void MX_RNG_Init(void);
-void StartDefaultTask(void *argument);
-void ledStartTask(void *argument);
-
 /* USER CODE BEGIN PFP */
 UBaseType_t uxHighWaterMark; 
 #ifdef __GNUC__
@@ -315,45 +297,6 @@ int main(void)
   /* USER CODE BEGIN 2 */
 	RTT_start();
   /* USER CODE END 2 */
-
-  /* Init scheduler */
-  osKernelInitialize();
-
-  /* USER CODE BEGIN RTOS_MUTEX */
-  /* add mutexes, ... */
-  /* USER CODE END RTOS_MUTEX */
-
-  /* USER CODE BEGIN RTOS_SEMAPHORES */
-  /* add semaphores, ... */
-  /* USER CODE END RTOS_SEMAPHORES */
-
-  /* USER CODE BEGIN RTOS_TIMERS */
-  /* start timers, add new ones, ... */
-  /* USER CODE END RTOS_TIMERS */
-
-  /* USER CODE BEGIN RTOS_QUEUES */
-  /* add queues, ... */
-  /* USER CODE END RTOS_QUEUES */
-
-  /* Create the thread(s) */
-  /* creation of defaultTask */
-  defaultTaskHandle = osThreadNew(StartDefaultTask, NULL, &defaultTask_attributes);
-
-  /* creation of ledTask */
-//  ledTaskHandle = osThreadNew(ledStartTask, NULL, &ledTask_attributes);
-
-  /* USER CODE BEGIN RTOS_THREADS */
-  /* add threads, ... */
-  /* USER CODE END RTOS_THREADS */
-
-  /* USER CODE BEGIN RTOS_EVENTS */
-  /* add events, ... */
-  /* USER CODE END RTOS_EVENTS */
-
-  /* Start scheduler */
-  osKernelStart();
-
-  /* We should never get here as control is now taken by the scheduler */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
@@ -605,55 +548,6 @@ static void MX_GPIO_Init(void)
 //    closesocket(sock);
 //}
 /* USER CODE END 4 */
-
-/* USER CODE BEGIN Header_StartDefaultTask */
-/**
-  * @brief  Function implementing the defaultTask thread.
-  * @param  argument: Not used
-  * @retval None
-  */
-/* USER CODE END Header_StartDefaultTask */
-void StartDefaultTask(void *argument)
-{
-  /* USER CODE BEGIN 5 */
-	
-	  mongoose_init();
-  for (;;) 
-  {
-    mongoose_poll();
-  }
-  
-  /* Infinite loop */
-  for(;;)
-  {
-//    send_data_tcp();   // ? safe place
-	  uxHighWaterMark = uxTaskGetStackHighWaterMark( NULL ); 
-//	  RTT_Test();
-//	  counter_rtt++;
-//	  printf( "Hello from STM32H7\r\n");
-    osDelay(1000);
-  }
-  /* USER CODE END 5 */
-}
-
-/* USER CODE BEGIN Header_ledStartTask */
-/**
-* @brief Function implementing the ledTask thread.
-* @param argument: Not used
-* @retval None
-*/
-/* USER CODE END Header_ledStartTask */
-void ledStartTask(void *argument)
-{
-  /* USER CODE BEGIN ledStartTask */
-  /* Infinite loop */
-  for(;;)
-  {
-	  HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_3);
-    osDelay(1000);
-  }
-  /* USER CODE END ledStartTask */
-}
 
  /* MPU Configuration */
 
