@@ -419,32 +419,7 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
-uint16_t counter = 0;
-void send_data_tcp(void)
-{
-    int sock;
-    struct sockaddr_in server_addr;
-    char buf[64];
 
-    sock = socket(AF_INET, SOCK_STREAM, IPPROTO_IP);
-    if (sock < 0) return;
-
-    server_addr.sin_family = AF_INET;
-    server_addr.sin_port = htons(5000);
-    server_addr.sin_addr.s_addr = inet_addr("192.168.10.20");
-
-    if (connect(sock, (struct sockaddr *)&server_addr, sizeof(server_addr)) == 0)
-    {
-		int len = sprintf(buf, "Hello from STM32H7 %u\r\n", counter++);
-		send(sock, buf, len, 0);
-        int len2 = sprintf(buf, "uxHighWaterMark %u\r\n", (int)uxHighWaterMark);
-        send(sock, buf, len2, 0);
-        int len3 = sprintf(buf, "-----------------------\r\n");
-        send(sock, buf, len3, 0);
-    }
-
-    closesocket(sock);
-}
 /* USER CODE END 4 */
 
 /* USER CODE BEGIN Header_StartDefaultTask */
@@ -454,19 +429,14 @@ void send_data_tcp(void)
   * @retval None
   */
 /* USER CODE END Header_StartDefaultTask */
-void StartDefaultTask(void *argument)
+__weak void StartDefaultTask(void *argument)
 {
   /* init code for LWIP */
-  MX_LWIP_Init();
+  
   /* USER CODE BEGIN 5 */
   /* Infinite loop */
   for(;;)
-  {
-    send_data_tcp();   // ? safe place
-	  uxHighWaterMark = uxTaskGetStackHighWaterMark( NULL ); 
-//	  RTT_Test();
-//	  counter_rtt++;
-//	  printf( "Hello from STM32H7 %u\r\n", counter++);
+  { 
     osDelay(1000);
   }
   /* USER CODE END 5 */
@@ -479,13 +449,13 @@ void StartDefaultTask(void *argument)
 * @retval None
 */
 /* USER CODE END Header_ledStartTask */
-void ledStartTask(void *argument)
+__weak void ledStartTask(void *argument)
 {
   /* USER CODE BEGIN ledStartTask */
   /* Infinite loop */
   for(;;)
   {
-	  HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_3);
+	  
     osDelay(1000);
   }
   /* USER CODE END ledStartTask */

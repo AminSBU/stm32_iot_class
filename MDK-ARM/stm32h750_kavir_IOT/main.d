@@ -38,6 +38,9 @@ stm32h750_kavir_iot\main.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_ti
 stm32h750_kavir_iot\main.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h
 stm32h750_kavir_iot\main.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h
 stm32h750_kavir_iot\main.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h
+stm32h750_kavir_iot\main.o: ..\App\App\App.h
+stm32h750_kavir_iot\main.o: ../Core/Inc/main.h
+stm32h750_kavir_iot\main.o: ..\App\App\App_FreeRTOS.h
 stm32h750_kavir_iot\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h
 stm32h750_kavir_iot\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
 stm32h750_kavir_iot\main.o: ../Core/Inc/FreeRTOSConfig.h
@@ -96,6 +99,6 @@ stm32h750_kavir_iot\main.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/ine
 stm32h750_kavir_iot\main.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/errno.h
 stm32h750_kavir_iot\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 stm32h750_kavir_iot\main.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/netdb.h
-stm32h750_kavir_iot\main.o: ..\App\RTT-main\RTT\SEGGER_RTT.h
-stm32h750_kavir_iot\main.o: ..\App\RTT-main\Config\SEGGER_RTT_Conf.h
+stm32h750_kavir_iot\main.o: ../App/RTT-main/RTT/SEGGER_RTT.h
+stm32h750_kavir_iot\main.o: ../App/RTT-main/Config/SEGGER_RTT_Conf.h
 stm32h750_kavir_iot\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h

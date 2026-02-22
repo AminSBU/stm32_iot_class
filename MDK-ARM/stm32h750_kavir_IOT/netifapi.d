@@ -40,6 +40,9 @@ stm32h750_kavir_iot\netifapi.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ha
 stm32h750_kavir_iot\netifapi.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h
 stm32h750_kavir_iot\netifapi.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h
 stm32h750_kavir_iot\netifapi.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h
+stm32h750_kavir_iot\netifapi.o: ..\App\App\App.h
+stm32h750_kavir_iot\netifapi.o: ../Core/Inc/main.h
+stm32h750_kavir_iot\netifapi.o: ..\App\App\App_FreeRTOS.h
 stm32h750_kavir_iot\netifapi.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/debug.h
 stm32h750_kavir_iot\netifapi.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/arch.h
 stm32h750_kavir_iot\netifapi.o: ../Middlewares/Third_Party/LwIP/system/arch/cc.h
