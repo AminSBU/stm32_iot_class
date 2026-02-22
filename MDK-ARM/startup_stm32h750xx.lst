@@ -1271,14 +1271,28 @@ ARM Macro Assembler    Page 20
               00000000 
               00000000 
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M7.fp.dp --apcs=
-interwork --depend=01_stm32_dadashi\startup_stm32h750xx.d -o01_stm32_dadashi\st
-artup_stm32h750xx.o -I../Drivers/CMSIS/Include -I.\RTE\_01_STM32_Dadashi -IC:\U
-sers\bakhshoodeh\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include -IC
-:\Users\bakhshoodeh\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CM
-SIS\Device\ST\STM32H7xx\Include --predefine="__MICROLIB SETA 1" --predefine="__
-UVISION_VERSION SETA 534" --predefine="_RTE_ SETA 1" --predefine="STM32H750xx S
-ETA 1" --predefine="_RTE_ SETA 1" --list=startup_stm32h750xx.lst startup_stm32h
-750xx.s
+interwork --depend=stm32h750_kavir_iot\startup_stm32h750xx.d -ostm32h750_kavir_
+iot\startup_stm32h750xx.o -I../Core/Inc -I../LWIP/App -I../LWIP/Target -I../Mid
+dlewares/Third_Party/LwIP/src/include -I../Middlewares/Third_Party/LwIP/system 
+-I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Leg
+acy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third
+_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Sour
+ce/portable/RVDS/ARM_CM4F -I../Drivers/BSP/Components/lan8742 -I../Middlewares/
+Third_Party/LwIP/src/include/netif/ppp -I../Drivers/CMSIS/Device/ST/STM32H7xx/I
+nclude -I../Middlewares/Third_Party/LwIP/src/include/lwip -I../Middlewares/Thir
+d_Party/LwIP/src/include/lwip/apps -I../Middlewares/Third_Party/LwIP/src/includ
+e/lwip/priv -I../Middlewares/Third_Party/LwIP/src/include/lwip/prot -I../Middle
+wares/Third_Party/LwIP/src/include/netif -I../Middlewares/Third_Party/LwIP/src/
+include/compat/posix -I../Middlewares/Third_Party/LwIP/src/include/compat/posix
+/arpa -I../Middlewares/Third_Party/LwIP/src/include/compat/posix/net -I../Middl
+ewares/Third_Party/LwIP/src/include/compat/posix/sys -I../Middlewares/Third_Par
+ty/LwIP/src/include/compat/stdc -I../Middlewares/Third_Party/LwIP/system/arch -
+I../Drivers/CMSIS/Include -I.\RTE\_stm32h750_kavir_IOT -IC:\Users\bakhshoodeh\A
+ppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include -IC:\Users\bakhshoode
+h\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM3
+2H7xx\Include --predefine="__MICROLIB SETA 1" --predefine="__UVISION_VERSION SE
+TA 534" --predefine="_RTE_ SETA 1" --predefine="STM32H750xx SETA 1" --predefine
+="_RTE_ SETA 1" --list=startup_stm32h750xx.lst startup_stm32h750xx.s
 
 
 
