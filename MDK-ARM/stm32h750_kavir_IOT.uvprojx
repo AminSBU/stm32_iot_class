@@ -1053,6 +1053,11 @@
               <FileType>1</FileType>
               <FilePath>..\App\App\App_FreeRTOS.c</FilePath>
             </File>
+            <File>
+              <FileName>App_Network.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\App\App\App_Network.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

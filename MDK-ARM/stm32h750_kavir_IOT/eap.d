@@ -44,6 +44,7 @@ stm32h750_kavir_iot\eap.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uar
 stm32h750_kavir_iot\eap.o: ..\App\App\App.h
 stm32h750_kavir_iot\eap.o: ../Core/Inc/main.h
 stm32h750_kavir_iot\eap.o: ..\App\App\App_FreeRTOS.h
+stm32h750_kavir_iot\eap.o: ..\App\App\App_Network.h
 stm32h750_kavir_iot\eap.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/debug.h
 stm32h750_kavir_iot\eap.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/arch.h
 stm32h750_kavir_iot\eap.o: ../Middlewares/Third_Party/LwIP/system/arch/cc.h

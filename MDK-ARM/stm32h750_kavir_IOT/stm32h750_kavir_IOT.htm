@@ -3,7 +3,7 @@
 <title>Static Call Graph - [stm32h750_kavir_IOT\stm32h750_kavir_IOT.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image stm32h750_kavir_IOT\stm32h750_kavir_IOT.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Sun Feb 22 16:37:15 2026
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Mon Feb 23 07:27:11 2026
 <BR><P>
 <H3>Maximum Stack Usage =        840 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -3072,7 +3072,7 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[238]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvInitialiseNewTask
 </UL>
 
-<P><STRONG><a name="[13b]"></a>send_data_tcp</STRONG> (Thumb, 130 bytes, Stack size 96 bytes, app_freertos.o(i.send_data_tcp))
+<P><STRONG><a name="[13b]"></a>send_data_tcp</STRONG> (Thumb, 130 bytes, Stack size 96 bytes, app_network.o(i.send_data_tcp))
 <BR><BR>[Stack]<UL><LI>Max Depth = 504<LI>Call Chain = send_data_tcp &rArr; lwip_send &rArr; lwip_sendto &rArr;  lwip_send (Cycle)
 </UL>
 <BR>[Calls]<UL><LI><a href="#[164]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_htons
@@ -3126,8 +3126,8 @@ Global Symbols
 <P><STRONG><a name="[1bf]"></a>sys_arch_sem_wait</STRONG> (Thumb, 62 bytes, Stack size 16 bytes, sys_arch.o(i.sys_arch_sem_wait))
 <BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = sys_arch_sem_wait &rArr; osSemaphoreAcquire &rArr; xQueueSemaphoreTake &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
-<BR>[Calls]<UL><LI><a href="#[16f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osSemaphoreAcquire
-<LI><a href="#[1f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osKernelGetTickCount
+<BR>[Calls]<UL><LI><a href="#[1f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osKernelGetTickCount
+<LI><a href="#[16f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osSemaphoreAcquire
 </UL>
 <BR>[Called By]<UL><LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_netconn_do_write
 <LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_netconn_do_delconn
@@ -4235,10 +4235,10 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[206]"></a>vQueueAddToRegistry</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, queue.o(i.vQueueAddToRegistry))
-<BR><BR>[Called By]<UL><LI><a href="#[19d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osSemaphoreNew
-<LI><a href="#[20d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osMutexNew
+<BR><BR>[Called By]<UL><LI><a href="#[20d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osMutexNew
 <LI><a href="#[203]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osMessageQueueNew
 <LI><a href="#[22d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvCheckForValidListAndQueue
+<LI><a href="#[19d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osSemaphoreNew
 </UL>
 
 <P><STRONG><a name="[1fc]"></a>vQueueDelete</STRONG> (Thumb, 50 bytes, Stack size 16 bytes, queue.o(i.vQueueDelete))
@@ -4247,9 +4247,9 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[1fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vQueueUnregisterQueue
 <LI><a href="#[234]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortFree
 </UL>
-<BR>[Called By]<UL><LI><a href="#[19d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osSemaphoreNew
-<LI><a href="#[212]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osSemaphoreDelete
+<BR>[Called By]<UL><LI><a href="#[212]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osSemaphoreDelete
 <LI><a href="#[1fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osMessageQueueDelete
+<LI><a href="#[19d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osSemaphoreNew
 </UL>
 
 <P><STRONG><a name="[1fb]"></a>vQueueUnregisterQueue</STRONG> (Thumb, 44 bytes, Stack size 0 bytes, queue.o(i.vQueueUnregisterQueue))
@@ -4406,8 +4406,8 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[236]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvInitialiseNewQueue
 <LI><a href="#[24b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pvPortMalloc
 </UL>
-<BR>[Called By]<UL><LI><a href="#[19d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osSemaphoreNew
-<LI><a href="#[203]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osMessageQueueNew
+<BR>[Called By]<UL><LI><a href="#[203]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osMessageQueueNew
+<LI><a href="#[19d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osSemaphoreNew
 <LI><a href="#[20f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueCreateMutex
 <LI><a href="#[214]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueCreateCountingSemaphore
 </UL>
@@ -4417,9 +4417,9 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[236]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvInitialiseNewQueue
 </UL>
-<BR>[Called By]<UL><LI><a href="#[19d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osSemaphoreNew
-<LI><a href="#[203]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osMessageQueueNew
+<BR>[Called By]<UL><LI><a href="#[203]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osMessageQueueNew
 <LI><a href="#[22d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvCheckForValidListAndQueue
+<LI><a href="#[19d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osSemaphoreNew
 <LI><a href="#[20e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueCreateMutexStatic
 <LI><a href="#[213]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueCreateCountingSemaphoreStatic
 </UL>
@@ -4451,11 +4451,11 @@ Global Symbols
 <LI><a href="#[22c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortExitCritical
 <LI><a href="#[22a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortEnterCritical
 </UL>
-<BR>[Called By]<UL><LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osSemaphoreRelease
-<LI><a href="#[19d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osSemaphoreNew
-<LI><a href="#[210]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osMutexRelease
+<BR>[Called By]<UL><LI><a href="#[210]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osMutexRelease
 <LI><a href="#[207]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osMessageQueuePut
 <LI><a href="#[23f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTimerGenericCommand
+<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osSemaphoreRelease
+<LI><a href="#[19d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osSemaphoreNew
 <LI><a href="#[211]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGiveMutexRecursive
 <LI><a href="#[235]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvInitialiseMutex
 </UL>
@@ -4516,8 +4516,8 @@ Global Symbols
 <LI><a href="#[29d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortValidateInterruptPriority
 <LI><a href="#[231]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvCopyDataFromQueue
 </UL>
-<BR>[Called By]<UL><LI><a href="#[16f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osSemaphoreAcquire
-<LI><a href="#[1fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osMessageQueueGet
+<BR>[Called By]<UL><LI><a href="#[1fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osMessageQueueGet
+<LI><a href="#[16f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osSemaphoreAcquire
 </UL>
 
 <P><STRONG><a name="[20c]"></a>xQueueSemaphoreTake</STRONG> (Thumb, 434 bytes, Stack size 40 bytes, queue.o(i.xQueueSemaphoreTake))
@@ -4539,8 +4539,8 @@ Global Symbols
 <LI><a href="#[22c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortExitCritical
 <LI><a href="#[22a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortEnterCritical
 </UL>
-<BR>[Called By]<UL><LI><a href="#[16f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osSemaphoreAcquire
-<LI><a href="#[20a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osMutexAcquire
+<BR>[Called By]<UL><LI><a href="#[20a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osMutexAcquire
+<LI><a href="#[16f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osSemaphoreAcquire
 <LI><a href="#[20b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueTakeMutexRecursive
 </UL>
 
@@ -5125,9 +5125,6 @@ Local Symbols
 <LI><a href="#[1d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osKernelStart
 <LI><a href="#[1d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osKernelInitialize
 <LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osDelay
-<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osSemaphoreRelease
-<LI><a href="#[19d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osSemaphoreNew
-<LI><a href="#[16f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osSemaphoreAcquire
 <LI><a href="#[212]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osSemaphoreDelete
 <LI><a href="#[210]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osMutexRelease
 <LI><a href="#[20d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osMutexNew
@@ -5138,6 +5135,9 @@ Local Symbols
 <LI><a href="#[1fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osMessageQueueGet
 <LI><a href="#[1fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osMessageQueueDelete
 <LI><a href="#[1f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osKernelGetTickCount
+<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osSemaphoreRelease
+<LI><a href="#[19d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osSemaphoreNew
+<LI><a href="#[16f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osSemaphoreAcquire
 </UL>
 
 <P><STRONG><a name="[24c]"></a>prvHeapInit</STRONG> (Thumb, 98 bytes, Stack size 12 bytes, heap_4.o(i.prvHeapInit))

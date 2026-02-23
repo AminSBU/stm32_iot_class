@@ -44,6 +44,7 @@ stm32h750_kavir_iot\demand.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_
 stm32h750_kavir_iot\demand.o: ..\App\App\App.h
 stm32h750_kavir_iot\demand.o: ../Core/Inc/main.h
 stm32h750_kavir_iot\demand.o: ..\App\App\App_FreeRTOS.h
+stm32h750_kavir_iot\demand.o: ..\App\App\App_Network.h
 stm32h750_kavir_iot\demand.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/debug.h
 stm32h750_kavir_iot\demand.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/arch.h
 stm32h750_kavir_iot\demand.o: ../Middlewares/Third_Party/LwIP/system/arch/cc.h

@@ -41,6 +41,7 @@ stm32h750_kavir_iot\app_freertos.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7x
 stm32h750_kavir_iot\app_freertos.o: ..\App\App\App.h
 stm32h750_kavir_iot\app_freertos.o: ../Core/Inc/main.h
 stm32h750_kavir_iot\app_freertos.o: ..\App\App\App_FreeRTOS.h
+stm32h750_kavir_iot\app_freertos.o: ..\App\App\App_Network.h
 stm32h750_kavir_iot\app_freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h
 stm32h750_kavir_iot\app_freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
 stm32h750_kavir_iot\app_freertos.o: ../Core/Inc/FreeRTOSConfig.h

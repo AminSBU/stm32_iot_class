@@ -41,3 +41,4 @@ stm32h750_kavir_iot\app.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uar
 stm32h750_kavir_iot\app.o: ..\App\App\App.h
 stm32h750_kavir_iot\app.o: ../Core/Inc/main.h
 stm32h750_kavir_iot\app.o: ..\App\App\App_FreeRTOS.h
+stm32h750_kavir_iot\app.o: ..\App\App\App_Network.h

@@ -33,6 +33,7 @@ extern "C" {
 /* USER CODE BEGIN Includes */
 #include "App.h"
 #include "App_FreeRTOS.h"
+#include "App_Network.h"
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
