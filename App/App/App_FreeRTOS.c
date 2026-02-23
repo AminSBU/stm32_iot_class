@@ -25,7 +25,8 @@ void LwIPTask(void *argument)
   /* Infinite loop */
   for(;;)
   {
-    osDelay(1);
+	  send_data_tcp();
+    osDelay(1000);
   }
   /* USER CODE END LwIPTask */
 }
