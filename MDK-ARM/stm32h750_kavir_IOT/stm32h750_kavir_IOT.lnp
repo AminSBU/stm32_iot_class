@@ -74,6 +74,8 @@
 "stm32h750_kavir_iot\slipif.o"
 "stm32h750_kavir_iot\zepif.o"
 "stm32h750_kavir_iot\ecp.o"
+"stm32h750_kavir_iot\httpd.o"
+"stm32h750_kavir_iot\fs.o"
 "stm32h750_kavir_iot\api_lib.o"
 "stm32h750_kavir_iot\api_msg.o"
 "stm32h750_kavir_iot\err.o"

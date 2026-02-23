@@ -3,7 +3,7 @@
 <title>Static Call Graph - [stm32h750_kavir_IOT\stm32h750_kavir_IOT.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image stm32h750_kavir_IOT\stm32h750_kavir_IOT.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Mon Feb 23 09:24:32 2026
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Mon Feb 23 16:33:40 2026
 <BR><P>
 <H3>Maximum Stack Usage =        840 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -724,15 +724,15 @@ Global Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[233]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvCopyDataToQueue
 <LI><a href="#[232]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvCopyDataFromQueue
+<LI><a href="#[17f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_copy
 <LI><a href="#[1ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_write
 <LI><a href="#[21e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_copy_partial
-<LI><a href="#[17f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_copy
-<LI><a href="#[19a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass_free_complete_datagram
-<LI><a href="#[192]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass_enqueue_new_datagram
 <LI><a href="#[18b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_reass
 <LI><a href="#[185]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_frag
 <LI><a href="#[17c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_input
 <LI><a href="#[17b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_send_response
+<LI><a href="#[19a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass_free_complete_datagram
+<LI><a href="#[192]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass_enqueue_new_datagram
 </UL>
 
 <P><STRONG><a name="[2bd]"></a>__aeabi_memmove</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, memmovea.o(.text), UNUSED)
@@ -764,10 +764,10 @@ Global Symbols
 <LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_ETH_MspInit
 <LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;low_level_output
 <LI><a href="#[16f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;low_level_init
-<LI><a href="#[254]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_thread_new
 <LI><a href="#[25c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_alloc
-<LI><a href="#[192]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass_enqueue_new_datagram
+<LI><a href="#[254]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_thread_new
 <LI><a href="#[29b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_new
+<LI><a href="#[192]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass_enqueue_new_datagram
 </UL>
 
 <P><STRONG><a name="[2c2]"></a>__aeabi_memclr8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
@@ -1597,7 +1597,6 @@ Global Symbols
 <LI><a href="#[1e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memp_free_pool
 <LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_output
 <LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ethernetif_init
-<LI><a href="#[219]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_add_header_impl
 <LI><a href="#[1f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netif_issue_reports
 <LI><a href="#[1f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netif_do_set_ipaddr
 <LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;do_memp_malloc_pool
@@ -1605,85 +1604,16 @@ Global Symbols
 <LI><a href="#[1df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_trim
 <LI><a href="#[1da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;plug_holes
 <LI><a href="#[1ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_init
-<LI><a href="#[1c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_sendto
-<LI><a href="#[1c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_send
-<LI><a href="#[1c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_remove
-<LI><a href="#[224]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_recv
-<LI><a href="#[1c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_disconnect
-<LI><a href="#[1bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_connect
-<LI><a href="#[298]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_bind
-<LI><a href="#[1ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_write
-<LI><a href="#[1ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_shutdown
-<LI><a href="#[1b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_sent
-<LI><a href="#[24f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_recved
-<LI><a href="#[1b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_recv
-<LI><a href="#[1b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_poll
-<LI><a href="#[1cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
-<LI><a href="#[1b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_err
-<LI><a href="#[1be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_connect
-<LI><a href="#[1b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_close
-<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sent_tcp
-<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;recv_udp
-<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;recv_tcp
-<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;poll_tcp
-<LI><a href="#[1c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pcb_new
-<LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_netconn_err_to_msg
-<LI><a href="#[1c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_netconn_do_writemore
-<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_netconn_do_connected
-<LI><a href="#[1b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_netconn_do_close_internal
-<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;err_tcp
-<LI><a href="#[1e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netconn_free
-<LI><a href="#[1e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netconn_alloc
-<LI><a href="#[198]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memp_malloc
-<LI><a href="#[199]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memp_free
-<LI><a href="#[1cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_netconn_is_err_msg
-<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_netconn_do_write
-<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_netconn_do_delconn
-<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_netconn_do_connect
-<LI><a href="#[1ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netconn_write_vectors_partly
-<LI><a href="#[1d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netconn_send
-<LI><a href="#[1d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netconn_new_with_proto_and_callback
-<LI><a href="#[1a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netconn_disconnect
-<LI><a href="#[1a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netconn_connect
-<LI><a href="#[189]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_realloc
-<LI><a href="#[188]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_cat
-<LI><a href="#[164]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloc
-<LI><a href="#[1de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_malloc
-<LI><a href="#[1d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_free
-<LI><a href="#[167]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_remove_header
-<LI><a href="#[159]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_input
-<LI><a href="#[15f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ethernet_output
-<LI><a href="#[255]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_timeout
 <LI><a href="#[256]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_timeouts_sleeptime
 <LI><a href="#[1aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_init
 <LI><a href="#[222]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcpip_try_callback
 <LI><a href="#[293]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcpip_inpkt
 <LI><a href="#[295]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcpip_thread_handle_msg
 <LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcpip_thread
-<LI><a href="#[21e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_copy_partial
 <LI><a href="#[195]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4addr_aton
 <LI><a href="#[1ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_sendto
 <LI><a href="#[1a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_connect
 <LI><a href="#[1a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_close
-<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;event_callback
-<LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;alloc_socket
-<LI><a href="#[1d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netbuf_ref
-<LI><a href="#[1d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netbuf_free
-<LI><a href="#[1a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_timeout_abs
-<LI><a href="#[292]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_write_checks
-<LI><a href="#[286]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_pbuf_prealloc
-<LI><a href="#[284]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_segment_busy
-<LI><a href="#[282]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_segment
-<LI><a href="#[27b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_fill_options
-<LI><a href="#[27c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_control_segment
-<LI><a href="#[283]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_alloc_header_common
-<LI><a href="#[27a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_alloc_header
-<LI><a href="#[26e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_create_segment
-<LI><a href="#[276]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_send_empty_ack
-<LI><a href="#[287]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rexmit_rto
-<LI><a href="#[28a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rexmit_fast
-<LI><a href="#[289]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rexmit
-<LI><a href="#[18d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
 <LI><a href="#[274]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_timewait_input
 <LI><a href="#[288]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_receive
 <LI><a href="#[277]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_process
@@ -1721,11 +1651,61 @@ Global Symbols
 <LI><a href="#[17f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_copy
 <LI><a href="#[162]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_clone
 <LI><a href="#[21a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloc_reference
-<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ipfrag_free_pbuf_custom
-<LI><a href="#[19a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass_free_complete_datagram
-<LI><a href="#[194]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass_dequeue_datagram
-<LI><a href="#[193]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass_chain_frag_into_datagram_and_validate
-<LI><a href="#[187]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_frag_free_pbuf_custom_ref
+<LI><a href="#[219]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_add_header_impl
+<LI><a href="#[1ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_write
+<LI><a href="#[1b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_sent
+<LI><a href="#[24f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_recved
+<LI><a href="#[1b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_recv
+<LI><a href="#[1b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_poll
+<LI><a href="#[1cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
+<LI><a href="#[1b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_err
+<LI><a href="#[1b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_close
+<LI><a href="#[21e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_copy_partial
+<LI><a href="#[189]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_realloc
+<LI><a href="#[188]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_cat
+<LI><a href="#[164]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloc
+<LI><a href="#[1de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_malloc
+<LI><a href="#[1d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_free
+<LI><a href="#[167]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_remove_header
+<LI><a href="#[159]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_input
+<LI><a href="#[15f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ethernet_output
+<LI><a href="#[255]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_timeout
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;event_callback
+<LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;alloc_socket
+<LI><a href="#[1d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netbuf_ref
+<LI><a href="#[1d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netbuf_free
+<LI><a href="#[1c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_sendto
+<LI><a href="#[1c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_send
+<LI><a href="#[1c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_remove
+<LI><a href="#[224]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_recv
+<LI><a href="#[1c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_disconnect
+<LI><a href="#[1bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_connect
+<LI><a href="#[298]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_bind
+<LI><a href="#[1ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_shutdown
+<LI><a href="#[1be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_connect
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sent_tcp
+<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;recv_udp
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;recv_tcp
+<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;poll_tcp
+<LI><a href="#[1c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pcb_new
+<LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_netconn_err_to_msg
+<LI><a href="#[1c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_netconn_do_writemore
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_netconn_do_connected
+<LI><a href="#[1b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_netconn_do_close_internal
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;err_tcp
+<LI><a href="#[1e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netconn_free
+<LI><a href="#[1e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netconn_alloc
+<LI><a href="#[198]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memp_malloc
+<LI><a href="#[199]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memp_free
+<LI><a href="#[1cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_netconn_is_err_msg
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_netconn_do_write
+<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_netconn_do_delconn
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_netconn_do_connect
+<LI><a href="#[1ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netconn_write_vectors_partly
+<LI><a href="#[1d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netconn_send
+<LI><a href="#[1d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netconn_new_with_proto_and_callback
+<LI><a href="#[1a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netconn_disconnect
+<LI><a href="#[1a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netconn_connect
 <LI><a href="#[18b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_reass
 <LI><a href="#[185]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_frag
 <LI><a href="#[17c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_input
@@ -1740,6 +1720,26 @@ Global Symbols
 <LI><a href="#[29c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_sendto_if
 <LI><a href="#[18c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_input
 <LI><a href="#[29a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_input_local_match
+<LI><a href="#[1a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_timeout_abs
+<LI><a href="#[292]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_write_checks
+<LI><a href="#[286]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_pbuf_prealloc
+<LI><a href="#[284]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_segment_busy
+<LI><a href="#[282]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_segment
+<LI><a href="#[27b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_fill_options
+<LI><a href="#[27c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_control_segment
+<LI><a href="#[283]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_alloc_header_common
+<LI><a href="#[27a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_alloc_header
+<LI><a href="#[26e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_create_segment
+<LI><a href="#[276]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_send_empty_ack
+<LI><a href="#[287]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rexmit_rto
+<LI><a href="#[28a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rexmit_fast
+<LI><a href="#[289]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rexmit
+<LI><a href="#[18d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ipfrag_free_pbuf_custom
+<LI><a href="#[19a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass_free_complete_datagram
+<LI><a href="#[194]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass_dequeue_datagram
+<LI><a href="#[193]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass_chain_frag_into_datagram_and_validate
+<LI><a href="#[187]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_frag_free_pbuf_custom_ref
 </UL>
 
 <P><STRONG><a name="[147]"></a>__0sprintf$6</STRONG> (Thumb, 34 bytes, Stack size 24 bytes, printf6.o(i.__0sprintf$6), UNUSED)
@@ -1780,9 +1780,9 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 368<LI>Call Chain = etharp_input &rArr; etharp_update_arp_entry &rArr; etharp_find_entry &rArr; etharp_free_entry &rArr; pbuf_free &rArr; memp_free &rArr; do_memp_free_pool &rArr; sys_arch_unprotect &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
 <BR>[Calls]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
-<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 <LI><a href="#[15a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_update_arp_entry
 <LI><a href="#[15b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_raw
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ethernet_input
 </UL>
@@ -1791,10 +1791,10 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 456<LI>Call Chain = etharp_output &rArr; etharp_query &rArr; etharp_request &rArr; etharp_request_dst &rArr; etharp_raw &rArr; pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; do_memp_free_pool &rArr; sys_arch_unprotect &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
 <BR>[Calls]<UL><LI><a href="#[15f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ethernet_output
-<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
-<LI><a href="#[15c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_addr_isbroadcast_u32
 <LI><a href="#[15e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_query
 <LI><a href="#[15d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_output_to_arp_index
+<LI><a href="#[15c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_addr_isbroadcast_u32
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> ethernetif.o(i.ethernetif_init)
 </UL>
@@ -1803,12 +1803,12 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[163]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_ref
 <LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
+<LI><a href="#[162]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_clone
 <LI><a href="#[160]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_request
 <LI><a href="#[15f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ethernet_output
-<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
-<LI><a href="#[15c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_addr_isbroadcast_u32
-<LI><a href="#[162]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_clone
 <LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_find_entry
+<LI><a href="#[15c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_addr_isbroadcast_u32
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_output
 </UL>
@@ -1910,13 +1910,13 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
 <LI><a href="#[17d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inet_chksum_pbuf
+<LI><a href="#[17f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_copy
 <LI><a href="#[164]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloc
 <LI><a href="#[167]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_remove_header
 <LI><a href="#[16e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_add_header
-<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 <LI><a href="#[180]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_output_if
 <LI><a href="#[15c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_addr_isbroadcast_u32
-<LI><a href="#[17f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_copy
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 <LI><a href="#[17e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
 <BR>[Called By]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_input
@@ -1951,12 +1951,12 @@ Global Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_output
 <LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_input
-<LI><a href="#[18d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
 <LI><a href="#[18a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_input_accept
 <LI><a href="#[17c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_input
 <LI><a href="#[15e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_query
 <LI><a href="#[15a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_update_arp_entry
 <LI><a href="#[18c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_input
+<LI><a href="#[18d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
 </UL>
 
 <P><STRONG><a name="[185]"></a>ip4_frag</STRONG> (Thumb, 536 bytes, Stack size 96 bytes, ip4_frag.o(i.ip4_frag))
@@ -1968,9 +1968,9 @@ Global Symbols
 <LI><a href="#[188]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_cat
 <LI><a href="#[164]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloc
 <LI><a href="#[165]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_htons
-<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 <LI><a href="#[187]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_frag_free_pbuf_custom_ref
 <LI><a href="#[186]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_frag_alloc_pbuf_custom_ref
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 <LI><a href="#[17e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
 <BR>[Called By]<UL><LI><a href="#[18f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_output_if_src
@@ -1980,17 +1980,17 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 816<LI>Call Chain = ip4_input &rArr; tcp_input &rArr; tcp_listen_input &rArr; tcp_alloc &rArr; tcp_kill_prio &rArr; tcp_abort &rArr; tcp_abandon &rArr; tcp_pcb_remove &rArr; tcp_output &rArr; tcp_send_empty_ack &rArr; tcp_output_control_segment &rArr; ip4_output_if &rArr; ip4_output_if_src &rArr; ip4_frag &rArr; pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; do_memp_free_pool &rArr; sys_arch_unprotect &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
 <BR>[Calls]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
+<LI><a href="#[18e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_header_force
 <LI><a href="#[189]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_realloc
 <LI><a href="#[167]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_remove_header
 <LI><a href="#[165]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_htons
-<LI><a href="#[15c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_addr_isbroadcast_u32
-<LI><a href="#[18d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
-<LI><a href="#[18e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_header_force
 <LI><a href="#[18b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_reass
 <LI><a href="#[18a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_input_accept
 <LI><a href="#[17c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_input
 <LI><a href="#[17a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_dest_unreach
 <LI><a href="#[18c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_input
+<LI><a href="#[15c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_addr_isbroadcast_u32
+<LI><a href="#[18d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
 </UL>
 <BR>[Called By]<UL><LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ethernet_input
 </UL>
@@ -2001,10 +2001,10 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[18f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_output_if_src
 </UL>
-<BR>[Called By]<UL><LI><a href="#[282]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_segment
-<LI><a href="#[27c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_control_segment
-<LI><a href="#[17c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_input
+<BR>[Called By]<UL><LI><a href="#[17c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_input
 <LI><a href="#[17b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_send_response
+<LI><a href="#[282]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_segment
+<LI><a href="#[27c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_control_segment
 </UL>
 
 <P><STRONG><a name="[18f]"></a>ip4_output_if_src</STRONG> (Thumb, 250 bytes, Stack size 40 bytes, ip4.o(i.ip4_output_if_src))
@@ -2012,26 +2012,26 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[16e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_add_header
 <LI><a href="#[165]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_htons
-<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 <LI><a href="#[185]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_frag
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[180]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_output_if
-<LI><a href="#[29d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_sendto_if_src
+<BR>[Called By]<UL><LI><a href="#[29d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_sendto_if_src
+<LI><a href="#[180]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_output_if
 </UL>
 
 <P><STRONG><a name="[18b]"></a>ip4_reass</STRONG> (Thumb, 584 bytes, Stack size 56 bytes, ip4_frag.o(i.ip4_reass))
 <BR><BR>[Stack]<UL><LI>Max Depth = 664<LI>Call Chain = ip4_reass &rArr; ip_reass_enqueue_new_datagram &rArr; ip_reass_remove_oldest_datagram &rArr; ip_reass_free_complete_datagram &rArr; icmp_time_exceeded &rArr; icmp_send_response &rArr; ip4_output_if &rArr; ip4_output_if_src &rArr; ip4_frag &rArr; pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; do_memp_free_pool &rArr; sys_arch_unprotect &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
 <BR>[Calls]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
+<LI><a href="#[190]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_clen
 <LI><a href="#[188]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_cat
 <LI><a href="#[167]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_remove_header
 <LI><a href="#[165]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_htons
-<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
-<LI><a href="#[190]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_clen
 <LI><a href="#[191]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass_remove_oldest_datagram
 <LI><a href="#[192]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass_enqueue_new_datagram
 <LI><a href="#[194]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass_dequeue_datagram
 <LI><a href="#[193]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass_chain_frag_into_datagram_and_validate
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 <LI><a href="#[17e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
 <BR>[Called By]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_input
@@ -2040,12 +2040,12 @@ Global Symbols
 <P><STRONG><a name="[181]"></a>ip4_route</STRONG> (Thumb, 140 bytes, Stack size 8 bytes, ip4.o(i.ip4_route))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = ip4_route
 </UL>
-<BR>[Called By]<UL><LI><a href="#[1c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_sendto
-<LI><a href="#[1be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_connect
-<LI><a href="#[281]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_route
-<LI><a href="#[277]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_process
+<BR>[Called By]<UL><LI><a href="#[277]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_process
 <LI><a href="#[275]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_listen_input
+<LI><a href="#[1c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_sendto
+<LI><a href="#[1be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_connect
 <LI><a href="#[17b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_send_response
+<LI><a href="#[281]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_route
 </UL>
 
 <P><STRONG><a name="[195]"></a>ip4addr_aton</STRONG> (Thumb, 412 bytes, Stack size 48 bytes, ip4_addr.o(i.ip4addr_aton))
@@ -2084,10 +2084,10 @@ Global Symbols
 <P><STRONG><a name="[1a2]"></a>lwip_close</STRONG> (Thumb, 134 bytes, Stack size 24 bytes, sockets.o(i.lwip_close))
 <BR><BR>[Stack]<UL><LI>Max Depth = 320<LI>Call Chain = lwip_close &rArr; free_socket &rArr; free_socket_free_elements &rArr; netconn_delete &rArr; netconn_prepare_delete &rArr; netconn_apimsg &rArr; tcpip_send_msg_wait_sem &rArr; sys_mutex_unlock &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
-<BR>[Calls]<UL><LI><a href="#[1a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netconn_prepare_delete
-<LI><a href="#[172]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_socket
+<BR>[Calls]<UL><LI><a href="#[172]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_socket
 <LI><a href="#[174]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;free_socket
 <LI><a href="#[1a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;err_to_errno
+<LI><a href="#[1a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netconn_prepare_delete
 <LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_data_tcp
@@ -2096,25 +2096,18 @@ Global Symbols
 <P><STRONG><a name="[1a5]"></a>lwip_connect</STRONG> (Thumb, 204 bytes, Stack size 40 bytes, sockets.o(i.lwip_connect))
 <BR><BR>[Stack]<UL><LI>Max Depth = 280<LI>Call Chain = lwip_connect &rArr; netconn_connect &rArr; netconn_apimsg &rArr; tcpip_send_msg_wait_sem &rArr; sys_mutex_unlock &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
-<BR>[Calls]<UL><LI><a href="#[1a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netconn_disconnect
-<LI><a href="#[1a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netconn_connect
-<LI><a href="#[165]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_htons
+<BR>[Calls]<UL><LI><a href="#[165]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_htons
 <LI><a href="#[172]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_socket
 <LI><a href="#[1a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;err_to_errno
+<LI><a href="#[1a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netconn_disconnect
+<LI><a href="#[1a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netconn_connect
 <LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_data_tcp
 </UL>
 
 <P><STRONG><a name="[197]"></a>lwip_htonl</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, def.o(i.lwip_htonl))
-<BR><BR>[Called By]<UL><LI><a href="#[1cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
-<LI><a href="#[195]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4addr_aton
-<LI><a href="#[282]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_segment
-<LI><a href="#[283]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_alloc_header_common
-<LI><a href="#[26e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_create_segment
-<LI><a href="#[276]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_send_empty_ack
-<LI><a href="#[289]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rexmit
-<LI><a href="#[18d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
+<BR><BR>[Called By]<UL><LI><a href="#[195]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4addr_aton
 <LI><a href="#[288]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_receive
 <LI><a href="#[272]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_free_acked_segments
 <LI><a href="#[290]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_zero_window_probe
@@ -2122,19 +2115,18 @@ Global Symbols
 <LI><a href="#[25b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rst
 <LI><a href="#[28d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rexmit_rto_prepare
 <LI><a href="#[279]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_keepalive
-</UL>
-
-<P><STRONG><a name="[165]"></a>lwip_htons</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, def.o(i.lwip_htons))
-<BR><BR>[Called By]<UL><LI><a href="#[1ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_write
 <LI><a href="#[1cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
-<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_input
-<LI><a href="#[15f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ethernet_output
-<LI><a href="#[1ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_sendto
-<LI><a href="#[1a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_connect
 <LI><a href="#[282]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_segment
 <LI><a href="#[283]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_alloc_header_common
 <LI><a href="#[26e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_create_segment
+<LI><a href="#[276]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_send_empty_ack
+<LI><a href="#[289]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rexmit
 <LI><a href="#[18d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
+</UL>
+
+<P><STRONG><a name="[165]"></a>lwip_htons</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, def.o(i.lwip_htons))
+<BR><BR>[Called By]<UL><LI><a href="#[1ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_sendto
+<LI><a href="#[1a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_connect
 <LI><a href="#[288]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_receive
 <LI><a href="#[280]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_oos_insert_segment
 <LI><a href="#[272]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_free_acked_segments
@@ -2142,14 +2134,22 @@ Global Symbols
 <LI><a href="#[291]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_split_unsent_seg
 <LI><a href="#[267]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_send_fin
 <LI><a href="#[28d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rexmit_rto_prepare
-<LI><a href="#[193]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass_chain_frag_into_datagram_and_validate
+<LI><a href="#[1ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_write
+<LI><a href="#[1cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_input
+<LI><a href="#[15f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ethernet_output
 <LI><a href="#[18b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_reass
 <LI><a href="#[185]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_frag
 <LI><a href="#[15b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_raw
 <LI><a href="#[18f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_output_if_src
 <LI><a href="#[29d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_sendto_if_src
 <LI><a href="#[18c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_input
+<LI><a href="#[282]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_segment
+<LI><a href="#[283]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_alloc_header_common
+<LI><a href="#[26e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_create_segment
+<LI><a href="#[18d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
 <LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_data_tcp
+<LI><a href="#[193]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass_chain_frag_into_datagram_and_validate
 </UL>
 
 <P><STRONG><a name="[1aa]"></a>lwip_init</STRONG> (Thumb, 68 bytes, Stack size 8 bytes, init.o(i.lwip_init))
@@ -2240,10 +2240,10 @@ Global Symbols
 <P><STRONG><a name="[1cd]"></a>lwip_send</STRONG> (Thumb, 156 bytes, Stack size 48 bytes, sockets.o(i.lwip_send))
 <BR><BR>[Stack]<UL><LI>Max Depth = 408<LI>Call Chain = lwip_send &rArr; lwip_sendto &rArr;  lwip_send (Cycle)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[1cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netconn_write_partly
-<LI><a href="#[1ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_sendto
+<BR>[Calls]<UL><LI><a href="#[1ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_sendto
 <LI><a href="#[172]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_socket
 <LI><a href="#[1a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;err_to_errno
+<LI><a href="#[1cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netconn_write_partly
 </UL>
 <BR>[Called By]<UL><LI><a href="#[1ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_sendto
 <LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_data_tcp
@@ -2253,13 +2253,13 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 360 + In Cycle
 <LI>Call Chain = lwip_sendto &rArr;  lwip_send (Cycle)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[1d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netconn_send
+<BR>[Calls]<UL><LI><a href="#[1cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_send
 <LI><a href="#[165]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_htons
-<LI><a href="#[1cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_send
 <LI><a href="#[172]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_socket
 <LI><a href="#[1d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netbuf_ref
 <LI><a href="#[1d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netbuf_free
 <LI><a href="#[1a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;err_to_errno
+<LI><a href="#[1d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netconn_send
 <LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[1cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_send
@@ -2268,9 +2268,9 @@ Global Symbols
 <P><STRONG><a name="[1d3]"></a>lwip_socket</STRONG> (Thumb, 158 bytes, Stack size 24 bytes, sockets.o(i.lwip_socket))
 <BR><BR>[Stack]<UL><LI>Max Depth = 296<LI>Call Chain = lwip_socket &rArr; netconn_new_with_proto_and_callback &rArr; netconn_alloc &rArr; memp_free &rArr; do_memp_free_pool &rArr; sys_arch_unprotect &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
-<BR>[Calls]<UL><LI><a href="#[1d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netconn_new_with_proto_and_callback
+<BR>[Calls]<UL><LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;alloc_socket
+<LI><a href="#[1d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netconn_new_with_proto_and_callback
 <LI><a href="#[178]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netconn_delete
-<LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;alloc_socket
 </UL>
 <BR>[Called By]<UL><LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_data_tcp
 </UL>
@@ -2354,11 +2354,6 @@ Global Symbols
 <LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
-<LI><a href="#[1c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_remove
-<LI><a href="#[177]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netbuf_delete
-<LI><a href="#[1e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netconn_free
-<LI><a href="#[1e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netconn_alloc
-<LI><a href="#[1d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netconn_new_with_proto_and_callback
 <LI><a href="#[253]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_check_timeouts
 <LI><a href="#[222]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcpip_try_callback
 <LI><a href="#[293]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcpip_inpkt
@@ -2366,6 +2361,11 @@ Global Symbols
 <LI><a href="#[26f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_seg_free
 <LI><a href="#[259]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_free
 <LI><a href="#[265]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_free_listen
+<LI><a href="#[1c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_remove
+<LI><a href="#[177]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netbuf_delete
+<LI><a href="#[1e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netconn_free
+<LI><a href="#[1e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netconn_alloc
+<LI><a href="#[1d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netconn_new_with_proto_and_callback
 <LI><a href="#[194]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass_dequeue_datagram
 <LI><a href="#[187]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_frag_free_pbuf_custom_ref
 </UL>
@@ -2400,19 +2400,19 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;do_memp_malloc_pool
 <LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;recv_udp
-<LI><a href="#[1e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netconn_alloc
-<LI><a href="#[164]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloc
-<LI><a href="#[222]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcpip_try_callback
+<BR>[Called By]<UL><LI><a href="#[222]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcpip_try_callback
 <LI><a href="#[293]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcpip_inpkt
-<LI><a href="#[1a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_timeout_abs
-<LI><a href="#[26e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_create_segment
 <LI><a href="#[28c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_seg_copy
 <LI><a href="#[25c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_alloc
 <LI><a href="#[21a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloc_reference
+<LI><a href="#[164]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloc
+<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;recv_udp
+<LI><a href="#[1e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netconn_alloc
+<LI><a href="#[29b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_new
+<LI><a href="#[1a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_timeout_abs
+<LI><a href="#[26e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_create_segment
 <LI><a href="#[192]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass_enqueue_new_datagram
 <LI><a href="#[186]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_frag_alloc_pbuf_custom_ref
-<LI><a href="#[29b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_new
 </UL>
 
 <P><STRONG><a name="[f4]"></a>memp_malloc_pool</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, memp.o(i.memp_malloc_pool))
@@ -2430,9 +2430,9 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
 <LI><a href="#[199]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memp_free
 </UL>
-<BR>[Called By]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;recv_udp
+<BR>[Called By]<UL><LI><a href="#[176]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;free_socket_free_elements
+<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;recv_udp
 <LI><a href="#[1c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netconn_drain
-<LI><a href="#[176]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;free_socket_free_elements
 </UL>
 
 <P><STRONG><a name="[1d2]"></a>netbuf_free</STRONG> (Thumb, 50 bytes, Stack size 8 bytes, netbuf.o(i.netbuf_free))
@@ -2522,13 +2522,13 @@ Global Symbols
 <P><STRONG><a name="[1d4]"></a>netconn_new_with_proto_and_callback</STRONG> (Thumb, 208 bytes, Stack size 56 bytes, api_lib.o(i.netconn_new_with_proto_and_callback))
 <BR><BR>[Stack]<UL><LI>Max Depth = 272<LI>Call Chain = netconn_new_with_proto_and_callback &rArr; netconn_alloc &rArr; memp_free &rArr; do_memp_free_pool &rArr; sys_arch_unprotect &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
-<BR>[Calls]<UL><LI><a href="#[154]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_sem_valid
+<BR>[Calls]<UL><LI><a href="#[1e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netconn_apimsg
+<LI><a href="#[154]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_sem_valid
 <LI><a href="#[1ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_sem_free
 <LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_mbox_valid
 <LI><a href="#[1e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_mbox_free
 <LI><a href="#[1e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netconn_alloc
 <LI><a href="#[199]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memp_free
-<LI><a href="#[1e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netconn_apimsg
 <LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[1d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_socket
@@ -2539,8 +2539,8 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[1e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netconn_apimsg
 </UL>
-<BR>[Called By]<UL><LI><a href="#[178]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netconn_delete
-<LI><a href="#[1a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_close
+<BR>[Called By]<UL><LI><a href="#[1a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_close
+<LI><a href="#[178]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netconn_delete
 </UL>
 
 <P><STRONG><a name="[1d1]"></a>netconn_send</STRONG> (Thumb, 60 bytes, Stack size 48 bytes, api_lib.o(i.netconn_send))
@@ -2844,35 +2844,35 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[219]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_add_header_impl
 </UL>
 <BR>[Called By]<UL><LI><a href="#[15f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ethernet_output
-<LI><a href="#[26e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_create_segment
 <LI><a href="#[17c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_input
 <LI><a href="#[18f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_output_if_src
 <LI><a href="#[29d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_sendto_if_src
+<LI><a href="#[26e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_create_segment
 </UL>
 
 <P><STRONG><a name="[164]"></a>pbuf_alloc</STRONG> (Thumb, 406 bytes, Stack size 48 bytes, pbuf.o(i.pbuf_alloc))
 <BR><BR>[Stack]<UL><LI>Max Depth = 272<LI>Call Chain = pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; do_memp_free_pool &rArr; sys_arch_unprotect &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
 <BR>[Calls]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
+<LI><a href="#[21a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloc_reference
 <LI><a href="#[21b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_pool_is_empty
 <LI><a href="#[21c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_init_alloced_pbuf
-<LI><a href="#[198]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memp_malloc
 <LI><a href="#[1de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_malloc
+<LI><a href="#[198]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memp_malloc
 <LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
-<LI><a href="#[21a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloc_reference
 </UL>
-<BR>[Called By]<UL><LI><a href="#[1ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_write
-<LI><a href="#[1d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netbuf_ref
-<LI><a href="#[286]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_pbuf_prealloc
-<LI><a href="#[283]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_alloc_header_common
-<LI><a href="#[291]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_split_unsent_seg
+<BR>[Called By]<UL><LI><a href="#[291]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_split_unsent_seg
 <LI><a href="#[26c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_enqueue_flags
 <LI><a href="#[162]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_clone
+<LI><a href="#[1ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_write
+<LI><a href="#[1d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netbuf_ref
 <LI><a href="#[185]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_frag
 <LI><a href="#[17c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_input
 <LI><a href="#[17b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_send_response
 <LI><a href="#[15b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_raw
 <LI><a href="#[29d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_sendto_if_src
+<LI><a href="#[286]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_pbuf_prealloc
+<LI><a href="#[283]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_alloc_header_common
 </UL>
 
 <P><STRONG><a name="[21a]"></a>pbuf_alloc_reference</STRONG> (Thumb, 78 bytes, Stack size 32 bytes, pbuf.o(i.pbuf_alloc_reference))
@@ -2899,9 +2899,9 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[1ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_write
-<LI><a href="#[288]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_receive
+<BR>[Called By]<UL><LI><a href="#[288]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_receive
 <LI><a href="#[21d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_chain
+<LI><a href="#[1ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_write
 <LI><a href="#[18b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_reass
 <LI><a href="#[185]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_frag
 </UL>
@@ -2916,20 +2916,20 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[190]"></a>pbuf_clen</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, pbuf.o(i.pbuf_clen))
-<BR><BR>[Called By]<UL><LI><a href="#[1ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_write
-<LI><a href="#[272]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_free_acked_segments
+<BR><BR>[Called By]<UL><LI><a href="#[272]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_free_acked_segments
 <LI><a href="#[291]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_split_unsent_seg
 <LI><a href="#[26c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_enqueue_flags
-<LI><a href="#[19a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass_free_complete_datagram
+<LI><a href="#[1ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_write
 <LI><a href="#[18b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_reass
+<LI><a href="#[19a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass_free_complete_datagram
 </UL>
 
 <P><STRONG><a name="[162]"></a>pbuf_clone</STRONG> (Thumb, 68 bytes, Stack size 24 bytes, pbuf.o(i.pbuf_clone))
 <BR><BR>[Stack]<UL><LI>Max Depth = 296<LI>Call Chain = pbuf_clone &rArr; pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; do_memp_free_pool &rArr; sys_arch_unprotect &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
-<BR>[Calls]<UL><LI><a href="#[164]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloc
+<BR>[Calls]<UL><LI><a href="#[17f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_copy
+<LI><a href="#[164]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloc
 <LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
-<LI><a href="#[17f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_copy
 </UL>
 <BR>[Called By]<UL><LI><a href="#[15e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_query
 </UL>
@@ -2957,39 +2957,34 @@ Global Symbols
 <P><STRONG><a name="[fa]"></a>pbuf_free</STRONG> (Thumb, 242 bytes, Stack size 32 bytes, pbuf.o(i.pbuf_free))
 <BR><BR>[Stack]<UL><LI>Max Depth = 224<LI>Call Chain = pbuf_free &rArr; memp_free &rArr; do_memp_free_pool &rArr; sys_arch_unprotect &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
-<BR>[Calls]<UL><LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_arch_unprotect
+<BR>[Calls]<UL><LI><a href="#[1d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_free
+<LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_arch_unprotect
 <LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_arch_protect
 <LI><a href="#[199]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memp_free
-<LI><a href="#[1d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_free
 <LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ethernetif_input
 <LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_ETH_TxFreeCallback
 <LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;low_level_output
+<LI><a href="#[295]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcpip_thread_handle_msg
+<LI><a href="#[291]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_split_unsent_seg
+<LI><a href="#[26f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_seg_free
+<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_recv_null
+<LI><a href="#[262]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_pcb_purge
 <LI><a href="#[1ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_write
-<LI><a href="#[1ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_shutdown
-<LI><a href="#[177]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netbuf_delete
-<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;recv_udp
-<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;recv_tcp
-<LI><a href="#[1c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netconn_drain
 <LI><a href="#[189]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_realloc
 <LI><a href="#[164]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloc
 <LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_input
 <LI><a href="#[159]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_input
 <LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ethernet_input
-<LI><a href="#[295]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcpip_thread_handle_msg
 <LI><a href="#[176]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;free_socket_free_elements
 <LI><a href="#[1d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netbuf_ref
 <LI><a href="#[1d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netbuf_free
-<LI><a href="#[27c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_control_segment
-<LI><a href="#[26e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_create_segment
-<LI><a href="#[18d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
-<LI><a href="#[291]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_split_unsent_seg
-<LI><a href="#[26f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_seg_free
-<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_recv_null
-<LI><a href="#[262]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_pcb_purge
-<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ipfrag_free_pbuf_custom
-<LI><a href="#[19a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass_free_complete_datagram
+<LI><a href="#[1ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_shutdown
+<LI><a href="#[177]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netbuf_delete
+<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;recv_udp
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;recv_tcp
+<LI><a href="#[1c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netconn_drain
 <LI><a href="#[18b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_reass
 <LI><a href="#[185]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_frag
 <LI><a href="#[17c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_input
@@ -3000,6 +2995,11 @@ Global Symbols
 <LI><a href="#[157]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_free_entry
 <LI><a href="#[29d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_sendto_if_src
 <LI><a href="#[18c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_input
+<LI><a href="#[27c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_control_segment
+<LI><a href="#[26e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_create_segment
+<LI><a href="#[18d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ipfrag_free_pbuf_custom
+<LI><a href="#[19a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass_free_complete_datagram
 </UL>
 
 <P><STRONG><a name="[9f]"></a>pbuf_free_custom</STRONG> (Thumb, 38 bytes, Stack size 16 bytes, ethernetif.o(i.pbuf_free_custom))
@@ -3026,10 +3026,10 @@ Global Symbols
 <LI><a href="#[1df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_trim
 <LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_input
-<LI><a href="#[288]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_receive
+<BR>[Called By]<UL><LI><a href="#[288]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_receive
 <LI><a href="#[280]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_oos_insert_segment
 <LI><a href="#[291]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_split_unsent_seg
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_input
 </UL>
 
 <P><STRONG><a name="[163]"></a>pbuf_ref</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, pbuf.o(i.pbuf_ref))
@@ -3051,14 +3051,14 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[221]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_header_impl
+<BR>[Called By]<UL><LI><a href="#[288]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_receive
+<LI><a href="#[221]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_header_impl
 <LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_input
 <LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ethernet_input
-<LI><a href="#[18d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
-<LI><a href="#[288]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_receive
 <LI><a href="#[18b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_reass
 <LI><a href="#[17c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_input
 <LI><a href="#[18c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_input
+<LI><a href="#[18d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
 </UL>
 
 <P><STRONG><a name="[24c]"></a>pvPortMalloc</STRONG> (Thumb, 306 bytes, Stack size 24 bytes, heap_4.o(i.pvPortMalloc))
@@ -3084,13 +3084,13 @@ Global Symbols
 <P><STRONG><a name="[12e]"></a>send_data_tcp</STRONG> (Thumb, 130 bytes, Stack size 96 bytes, app_network.o(i.send_data_tcp))
 <BR><BR>[Stack]<UL><LI>Max Depth = 504<LI>Call Chain = send_data_tcp &rArr; lwip_send &rArr; lwip_sendto &rArr;  lwip_send (Cycle)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[165]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_htons
-<LI><a href="#[1d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_socket
+<BR>[Calls]<UL><LI><a href="#[1d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_socket
 <LI><a href="#[1cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_send
 <LI><a href="#[1a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_connect
 <LI><a href="#[1a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_close
-<LI><a href="#[251]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
+<LI><a href="#[165]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_htons
 <LI><a href="#[19b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ipaddr_addr
+<LI><a href="#[251]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LwIPTask
 </UL>
@@ -3119,17 +3119,17 @@ Global Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[163]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_ref
 <LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
-<LI><a href="#[21b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_pool_is_empty
-<LI><a href="#[21f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free_ooseq
 <LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;do_memp_malloc_pool
 <LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;do_memp_free_pool
 <LI><a href="#[1df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_trim
-<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;err_tcp
-<LI><a href="#[1c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netconn_err
+<LI><a href="#[21b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_pool_is_empty
+<LI><a href="#[21f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free_ooseq
 <LI><a href="#[1d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_free
 <LI><a href="#[174]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;free_socket
 <LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;event_callback
 <LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;alloc_socket
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;err_tcp
+<LI><a href="#[1c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netconn_err
 </UL>
 
 <P><STRONG><a name="[1c0]"></a>sys_arch_sem_wait</STRONG> (Thumb, 62 bytes, Stack size 16 bytes, sys_arch.o(i.sys_arch_sem_wait))
@@ -3150,17 +3150,17 @@ Global Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[163]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_ref
 <LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
-<LI><a href="#[21b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_pool_is_empty
-<LI><a href="#[21f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free_ooseq
 <LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;do_memp_malloc_pool
 <LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;do_memp_free_pool
 <LI><a href="#[1df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_trim
-<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;err_tcp
-<LI><a href="#[1c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netconn_err
+<LI><a href="#[21b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_pool_is_empty
+<LI><a href="#[21f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free_ooseq
 <LI><a href="#[1d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_free
 <LI><a href="#[174]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;free_socket
 <LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;event_callback
 <LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;alloc_socket
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;err_tcp
+<LI><a href="#[1c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netconn_err
 </UL>
 
 <P><STRONG><a name="[253]"></a>sys_check_timeouts</STRONG> (Thumb, 74 bytes, Stack size 24 bytes, timeouts.o(i.sys_check_timeouts))
@@ -3210,22 +3210,22 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[208]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osMessageQueuePut
 </UL>
-<BR>[Called By]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;recv_udp
+<BR>[Called By]<UL><LI><a href="#[222]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcpip_try_callback
+<LI><a href="#[293]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcpip_inpkt
+<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;recv_udp
 <LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;recv_tcp
 <LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;err_tcp
-<LI><a href="#[222]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcpip_try_callback
-<LI><a href="#[293]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcpip_inpkt
 </UL>
 
 <P><STRONG><a name="[152]"></a>sys_mbox_valid</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, sys_arch.o(i.sys_mbox_valid))
-<BR><BR>[Called By]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;recv_udp
+<BR><BR>[Called By]<UL><LI><a href="#[222]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcpip_try_callback
+<LI><a href="#[293]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcpip_inpkt
+<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;recv_udp
 <LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;recv_tcp
 <LI><a href="#[1c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netconn_drain
 <LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;err_tcp
 <LI><a href="#[1e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netconn_free
 <LI><a href="#[1d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netconn_new_with_proto_and_callback
-<LI><a href="#[222]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcpip_try_callback
-<LI><a href="#[293]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcpip_inpkt
 </UL>
 
 <P><STRONG><a name="[1c1]"></a>sys_mutex_lock</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, sys_arch.o(i.sys_mutex_lock))
@@ -3234,14 +3234,14 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[20b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osMutexAcquire
 </UL>
 <BR>[Called By]<UL><LI><a href="#[1df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_trim
+<LI><a href="#[294]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcpip_timeouts_mbox_fetch
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcpip_thread
+<LI><a href="#[1de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_malloc
+<LI><a href="#[1d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_free
 <LI><a href="#[1e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcpip_send_msg_wait_sem
 <LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_netconn_do_write
 <LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_netconn_do_delconn
 <LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_netconn_do_connect
-<LI><a href="#[1de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_malloc
-<LI><a href="#[1d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_free
-<LI><a href="#[294]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcpip_timeouts_mbox_fetch
-<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcpip_thread
 </UL>
 
 <P><STRONG><a name="[1dc]"></a>sys_mutex_new</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, sys_arch.o(i.sys_mutex_new))
@@ -3259,13 +3259,13 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[211]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osMutexRelease
 </UL>
 <BR>[Called By]<UL><LI><a href="#[1df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_trim
+<LI><a href="#[294]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcpip_timeouts_mbox_fetch
+<LI><a href="#[1de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_malloc
+<LI><a href="#[1d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_free
 <LI><a href="#[1e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcpip_send_msg_wait_sem
 <LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_netconn_do_write
 <LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_netconn_do_delconn
 <LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_netconn_do_connect
-<LI><a href="#[1de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_malloc
-<LI><a href="#[1d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_free
-<LI><a href="#[294]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcpip_timeouts_mbox_fetch
 </UL>
 
 <P><STRONG><a name="[1a8]"></a>sys_now</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, ethernetif.o(i.sys_now))
@@ -3273,9 +3273,9 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
 </UL>
-<BR>[Called By]<UL><LI><a href="#[255]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_timeout
-<LI><a href="#[256]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_timeouts_sleeptime
+<BR>[Called By]<UL><LI><a href="#[256]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_timeouts_sleeptime
 <LI><a href="#[253]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_check_timeouts
+<LI><a href="#[255]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_timeout
 <LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_cyclic_timer
 </UL>
 
@@ -3306,11 +3306,11 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osSemaphoreRelease
 </UL>
-<BR>[Called By]<UL><LI><a href="#[1c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_netconn_do_writemore
+<BR>[Called By]<UL><LI><a href="#[173]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;select_check_waiters
+<LI><a href="#[1c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_netconn_do_writemore
 <LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_netconn_do_connected
 <LI><a href="#[1b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_netconn_do_close_internal
 <LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;err_tcp
-<LI><a href="#[173]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;select_check_waiters
 </UL>
 
 <P><STRONG><a name="[154]"></a>sys_sem_valid</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, sys_arch.o(i.sys_sem_valid))
@@ -3332,12 +3332,12 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 232<LI>Call Chain = sys_timeout &rArr; sys_timeout_abs &rArr; memp_malloc &rArr; do_memp_malloc_pool &rArr; sys_arch_unprotect &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
 <BR>[Calls]<UL><LI><a href="#[1a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_now
-<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 <LI><a href="#[1a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_timeout_abs
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[1b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_timeouts_init
-<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcpip_tcp_timer
 <LI><a href="#[26d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_timer_needed
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcpip_tcp_timer
 </UL>
 
 <P><STRONG><a name="[1b1]"></a>sys_timeouts_init</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, timeouts.o(i.sys_timeouts_init))
@@ -3360,15 +3360,15 @@ Global Symbols
 <P><STRONG><a name="[257]"></a>tcp_abandon</STRONG> (Thumb, 284 bytes, Stack size 56 bytes, tcp.o(i.tcp_abandon))
 <BR><BR>[Stack]<UL><LI>Max Depth = 648<LI>Call Chain = tcp_abandon &rArr; tcp_pcb_remove &rArr; tcp_output &rArr; tcp_send_empty_ack &rArr; tcp_output_control_segment &rArr; ip4_output_if &rArr; ip4_output_if_src &rArr; ip4_frag &rArr; pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; do_memp_free_pool &rArr; sys_arch_unprotect &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
-<BR>[Calls]<UL><LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
-<LI><a href="#[25b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rst
+<BR>[Calls]<UL><LI><a href="#[25b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rst
 <LI><a href="#[25a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_segs_free
 <LI><a href="#[258]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_pcb_remove
 <LI><a href="#[259]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_free
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[1bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_abort
-<LI><a href="#[275]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_listen_input
+<BR>[Called By]<UL><LI><a href="#[275]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_listen_input
 <LI><a href="#[25f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_kill_state
+<LI><a href="#[1bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_abort
 </UL>
 
 <P><STRONG><a name="[1bb]"></a>tcp_abort</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, tcp.o(i.tcp_abort))
@@ -3376,13 +3376,13 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[257]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_abandon
 </UL>
-<BR>[Called By]<UL><LI><a href="#[1c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netconn_drain
-<LI><a href="#[1b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_netconn_do_close_internal
-<LI><a href="#[18d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
-<LI><a href="#[277]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_process
+<BR>[Called By]<UL><LI><a href="#[277]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_process
 <LI><a href="#[27f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_netif_ip_addr_changed_pcblist
 <LI><a href="#[25e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_kill_timewait
 <LI><a href="#[260]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_kill_prio
+<LI><a href="#[1c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netconn_drain
+<LI><a href="#[1b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_netconn_do_close_internal
+<LI><a href="#[18d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
 </UL>
 
 <P><STRONG><a name="[1b4]"></a>tcp_accept</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, tcp.o(i.tcp_accept))
@@ -3392,15 +3392,15 @@ Global Symbols
 <P><STRONG><a name="[25c]"></a>tcp_alloc</STRONG> (Thumb, 174 bytes, Stack size 16 bytes, tcp.o(i.tcp_alloc))
 <BR><BR>[Stack]<UL><LI>Max Depth = 696<LI>Call Chain = tcp_alloc &rArr; tcp_kill_prio &rArr; tcp_abort &rArr; tcp_abandon &rArr; tcp_pcb_remove &rArr; tcp_output &rArr; tcp_send_empty_ack &rArr; tcp_output_control_segment &rArr; ip4_output_if &rArr; ip4_output_if_src &rArr; ip4_frag &rArr; pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; do_memp_free_pool &rArr; sys_arch_unprotect &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
-<BR>[Calls]<UL><LI><a href="#[198]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memp_malloc
-<LI><a href="#[25e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_kill_timewait
+<BR>[Calls]<UL><LI><a href="#[25e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_kill_timewait
 <LI><a href="#[25f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_kill_state
 <LI><a href="#[260]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_kill_prio
 <LI><a href="#[25d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_handle_closepend
+<LI><a href="#[198]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memp_malloc
 <LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
 </UL>
-<BR>[Called By]<UL><LI><a href="#[225]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_new_ip_type
-<LI><a href="#[275]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_listen_input
+<BR>[Called By]<UL><LI><a href="#[275]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_listen_input
+<LI><a href="#[225]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_new_ip_type
 </UL>
 
 <P><STRONG><a name="[1b3]"></a>tcp_arg</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, tcp.o(i.tcp_arg))
@@ -3411,25 +3411,25 @@ Global Symbols
 <P><STRONG><a name="[1b9]"></a>tcp_close</STRONG> (Thumb, 64 bytes, Stack size 8 bytes, tcp.o(i.tcp_close))
 <BR><BR>[Stack]<UL><LI>Max Depth = 624<LI>Call Chain = tcp_close &rArr; tcp_close_shutdown &rArr; tcp_pcb_remove &rArr; tcp_output &rArr; tcp_send_empty_ack &rArr; tcp_output_control_segment &rArr; ip4_output_if &rArr; ip4_output_if_src &rArr; ip4_frag &rArr; pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; do_memp_free_pool &rArr; sys_arch_unprotect &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
-<BR>[Calls]<UL><LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
-<LI><a href="#[261]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_close_shutdown
+<BR>[Calls]<UL><LI><a href="#[261]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_close_shutdown
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[1b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_netconn_do_close_internal
-<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_recv_null
+<BR>[Called By]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_recv_null
+<LI><a href="#[1b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_netconn_do_close_internal
 </UL>
 
 <P><STRONG><a name="[1be]"></a>tcp_connect</STRONG> (Thumb, 400 bytes, Stack size 40 bytes, tcp.o(i.tcp_connect))
 <BR><BR>[Stack]<UL><LI>Max Depth = 616<LI>Call Chain = tcp_connect &rArr; tcp_output &rArr; tcp_send_empty_ack &rArr; tcp_output_control_segment &rArr; ip4_output_if &rArr; ip4_output_if_src &rArr; ip4_frag &rArr; pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; do_memp_free_pool &rArr; sys_arch_unprotect &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
-<BR>[Calls]<UL><LI><a href="#[1cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
-<LI><a href="#[268]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netif_get_by_index
-<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
-<LI><a href="#[26d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_timer_needed
+<BR>[Calls]<UL><LI><a href="#[26d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_timer_needed
 <LI><a href="#[26c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_enqueue_flags
 <LI><a href="#[181]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_route
 <LI><a href="#[26a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_next_iss
 <LI><a href="#[26b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_eff_send_mss_netif
 <LI><a href="#[269]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_new_port
+<LI><a href="#[1cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
+<LI><a href="#[268]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netif_get_by_index
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_netconn_do_connect
 </UL>
@@ -3439,23 +3439,23 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[1be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_connect
-<LI><a href="#[282]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_segment
-<LI><a href="#[277]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_process
+<BR>[Called By]<UL><LI><a href="#[277]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_process
 <LI><a href="#[275]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_listen_input
+<LI><a href="#[1be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_connect
+<LI><a href="#[282]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_segment
 </UL>
 
 <P><STRONG><a name="[26c]"></a>tcp_enqueue_flags</STRONG> (Thumb, 408 bytes, Stack size 32 bytes, tcp_out.o(i.tcp_enqueue_flags))
 <BR><BR>[Stack]<UL><LI>Max Depth = 304<LI>Call Chain = tcp_enqueue_flags &rArr; pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; do_memp_free_pool &rArr; sys_arch_unprotect &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
-<BR>[Calls]<UL><LI><a href="#[164]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloc
-<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<BR>[Calls]<UL><LI><a href="#[190]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_clen
+<LI><a href="#[164]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloc
 <LI><a href="#[26e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_create_segment
-<LI><a href="#[190]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_clen
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[1be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_connect
-<LI><a href="#[275]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_listen_input
+<BR>[Called By]<UL><LI><a href="#[275]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_listen_input
 <LI><a href="#[267]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_send_fin
+<LI><a href="#[1be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_connect
 </UL>
 
 <P><STRONG><a name="[1b8]"></a>tcp_err</STRONG> (Thumb, 44 bytes, Stack size 16 bytes, tcp.o(i.tcp_err))
@@ -3470,9 +3470,9 @@ Global Symbols
 <P><STRONG><a name="[270]"></a>tcp_fasttmr</STRONG> (Thumb, 142 bytes, Stack size 16 bytes, tcp.o(i.tcp_fasttmr))
 <BR><BR>[Stack]<UL><LI>Max Depth = 688<LI>Call Chain = tcp_fasttmr &rArr; tcp_process_refused_data &rArr; tcp_recv_null &rArr; tcp_close &rArr; tcp_close_shutdown &rArr; tcp_pcb_remove &rArr; tcp_output &rArr; tcp_send_empty_ack &rArr; tcp_output_control_segment &rArr; ip4_output_if &rArr; ip4_output_if_src &rArr; ip4_frag &rArr; pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; do_memp_free_pool &rArr; sys_arch_unprotect &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
-<BR>[Calls]<UL><LI><a href="#[1cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
-<LI><a href="#[271]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_process_refused_data
+<BR>[Calls]<UL><LI><a href="#[271]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_process_refused_data
 <LI><a href="#[266]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_close_shutdown_fin
+<LI><a href="#[1cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
 </UL>
 <BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_tmr
 </UL>
@@ -3483,11 +3483,11 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[199]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memp_free
 <LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[18d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
-<LI><a href="#[278]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input_delayed_close
+<BR>[Called By]<UL><LI><a href="#[278]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input_delayed_close
 <LI><a href="#[28f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_slowtmr
 <LI><a href="#[257]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_abandon
 <LI><a href="#[261]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_close_shutdown
+<LI><a href="#[18d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
 </UL>
 
 <P><STRONG><a name="[220]"></a>tcp_free_ooseq</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, tcp.o(i.tcp_free_ooseq))
@@ -3495,9 +3495,9 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[25a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_segs_free
 </UL>
-<BR>[Called By]<UL><LI><a href="#[21f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free_ooseq
-<LI><a href="#[28f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_slowtmr
+<BR>[Called By]<UL><LI><a href="#[28f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_slowtmr
 <LI><a href="#[262]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_pcb_purge
+<LI><a href="#[21f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free_ooseq
 </UL>
 
 <P><STRONG><a name="[1b0]"></a>tcp_init</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, tcp.o(i.tcp_init))
@@ -3513,13 +3513,6 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
 <LI><a href="#[197]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_htonl
-<LI><a href="#[1cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
-<LI><a href="#[1bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_abort
-<LI><a href="#[167]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_remove_header
-<LI><a href="#[165]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_htons
-<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
-<LI><a href="#[276]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_send_empty_ack
-<LI><a href="#[15c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_addr_isbroadcast_u32
 <LI><a href="#[274]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_timewait_input
 <LI><a href="#[277]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_process
 <LI><a href="#[275]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_listen_input
@@ -3529,6 +3522,13 @@ Global Symbols
 <LI><a href="#[271]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_process_refused_data
 <LI><a href="#[258]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_pcb_remove
 <LI><a href="#[259]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_free
+<LI><a href="#[1cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
+<LI><a href="#[1bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_abort
+<LI><a href="#[167]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_remove_header
+<LI><a href="#[165]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_htons
+<LI><a href="#[276]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_send_empty_ack
+<LI><a href="#[15c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_addr_isbroadcast_u32
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_input
 </UL>
@@ -3537,10 +3537,10 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 528<LI>Call Chain = tcp_keepalive &rArr; tcp_output_control_segment &rArr; ip4_output_if &rArr; ip4_output_if_src &rArr; ip4_frag &rArr; pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; do_memp_free_pool &rArr; sys_arch_unprotect &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
 <BR>[Calls]<UL><LI><a href="#[197]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_htonl
-<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 <LI><a href="#[27b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_fill_options
 <LI><a href="#[27c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_control_segment
 <LI><a href="#[27a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_alloc_header
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[28f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_slowtmr
 </UL>
@@ -3566,41 +3566,41 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[1be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_connect
-<LI><a href="#[275]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_listen_input
+<BR>[Called By]<UL><LI><a href="#[275]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_listen_input
+<LI><a href="#[1be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_connect
 </UL>
 
 <P><STRONG><a name="[1cb]"></a>tcp_output</STRONG> (Thumb, 684 bytes, Stack size 40 bytes, tcp_out.o(i.tcp_output))
 <BR><BR>[Stack]<UL><LI>Max Depth = 576<LI>Call Chain = tcp_output &rArr; tcp_send_empty_ack &rArr; tcp_output_control_segment &rArr; ip4_output_if &rArr; ip4_output_if_src &rArr; ip4_frag &rArr; pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; do_memp_free_pool &rArr; sys_arch_unprotect &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
 <BR>[Calls]<UL><LI><a href="#[197]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_htonl
+<LI><a href="#[26f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_seg_free
 <LI><a href="#[165]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_htons
-<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 <LI><a href="#[281]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_route
 <LI><a href="#[282]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_segment
 <LI><a href="#[276]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_send_empty_ack
-<LI><a href="#[26f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_seg_free
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[24f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_recved
-<LI><a href="#[1be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_connect
-<LI><a href="#[1c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_netconn_do_writemore
-<LI><a href="#[18d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
-<LI><a href="#[274]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_timewait_input
+<BR>[Called By]<UL><LI><a href="#[274]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_timewait_input
 <LI><a href="#[275]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_listen_input
 <LI><a href="#[28e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rexmit_rto_commit
 <LI><a href="#[28f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_slowtmr
 <LI><a href="#[258]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_pcb_remove
 <LI><a href="#[270]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_fasttmr
 <LI><a href="#[266]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_close_shutdown_fin
+<LI><a href="#[24f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_recved
+<LI><a href="#[1be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_connect
+<LI><a href="#[1c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_netconn_do_writemore
+<LI><a href="#[18d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
 </UL>
 
 <P><STRONG><a name="[262]"></a>tcp_pcb_purge</STRONG> (Thumb, 104 bytes, Stack size 8 bytes, tcp.o(i.tcp_pcb_purge))
 <BR><BR>[Stack]<UL><LI>Max Depth = 264<LI>Call Chain = tcp_pcb_purge &rArr; tcp_free_ooseq &rArr; tcp_segs_free &rArr; tcp_seg_free &rArr; pbuf_free &rArr; memp_free &rArr; do_memp_free_pool &rArr; sys_arch_unprotect &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
 <BR>[Calls]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
-<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 <LI><a href="#[25a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_segs_free
 <LI><a href="#[220]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_free_ooseq
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[277]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_process
 <LI><a href="#[28f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_slowtmr
@@ -3611,14 +3611,14 @@ Global Symbols
 <P><STRONG><a name="[258]"></a>tcp_pcb_remove</STRONG> (Thumb, 246 bytes, Stack size 16 bytes, tcp.o(i.tcp_pcb_remove))
 <BR><BR>[Stack]<UL><LI>Max Depth = 592<LI>Call Chain = tcp_pcb_remove &rArr; tcp_output &rArr; tcp_send_empty_ack &rArr; tcp_output_control_segment &rArr; ip4_output_if &rArr; ip4_output_if_src &rArr; ip4_frag &rArr; pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; do_memp_free_pool &rArr; sys_arch_unprotect &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
-<BR>[Calls]<UL><LI><a href="#[1cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
+<BR>[Calls]<UL><LI><a href="#[262]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_pcb_purge
+<LI><a href="#[1cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
 <LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
-<LI><a href="#[262]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_pcb_purge
 </UL>
-<BR>[Called By]<UL><LI><a href="#[18d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
-<LI><a href="#[278]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input_delayed_close
+<BR>[Called By]<UL><LI><a href="#[278]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input_delayed_close
 <LI><a href="#[257]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_abandon
 <LI><a href="#[261]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_close_shutdown
+<LI><a href="#[18d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
 </UL>
 
 <P><STRONG><a name="[1b7]"></a>tcp_poll</STRONG> (Thumb, 74 bytes, Stack size 16 bytes, tcp.o(i.tcp_poll))
@@ -3633,11 +3633,11 @@ Global Symbols
 <P><STRONG><a name="[271]"></a>tcp_process_refused_data</STRONG> (Thumb, 180 bytes, Stack size 24 bytes, tcp.o(i.tcp_process_refused_data))
 <BR><BR>[Stack]<UL><LI>Max Depth = 672<LI>Call Chain = tcp_process_refused_data &rArr; tcp_recv_null &rArr; tcp_close &rArr; tcp_close_shutdown &rArr; tcp_pcb_remove &rArr; tcp_output &rArr; tcp_send_empty_ack &rArr; tcp_output_control_segment &rArr; ip4_output_if &rArr; ip4_output_if_src &rArr; ip4_frag &rArr; pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; do_memp_free_pool &rArr; sys_arch_unprotect &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
-<BR>[Calls]<UL><LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
-<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_recv_null
+<BR>[Calls]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_recv_null
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[18d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
-<LI><a href="#[270]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_fasttmr
+<BR>[Called By]<UL><LI><a href="#[270]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_fasttmr
+<LI><a href="#[18d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
 </UL>
 
 <P><STRONG><a name="[1b5]"></a>tcp_recv</STRONG> (Thumb, 44 bytes, Stack size 16 bytes, tcp.o(i.tcp_recv))
@@ -3657,38 +3657,38 @@ Global Symbols
 <LI><a href="#[1b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_close
 <LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[18d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
-<LI><a href="#[271]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_process_refused_data
+<BR>[Called By]<UL><LI><a href="#[271]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_process_refused_data
+<LI><a href="#[18d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> tcp.o(i.tcp_alloc)
 </UL>
 <P><STRONG><a name="[24f]"></a>tcp_recved</STRONG> (Thumb, 130 bytes, Stack size 24 bytes, tcp.o(i.tcp_recved))
 <BR><BR>[Stack]<UL><LI>Max Depth = 600<LI>Call Chain = tcp_recved &rArr; tcp_output &rArr; tcp_send_empty_ack &rArr; tcp_output_control_segment &rArr; ip4_output_if &rArr; ip4_output_if_src &rArr; ip4_frag &rArr; pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; do_memp_free_pool &rArr; sys_arch_unprotect &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
-<BR>[Calls]<UL><LI><a href="#[1cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
+<BR>[Calls]<UL><LI><a href="#[28b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_update_rcv_ann_wnd
+<LI><a href="#[1cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
 <LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
-<LI><a href="#[28b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_update_rcv_ann_wnd
 </UL>
-<BR>[Called By]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;recv_tcp
-<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_recv_null
+<BR>[Called By]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_recv_null
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;recv_tcp
 </UL>
 
 <P><STRONG><a name="[289]"></a>tcp_rexmit</STRONG> (Thumb, 142 bytes, Stack size 24 bytes, tcp_out.o(i.tcp_rexmit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = tcp_rexmit &rArr; tcp_output_segment_busy &rArr; __2printf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[197]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_htonl
-<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 <LI><a href="#[284]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_segment_busy
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[28a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rexmit_fast
-<LI><a href="#[277]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_process
+<BR>[Called By]<UL><LI><a href="#[277]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_process
+<LI><a href="#[28a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rexmit_fast
 </UL>
 
 <P><STRONG><a name="[28a]"></a>tcp_rexmit_fast</STRONG> (Thumb, 142 bytes, Stack size 8 bytes, tcp_out.o(i.tcp_rexmit_fast))
 <BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = tcp_rexmit_fast &rArr; tcp_rexmit &rArr; tcp_output_segment_busy &rArr; __2printf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
-<LI><a href="#[289]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rexmit
+<BR>[Calls]<UL><LI><a href="#[289]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rexmit
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[288]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_receive
 </UL>
@@ -3696,9 +3696,9 @@ Global Symbols
 <P><STRONG><a name="[287]"></a>tcp_rexmit_rto</STRONG> (Thumb, 46 bytes, Stack size 8 bytes, tcp_out.o(i.tcp_rexmit_rto))
 <BR><BR>[Stack]<UL><LI>Max Depth = 592<LI>Call Chain = tcp_rexmit_rto &rArr; tcp_rexmit_rto_commit &rArr; tcp_output &rArr; tcp_send_empty_ack &rArr; tcp_output_control_segment &rArr; ip4_output_if &rArr; ip4_output_if_src &rArr; ip4_frag &rArr; pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; do_memp_free_pool &rArr; sys_arch_unprotect &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
-<BR>[Calls]<UL><LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
-<LI><a href="#[28d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rexmit_rto_prepare
+<BR>[Calls]<UL><LI><a href="#[28d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rexmit_rto_prepare
 <LI><a href="#[28e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rexmit_rto_commit
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[277]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_process
 </UL>
@@ -3709,8 +3709,8 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[1cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
 <LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[287]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rexmit_rto
-<LI><a href="#[28f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_slowtmr
+<BR>[Called By]<UL><LI><a href="#[28f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_slowtmr
+<LI><a href="#[287]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rexmit_rto
 </UL>
 
 <P><STRONG><a name="[28d]"></a>tcp_rexmit_rto_prepare</STRONG> (Thumb, 150 bytes, Stack size 16 bytes, tcp_out.o(i.tcp_rexmit_rto_prepare))
@@ -3718,29 +3718,29 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[197]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_htonl
 <LI><a href="#[165]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_htons
-<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 <LI><a href="#[284]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_segment_busy
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[287]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rexmit_rto
-<LI><a href="#[28f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_slowtmr
+<BR>[Called By]<UL><LI><a href="#[28f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_slowtmr
+<LI><a href="#[287]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rexmit_rto
 </UL>
 
 <P><STRONG><a name="[25b]"></a>tcp_rst</STRONG> (Thumb, 146 bytes, Stack size 56 bytes, tcp_out.o(i.tcp_rst))
 <BR><BR>[Stack]<UL><LI>Max Depth = 560<LI>Call Chain = tcp_rst &rArr; tcp_output_control_segment &rArr; ip4_output_if &rArr; ip4_output_if_src &rArr; ip4_frag &rArr; pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; do_memp_free_pool &rArr; sys_arch_unprotect &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
 <BR>[Calls]<UL><LI><a href="#[197]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_htonl
-<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 <LI><a href="#[27b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_fill_options
 <LI><a href="#[27c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_control_segment
 <LI><a href="#[283]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_alloc_header_common
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[18d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
-<LI><a href="#[274]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_timewait_input
+<BR>[Called By]<UL><LI><a href="#[274]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_timewait_input
 <LI><a href="#[277]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_process
 <LI><a href="#[275]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_listen_input
 <LI><a href="#[28f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_slowtmr
 <LI><a href="#[257]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_abandon
 <LI><a href="#[261]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_close_shutdown
+<LI><a href="#[18d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
 </UL>
 
 <P><STRONG><a name="[28c]"></a>tcp_seg_copy</STRONG> (Thumb, 62 bytes, Stack size 16 bytes, tcp.o(i.tcp_seg_copy))
@@ -3759,13 +3759,13 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
 <LI><a href="#[199]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memp_free
 </UL>
-<BR>[Called By]<UL><LI><a href="#[1cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
-<LI><a href="#[26e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_create_segment
-<LI><a href="#[288]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_receive
+<BR>[Called By]<UL><LI><a href="#[288]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_receive
 <LI><a href="#[277]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_process
 <LI><a href="#[280]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_oos_insert_segment
 <LI><a href="#[272]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_free_acked_segments
 <LI><a href="#[25a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_segs_free
+<LI><a href="#[1cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
+<LI><a href="#[26e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_create_segment
 </UL>
 
 <P><STRONG><a name="[25a]"></a>tcp_segs_free</STRONG> (Thumb, 24 bytes, Stack size 16 bytes, tcp.o(i.tcp_segs_free))
@@ -3773,33 +3773,33 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[26f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_seg_free
 </UL>
-<BR>[Called By]<UL><LI><a href="#[1ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_write
-<LI><a href="#[280]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_oos_insert_segment
+<BR>[Called By]<UL><LI><a href="#[280]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_oos_insert_segment
 <LI><a href="#[262]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_pcb_purge
 <LI><a href="#[257]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_abandon
 <LI><a href="#[220]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_free_ooseq
+<LI><a href="#[1ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_write
 </UL>
 
 <P><STRONG><a name="[276]"></a>tcp_send_empty_ack</STRONG> (Thumb, 194 bytes, Stack size 32 bytes, tcp_out.o(i.tcp_send_empty_ack))
 <BR><BR>[Stack]<UL><LI>Max Depth = 536<LI>Call Chain = tcp_send_empty_ack &rArr; tcp_output_control_segment &rArr; ip4_output_if &rArr; ip4_output_if_src &rArr; ip4_frag &rArr; pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; do_memp_free_pool &rArr; sys_arch_unprotect &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
 <BR>[Calls]<UL><LI><a href="#[197]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_htonl
-<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 <LI><a href="#[27b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_fill_options
 <LI><a href="#[27c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_control_segment
 <LI><a href="#[27a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_alloc_header
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[1cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
+<BR>[Called By]<UL><LI><a href="#[288]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_receive
+<LI><a href="#[1cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
 <LI><a href="#[18d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
-<LI><a href="#[288]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_receive
 </UL>
 
 <P><STRONG><a name="[267]"></a>tcp_send_fin</STRONG> (Thumb, 104 bytes, Stack size 16 bytes, tcp_out.o(i.tcp_send_fin))
 <BR><BR>[Stack]<UL><LI>Max Depth = 320<LI>Call Chain = tcp_send_fin &rArr; tcp_enqueue_flags &rArr; pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; do_memp_free_pool &rArr; sys_arch_unprotect &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
-<BR>[Calls]<UL><LI><a href="#[165]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_htons
+<BR>[Calls]<UL><LI><a href="#[26c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_enqueue_flags
+<LI><a href="#[165]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_htons
 <LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
-<LI><a href="#[26c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_enqueue_flags
 </UL>
 <BR>[Called By]<UL><LI><a href="#[266]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_close_shutdown_fin
 </UL>
@@ -3817,8 +3817,8 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 632<LI>Call Chain = tcp_shutdown &rArr; tcp_close_shutdown &rArr; tcp_pcb_remove &rArr; tcp_output &rArr; tcp_send_empty_ack &rArr; tcp_output_control_segment &rArr; ip4_output_if &rArr; ip4_output_if_src &rArr; ip4_frag &rArr; pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; do_memp_free_pool &rArr; sys_arch_unprotect &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
 <BR>[Calls]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
-<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 <LI><a href="#[261]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_close_shutdown
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[1b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_netconn_do_close_internal
 </UL>
@@ -3826,9 +3826,7 @@ Global Symbols
 <P><STRONG><a name="[28f]"></a>tcp_slowtmr</STRONG> (Thumb, 1702 bytes, Stack size 56 bytes, tcp.o(i.tcp_slowtmr))
 <BR><BR>[Stack]<UL><LI>Max Depth = 640<LI>Call Chain = tcp_slowtmr &rArr; tcp_rexmit_rto_commit &rArr; tcp_output &rArr; tcp_send_empty_ack &rArr; tcp_output_control_segment &rArr; ip4_output_if &rArr; ip4_output_if_src &rArr; ip4_frag &rArr; pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; do_memp_free_pool &rArr; sys_arch_unprotect &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
-<BR>[Calls]<UL><LI><a href="#[1cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
-<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
-<LI><a href="#[290]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_zero_window_probe
+<BR>[Calls]<UL><LI><a href="#[290]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_zero_window_probe
 <LI><a href="#[291]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_split_unsent_seg
 <LI><a href="#[25b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rst
 <LI><a href="#[28d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rexmit_rto_prepare
@@ -3837,6 +3835,8 @@ Global Symbols
 <LI><a href="#[262]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_pcb_purge
 <LI><a href="#[259]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_free
 <LI><a href="#[220]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_free_ooseq
+<LI><a href="#[1cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_tmr
 </UL>
@@ -3846,13 +3846,13 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
 <LI><a href="#[197]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_htonl
+<LI><a href="#[21e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_copy_partial
+<LI><a href="#[190]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_clen
 <LI><a href="#[189]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_realloc
 <LI><a href="#[164]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloc
 <LI><a href="#[165]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_htons
-<LI><a href="#[21e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_copy_partial
-<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 <LI><a href="#[26e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_create_segment
-<LI><a href="#[190]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_clen
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[28f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_slowtmr
 </UL>
@@ -3862,9 +3862,9 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[255]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_timeout
 </UL>
-<BR>[Called By]<UL><LI><a href="#[1be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_connect
-<LI><a href="#[277]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_process
+<BR>[Called By]<UL><LI><a href="#[277]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_process
 <LI><a href="#[275]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_listen_input
+<LI><a href="#[1be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_connect
 </UL>
 
 <P><STRONG><a name="[c6]"></a>tcp_tmr</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, tcp.o(i.tcp_tmr))
@@ -3886,23 +3886,23 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[24f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_recved
-<LI><a href="#[288]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_receive
+<BR>[Called By]<UL><LI><a href="#[288]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_receive
+<LI><a href="#[24f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_recved
 </UL>
 
 <P><STRONG><a name="[1ca]"></a>tcp_write</STRONG> (Thumb, 1918 bytes, Stack size 120 bytes, tcp_out.o(i.tcp_write))
 <BR><BR>[Stack]<UL><LI>Max Depth = 432<LI>Call Chain = tcp_write &rArr; tcp_pbuf_prealloc &rArr; pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; do_memp_free_pool &rArr; sys_arch_unprotect &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
 <BR>[Calls]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
+<LI><a href="#[25a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_segs_free
+<LI><a href="#[190]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_clen
 <LI><a href="#[188]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_cat
 <LI><a href="#[164]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloc
 <LI><a href="#[165]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_htons
-<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 <LI><a href="#[292]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_write_checks
 <LI><a href="#[286]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_pbuf_prealloc
 <LI><a href="#[26e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_create_segment
-<LI><a href="#[25a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_segs_free
-<LI><a href="#[190]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_clen
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 <LI><a href="#[17e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
 <BR>[Called By]<UL><LI><a href="#[1c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_netconn_do_writemore
@@ -3912,23 +3912,23 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 552<LI>Call Chain = tcp_zero_window_probe &rArr; tcp_output_control_segment &rArr; ip4_output_if &rArr; ip4_output_if_src &rArr; ip4_frag &rArr; pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; do_memp_free_pool &rArr; sys_arch_unprotect &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
 <BR>[Calls]<UL><LI><a href="#[197]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_htonl
-<LI><a href="#[165]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_htons
 <LI><a href="#[21e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_copy_partial
-<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[165]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_htons
 <LI><a href="#[27b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_fill_options
 <LI><a href="#[27c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_control_segment
 <LI><a href="#[27a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_alloc_header
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[28f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_slowtmr
 </UL>
 
 <P><STRONG><a name="[136]"></a>tcpip_init</STRONG> (Thumb, 104 bytes, Stack size 16 bytes, tcpip.o(i.tcpip_init))
-<BR><BR>[Stack]<UL><LI>Max Depth = 264<LI>Call Chain = tcpip_init &rArr; sys_thread_new &rArr; osThreadNew &rArr; xTaskCreate &rArr; pvPortMalloc &rArr; xTaskResumeAll &rArr; xTaskIncrementTick
+<BR><BR>[Stack]<UL><LI>Max Depth = 264<LI>Call Chain = tcpip_init &rArr; lwip_init &rArr; sys_timeouts_init &rArr; sys_timeout &rArr; sys_timeout_abs &rArr; memp_malloc &rArr; do_memp_malloc_pool &rArr; sys_arch_unprotect &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
-<BR>[Calls]<UL><LI><a href="#[1e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_mbox_new
-<LI><a href="#[254]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_thread_new
-<LI><a href="#[1dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_mutex_new
+<BR>[Calls]<UL><LI><a href="#[1dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_mutex_new
 <LI><a href="#[1aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_init
+<LI><a href="#[254]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_thread_new
+<LI><a href="#[1e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_mbox_new
 <LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[12d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_LWIP_Init
@@ -3977,8 +3977,8 @@ Global Symbols
 <P><STRONG><a name="[298]"></a>udp_bind</STRONG> (Thumb, 172 bytes, Stack size 24 bytes, udp.o(i.udp_bind))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = udp_bind &rArr; __2printf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
-<LI><a href="#[299]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_new_port
+<BR>[Calls]<UL><LI><a href="#[299]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_new_port
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[1bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_connect
 <LI><a href="#[29d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_sendto_if_src
@@ -4013,13 +4013,13 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 568<LI>Call Chain = udp_input &rArr; icmp_dest_unreach &rArr; icmp_send_response &rArr; ip4_output_if &rArr; ip4_output_if_src &rArr; ip4_frag &rArr; pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; do_memp_free_pool &rArr; sys_arch_unprotect &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
 <BR>[Calls]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
+<LI><a href="#[18e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_header_force
 <LI><a href="#[167]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_remove_header
 <LI><a href="#[165]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_htons
-<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
-<LI><a href="#[15c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_addr_isbroadcast_u32
-<LI><a href="#[18e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_header_force
 <LI><a href="#[17a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_dest_unreach
 <LI><a href="#[29a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_input_local_match
+<LI><a href="#[15c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_addr_isbroadcast_u32
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_input
 </UL>
@@ -4076,10 +4076,10 @@ Global Symbols
 <P><STRONG><a name="[1c8]"></a>udp_sendto</STRONG> (Thumb, 156 bytes, Stack size 32 bytes, udp.o(i.udp_sendto))
 <BR><BR>[Stack]<UL><LI>Max Depth = 552<LI>Call Chain = udp_sendto &rArr; udp_sendto_if &rArr; udp_sendto_if_src &rArr; ip4_output_if_src &rArr; ip4_frag &rArr; pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; do_memp_free_pool &rArr; sys_arch_unprotect &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
-<BR>[Calls]<UL><LI><a href="#[268]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netif_get_by_index
-<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
-<LI><a href="#[181]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_route
+<BR>[Calls]<UL><LI><a href="#[181]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_route
+<LI><a href="#[268]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netif_get_by_index
 <LI><a href="#[29c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_sendto_if
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[1c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_send
 <LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_netconn_do_send
@@ -4088,8 +4088,8 @@ Global Symbols
 <P><STRONG><a name="[29c]"></a>udp_sendto_if</STRONG> (Thumb, 200 bytes, Stack size 40 bytes, udp.o(i.udp_sendto_if))
 <BR><BR>[Stack]<UL><LI>Max Depth = 520<LI>Call Chain = udp_sendto_if &rArr; udp_sendto_if_src &rArr; ip4_output_if_src &rArr; ip4_frag &rArr; pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; do_memp_free_pool &rArr; sys_arch_unprotect &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
-<BR>[Calls]<UL><LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
-<LI><a href="#[29d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_sendto_if_src
+<BR>[Calls]<UL><LI><a href="#[29d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_sendto_if_src
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[1c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_sendto
 </UL>
@@ -4098,13 +4098,13 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 480<LI>Call Chain = udp_sendto_if_src &rArr; ip4_output_if_src &rArr; ip4_frag &rArr; pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; do_memp_free_pool &rArr; sys_arch_unprotect &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
 <BR>[Calls]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
-<LI><a href="#[298]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_bind
+<LI><a href="#[21d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_chain
 <LI><a href="#[164]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloc
 <LI><a href="#[16e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_add_header
 <LI><a href="#[165]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_htons
-<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
-<LI><a href="#[21d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_chain
+<LI><a href="#[298]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_bind
 <LI><a href="#[18f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_output_if_src
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[29c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_sendto_if
 </UL>
@@ -5196,8 +5196,7 @@ Local Symbols
 <P><STRONG><a name="[1b2]"></a>lwip_netconn_do_close_internal</STRONG> (Thumb, 572 bytes, Stack size 48 bytes, api_msg.o(i.lwip_netconn_do_close_internal))
 <BR><BR>[Stack]<UL><LI>Max Depth = 704<LI>Call Chain = lwip_netconn_do_close_internal &rArr; tcp_abort &rArr; tcp_abandon &rArr; tcp_pcb_remove &rArr; tcp_output &rArr; tcp_send_empty_ack &rArr; tcp_output_control_segment &rArr; ip4_output_if &rArr; ip4_output_if_src &rArr; ip4_frag &rArr; pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; do_memp_free_pool &rArr; sys_arch_unprotect &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
-<BR>[Calls]<UL><LI><a href="#[1ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_shutdown
-<LI><a href="#[1b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_sent
+<BR>[Calls]<UL><LI><a href="#[1b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_sent
 <LI><a href="#[1b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_recv
 <LI><a href="#[1b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_poll
 <LI><a href="#[1b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_err
@@ -5205,6 +5204,7 @@ Local Symbols
 <LI><a href="#[1b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_arg
 <LI><a href="#[1b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_accept
 <LI><a href="#[1bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_abort
+<LI><a href="#[1ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_shutdown
 <LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_sem_signal
 <LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
@@ -5265,9 +5265,9 @@ Local Symbols
 <P><STRONG><a name="[1c5]"></a>pcb_new</STRONG> (Thumb, 142 bytes, Stack size 16 bytes, api_msg.o(i.pcb_new))
 <BR><BR>[Stack]<UL><LI>Max Depth = 728<LI>Call Chain = pcb_new &rArr; tcp_new_ip_type &rArr; tcp_alloc &rArr; tcp_kill_prio &rArr; tcp_abort &rArr; tcp_abandon &rArr; tcp_pcb_remove &rArr; tcp_output &rArr; tcp_send_empty_ack &rArr; tcp_output_control_segment &rArr; ip4_output_if &rArr; ip4_output_if_src &rArr; ip4_frag &rArr; pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; do_memp_free_pool &rArr; sys_arch_unprotect &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
-<BR>[Calls]<UL><LI><a href="#[224]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_recv
+<BR>[Calls]<UL><LI><a href="#[225]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_new_ip_type
+<LI><a href="#[224]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_recv
 <LI><a href="#[223]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_new_ip_type
-<LI><a href="#[225]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_new_ip_type
 <LI><a href="#[1bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setup_tcp
 <LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
@@ -5344,10 +5344,10 @@ Local Symbols
 <P><STRONG><a name="[b0]"></a>event_callback</STRONG> (Thumb, 262 bytes, Stack size 40 bytes, sockets.o(i.event_callback))
 <BR><BR>[Stack]<UL><LI>Max Depth = 208<LI>Call Chain = event_callback &rArr; select_check_waiters &rArr; sys_sem_signal &rArr; osSemaphoreRelease &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
-<BR>[Calls]<UL><LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_arch_unprotect
-<LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_arch_protect
-<LI><a href="#[173]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;select_check_waiters
+<BR>[Calls]<UL><LI><a href="#[173]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;select_check_waiters
 <LI><a href="#[172]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_socket
+<LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_arch_unprotect
+<LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_arch_protect
 <LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> sockets.o(i.lwip_socket)
@@ -5355,10 +5355,10 @@ Local Symbols
 <P><STRONG><a name="[174]"></a>free_socket</STRONG> (Thumb, 50 bytes, Stack size 32 bytes, sockets.o(i.free_socket))
 <BR><BR>[Stack]<UL><LI>Max Depth = 296<LI>Call Chain = free_socket &rArr; free_socket_free_elements &rArr; netconn_delete &rArr; netconn_prepare_delete &rArr; netconn_apimsg &rArr; tcpip_send_msg_wait_sem &rArr; sys_mutex_unlock &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
-<BR>[Calls]<UL><LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_arch_unprotect
-<LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_arch_protect
-<LI><a href="#[175]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;free_socket_locked
+<BR>[Calls]<UL><LI><a href="#[175]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;free_socket_locked
 <LI><a href="#[176]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;free_socket_free_elements
+<LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_arch_unprotect
+<LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_arch_protect
 </UL>
 <BR>[Called By]<UL><LI><a href="#[1a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_close
 </UL>
@@ -5400,8 +5400,8 @@ Local Symbols
 <P><STRONG><a name="[173]"></a>select_check_waiters</STRONG> (Thumb, 258 bytes, Stack size 32 bytes, sockets.o(i.select_check_waiters))
 <BR><BR>[Stack]<UL><LI>Max Depth = 168<LI>Call Chain = select_check_waiters &rArr; sys_sem_signal &rArr; osSemaphoreRelease &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
-<BR>[Calls]<UL><LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_sem_signal
-<LI><a href="#[250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_poll_should_wake
+<BR>[Calls]<UL><LI><a href="#[250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_poll_should_wake
+<LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_sem_signal
 </UL>
 <BR>[Called By]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;event_callback
 </UL>
@@ -5429,9 +5429,9 @@ Local Symbols
 <P><STRONG><a name="[c1]"></a>tcpip_thread</STRONG> (Thumb, 72 bytes, Stack size 8 bytes, tcpip.o(i.tcpip_thread))
 <BR><BR>[Stack]<UL><LI>Max Depth = 248<LI>Call Chain = tcpip_thread &rArr; tcpip_timeouts_mbox_fetch &rArr; sys_check_timeouts &rArr; memp_free &rArr; do_memp_free_pool &rArr; sys_arch_unprotect &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
-<BR>[Calls]<UL><LI><a href="#[1c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_mutex_lock
-<LI><a href="#[294]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcpip_timeouts_mbox_fetch
+<BR>[Calls]<UL><LI><a href="#[294]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcpip_timeouts_mbox_fetch
 <LI><a href="#[295]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcpip_thread_handle_msg
+<LI><a href="#[1c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_mutex_lock
 <LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> tcpip.o(i.tcpip_init)
@@ -5449,11 +5449,11 @@ Local Symbols
 <P><STRONG><a name="[294]"></a>tcpip_timeouts_mbox_fetch</STRONG> (Thumb, 92 bytes, Stack size 24 bytes, tcpip.o(i.tcpip_timeouts_mbox_fetch))
 <BR><BR>[Stack]<UL><LI>Max Depth = 240<LI>Call Chain = tcpip_timeouts_mbox_fetch &rArr; sys_check_timeouts &rArr; memp_free &rArr; do_memp_free_pool &rArr; sys_arch_unprotect &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
-<BR>[Calls]<UL><LI><a href="#[1bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_mutex_unlock
+<BR>[Calls]<UL><LI><a href="#[256]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_timeouts_sleeptime
+<LI><a href="#[253]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_check_timeouts
+<LI><a href="#[1bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_mutex_unlock
 <LI><a href="#[1c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_mutex_lock
 <LI><a href="#[252]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_arch_mbox_fetch
-<LI><a href="#[256]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_timeouts_sleeptime
-<LI><a href="#[253]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_check_timeouts
 </UL>
 <BR>[Called By]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcpip_thread
 </UL>
@@ -5571,9 +5571,9 @@ Local Symbols
 <P><STRONG><a name="[21f]"></a>pbuf_free_ooseq</STRONG> (Thumb, 52 bytes, Stack size 16 bytes, pbuf.o(i.pbuf_free_ooseq))
 <BR><BR>[Stack]<UL><LI>Max Depth = 272<LI>Call Chain = pbuf_free_ooseq &rArr; tcp_free_ooseq &rArr; tcp_segs_free &rArr; tcp_seg_free &rArr; pbuf_free &rArr; memp_free &rArr; do_memp_free_pool &rArr; sys_arch_unprotect &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
-<BR>[Calls]<UL><LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_arch_unprotect
+<BR>[Calls]<UL><LI><a href="#[220]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_free_ooseq
+<LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_arch_unprotect
 <LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_arch_protect
-<LI><a href="#[220]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_free_ooseq
 </UL>
 <BR>[Called By]<UL><LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free_ooseq_callback
 </UL>
@@ -5598,16 +5598,16 @@ Local Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = pbuf_init_alloced_pbuf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloced_custom
-<LI><a href="#[164]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloc
 <LI><a href="#[21a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloc_reference
+<LI><a href="#[164]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloc
 </UL>
 
 <P><STRONG><a name="[21b]"></a>pbuf_pool_is_empty</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, pbuf.o(i.pbuf_pool_is_empty))
 <BR><BR>[Stack]<UL><LI>Max Depth = 224<LI>Call Chain = pbuf_pool_is_empty &rArr; tcpip_try_callback &rArr; memp_free &rArr; do_memp_free_pool &rArr; sys_arch_unprotect &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
-<BR>[Calls]<UL><LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_arch_unprotect
+<BR>[Calls]<UL><LI><a href="#[222]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcpip_try_callback
+<LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_arch_unprotect
 <LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_arch_protect
-<LI><a href="#[222]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcpip_try_callback
 </UL>
 <BR>[Called By]<UL><LI><a href="#[164]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloc
 </UL>
@@ -5615,8 +5615,7 @@ Local Symbols
 <P><STRONG><a name="[261]"></a>tcp_close_shutdown</STRONG> (Thumb, 354 bytes, Stack size 24 bytes, tcp.o(i.tcp_close_shutdown))
 <BR><BR>[Stack]<UL><LI>Max Depth = 616<LI>Call Chain = tcp_close_shutdown &rArr; tcp_pcb_remove &rArr; tcp_output &rArr; tcp_send_empty_ack &rArr; tcp_output_control_segment &rArr; ip4_output_if &rArr; ip4_output_if_src &rArr; ip4_frag &rArr; pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; do_memp_free_pool &rArr; sys_arch_unprotect &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
-<BR>[Calls]<UL><LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
-<LI><a href="#[263]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_trigger_input_pcb_close
+<BR>[Calls]<UL><LI><a href="#[263]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_trigger_input_pcb_close
 <LI><a href="#[25b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rst
 <LI><a href="#[258]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_pcb_remove
 <LI><a href="#[262]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_pcb_purge
@@ -5624,17 +5623,18 @@ Local Symbols
 <LI><a href="#[264]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_listen_closed
 <LI><a href="#[265]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_free_listen
 <LI><a href="#[266]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_close_shutdown_fin
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[1ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_shutdown
-<LI><a href="#[1b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_close
+<BR>[Called By]<UL><LI><a href="#[1b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_close
+<LI><a href="#[1ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_shutdown
 </UL>
 
 <P><STRONG><a name="[266]"></a>tcp_close_shutdown_fin</STRONG> (Thumb, 132 bytes, Stack size 16 bytes, tcp.o(i.tcp_close_shutdown_fin))
 <BR><BR>[Stack]<UL><LI>Max Depth = 592<LI>Call Chain = tcp_close_shutdown_fin &rArr; tcp_output &rArr; tcp_send_empty_ack &rArr; tcp_output_control_segment &rArr; ip4_output_if &rArr; ip4_output_if_src &rArr; ip4_frag &rArr; pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; do_memp_free_pool &rArr; sys_arch_unprotect &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
-<BR>[Calls]<UL><LI><a href="#[1cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
+<BR>[Calls]<UL><LI><a href="#[267]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_send_fin
+<LI><a href="#[1cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
 <LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
-<LI><a href="#[267]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_send_fin
 </UL>
 <BR>[Called By]<UL><LI><a href="#[270]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_fasttmr
 <LI><a href="#[25d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_handle_closepend
@@ -5669,8 +5669,8 @@ Local Symbols
 <P><STRONG><a name="[25f]"></a>tcp_kill_state</STRONG> (Thumb, 94 bytes, Stack size 24 bytes, tcp.o(i.tcp_kill_state))
 <BR><BR>[Stack]<UL><LI>Max Depth = 672<LI>Call Chain = tcp_kill_state &rArr; tcp_abandon &rArr; tcp_pcb_remove &rArr; tcp_output &rArr; tcp_send_empty_ack &rArr; tcp_output_control_segment &rArr; ip4_output_if &rArr; ip4_output_if_src &rArr; ip4_frag &rArr; pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; do_memp_free_pool &rArr; sys_arch_unprotect &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
-<BR>[Calls]<UL><LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
-<LI><a href="#[257]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_abandon
+<BR>[Calls]<UL><LI><a href="#[257]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_abandon
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[25c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_alloc
 </UL>
@@ -5686,8 +5686,8 @@ Local Symbols
 <P><STRONG><a name="[264]"></a>tcp_listen_closed</STRONG> (Thumb, 82 bytes, Stack size 16 bytes, tcp.o(i.tcp_listen_closed))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = tcp_listen_closed &rArr; tcp_remove_listener &rArr; __2printf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
-<LI><a href="#[27d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_remove_listener
+<BR>[Calls]<UL><LI><a href="#[27d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_remove_listener
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[261]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_close_shutdown
 </UL>
@@ -5719,10 +5719,10 @@ Local Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 264<LI>Call Chain = tcp_free_acked_segments &rArr; tcp_seg_free &rArr; pbuf_free &rArr; memp_free &rArr; do_memp_free_pool &rArr; sys_arch_unprotect &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
 <BR>[Calls]<UL><LI><a href="#[197]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_htonl
-<LI><a href="#[165]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_htons
-<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 <LI><a href="#[26f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_seg_free
 <LI><a href="#[190]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_clen
+<LI><a href="#[165]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_htons
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[288]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_receive
 </UL>
@@ -5734,9 +5734,9 @@ Local Symbols
 <P><STRONG><a name="[278]"></a>tcp_input_delayed_close</STRONG> (Thumb, 92 bytes, Stack size 8 bytes, tcp_in.o(i.tcp_input_delayed_close))
 <BR><BR>[Stack]<UL><LI>Max Depth = 600<LI>Call Chain = tcp_input_delayed_close &rArr; tcp_pcb_remove &rArr; tcp_output &rArr; tcp_send_empty_ack &rArr; tcp_output_control_segment &rArr; ip4_output_if &rArr; ip4_output_if_src &rArr; ip4_frag &rArr; pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; do_memp_free_pool &rArr; sys_arch_unprotect &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
-<BR>[Calls]<UL><LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
-<LI><a href="#[258]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_pcb_remove
+<BR>[Calls]<UL><LI><a href="#[258]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_pcb_remove
 <LI><a href="#[259]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_free
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[18d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
 </UL>
@@ -5744,9 +5744,7 @@ Local Symbols
 <P><STRONG><a name="[275]"></a>tcp_listen_input</STRONG> (Thumb, 342 bytes, Stack size 40 bytes, tcp_in.o(i.tcp_listen_input))
 <BR><BR>[Stack]<UL><LI>Max Depth = 736<LI>Call Chain = tcp_listen_input &rArr; tcp_alloc &rArr; tcp_kill_prio &rArr; tcp_abort &rArr; tcp_abandon &rArr; tcp_pcb_remove &rArr; tcp_output &rArr; tcp_send_empty_ack &rArr; tcp_output_control_segment &rArr; ip4_output_if &rArr; ip4_output_if_src &rArr; ip4_frag &rArr; pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; do_memp_free_pool &rArr; sys_arch_unprotect &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
-<BR>[Calls]<UL><LI><a href="#[1cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
-<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
-<LI><a href="#[27e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_parseopt
+<BR>[Calls]<UL><LI><a href="#[27e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_parseopt
 <LI><a href="#[26d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_timer_needed
 <LI><a href="#[25b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rst
 <LI><a href="#[26c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_enqueue_flags
@@ -5755,18 +5753,20 @@ Local Symbols
 <LI><a href="#[26b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_eff_send_mss_netif
 <LI><a href="#[25c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_alloc
 <LI><a href="#[257]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_abandon
+<LI><a href="#[1cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[18d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
 </UL>
 
 <P><STRONG><a name="[280]"></a>tcp_oos_insert_segment</STRONG> (Thumb, 164 bytes, Stack size 16 bytes, tcp_in.o(i.tcp_oos_insert_segment))
-<BR><BR>[Stack]<UL><LI>Max Depth = 264<LI>Call Chain = tcp_oos_insert_segment &rArr; pbuf_realloc &rArr; pbuf_free &rArr; memp_free &rArr; do_memp_free_pool &rArr; sys_arch_unprotect &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
+<BR><BR>[Stack]<UL><LI>Max Depth = 264<LI>Call Chain = tcp_oos_insert_segment &rArr; tcp_segs_free &rArr; tcp_seg_free &rArr; pbuf_free &rArr; memp_free &rArr; do_memp_free_pool &rArr; sys_arch_unprotect &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
-<BR>[Calls]<UL><LI><a href="#[189]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_realloc
+<BR>[Calls]<UL><LI><a href="#[25a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_segs_free
+<LI><a href="#[26f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_seg_free
+<LI><a href="#[189]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_realloc
 <LI><a href="#[165]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_htons
 <LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
-<LI><a href="#[25a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_segs_free
-<LI><a href="#[26f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_seg_free
 </UL>
 <BR>[Called By]<UL><LI><a href="#[288]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_receive
 </UL>
@@ -5774,8 +5774,8 @@ Local Symbols
 <P><STRONG><a name="[27e]"></a>tcp_parseopt</STRONG> (Thumb, 174 bytes, Stack size 24 bytes, tcp_in.o(i.tcp_parseopt))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = tcp_parseopt &rArr; __2printf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
-<LI><a href="#[285]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_get_next_optbyte
+<BR>[Calls]<UL><LI><a href="#[285]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_get_next_optbyte
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[277]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_process
 <LI><a href="#[275]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_listen_input
@@ -5784,11 +5784,7 @@ Local Symbols
 <P><STRONG><a name="[277]"></a>tcp_process</STRONG> (Thumb, 1818 bytes, Stack size 40 bytes, tcp_in.o(i.tcp_process))
 <BR><BR>[Stack]<UL><LI>Max Depth = 696<LI>Call Chain = tcp_process &rArr; tcp_abort &rArr; tcp_abandon &rArr; tcp_pcb_remove &rArr; tcp_output &rArr; tcp_send_empty_ack &rArr; tcp_output_control_segment &rArr; ip4_output_if &rArr; ip4_output_if_src &rArr; ip4_frag &rArr; pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; do_memp_free_pool &rArr; sys_arch_unprotect &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
-<BR>[Calls]<UL><LI><a href="#[1bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_abort
-<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
-<LI><a href="#[287]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rexmit_rto
-<LI><a href="#[289]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rexmit
-<LI><a href="#[288]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_receive
+<BR>[Calls]<UL><LI><a href="#[288]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_receive
 <LI><a href="#[27e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_parseopt
 <LI><a href="#[26d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_timer_needed
 <LI><a href="#[25b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rst
@@ -5796,6 +5792,10 @@ Local Symbols
 <LI><a href="#[26f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_seg_free
 <LI><a href="#[262]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_pcb_purge
 <LI><a href="#[26b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_eff_send_mss_netif
+<LI><a href="#[1bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_abort
+<LI><a href="#[287]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rexmit_rto
+<LI><a href="#[289]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rexmit
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[18d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
 </UL>
@@ -5804,18 +5804,18 @@ Local Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 576<LI>Call Chain = tcp_receive &rArr; tcp_send_empty_ack &rArr; tcp_output_control_segment &rArr; ip4_output_if &rArr; ip4_output_if_src &rArr; ip4_frag &rArr; pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; do_memp_free_pool &rArr; sys_arch_unprotect &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
 <BR>[Calls]<UL><LI><a href="#[197]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_htonl
-<LI><a href="#[189]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_realloc
-<LI><a href="#[188]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_cat
-<LI><a href="#[167]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_remove_header
-<LI><a href="#[165]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_htons
-<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
-<LI><a href="#[276]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_send_empty_ack
-<LI><a href="#[28a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rexmit_fast
 <LI><a href="#[280]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_oos_insert_segment
 <LI><a href="#[272]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_free_acked_segments
 <LI><a href="#[28b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_update_rcv_ann_wnd
 <LI><a href="#[26f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_seg_free
 <LI><a href="#[28c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_seg_copy
+<LI><a href="#[189]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_realloc
+<LI><a href="#[188]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_cat
+<LI><a href="#[167]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_remove_header
+<LI><a href="#[165]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_htons
+<LI><a href="#[276]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_send_empty_ack
+<LI><a href="#[28a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rexmit_fast
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[277]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_process
 </UL>
@@ -5823,9 +5823,9 @@ Local Symbols
 <P><STRONG><a name="[274]"></a>tcp_timewait_input</STRONG> (Thumb, 170 bytes, Stack size 24 bytes, tcp_in.o(i.tcp_timewait_input))
 <BR><BR>[Stack]<UL><LI>Max Depth = 600<LI>Call Chain = tcp_timewait_input &rArr; tcp_output &rArr; tcp_send_empty_ack &rArr; tcp_output_control_segment &rArr; ip4_output_if &rArr; ip4_output_if_src &rArr; ip4_frag &rArr; pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; do_memp_free_pool &rArr; sys_arch_unprotect &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
-<BR>[Calls]<UL><LI><a href="#[1cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
+<BR>[Calls]<UL><LI><a href="#[25b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rst
+<LI><a href="#[1cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
 <LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
-<LI><a href="#[25b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rst
 </UL>
 <BR>[Called By]<UL><LI><a href="#[18d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_input
 </UL>
@@ -5835,26 +5835,26 @@ Local Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
 <LI><a href="#[197]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_htonl
-<LI><a href="#[198]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memp_malloc
+<LI><a href="#[26f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_seg_free
 <LI><a href="#[16e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_add_header
 <LI><a href="#[165]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_htons
+<LI><a href="#[198]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memp_malloc
 <LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
-<LI><a href="#[26f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_seg_free
 </UL>
-<BR>[Called By]<UL><LI><a href="#[1ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_write
-<LI><a href="#[291]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_split_unsent_seg
+<BR>[Called By]<UL><LI><a href="#[291]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_split_unsent_seg
 <LI><a href="#[26c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_enqueue_flags
+<LI><a href="#[1ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_write
 </UL>
 
 <P><STRONG><a name="[27a]"></a>tcp_output_alloc_header</STRONG> (Thumb, 86 bytes, Stack size 40 bytes, tcp_out.o(i.tcp_output_alloc_header))
 <BR><BR>[Stack]<UL><LI>Max Depth = 352<LI>Call Chain = tcp_output_alloc_header &rArr; tcp_output_alloc_header_common &rArr; pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; do_memp_free_pool &rArr; sys_arch_unprotect &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
-<BR>[Calls]<UL><LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
-<LI><a href="#[283]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_alloc_header_common
+<BR>[Calls]<UL><LI><a href="#[283]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_alloc_header_common
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[276]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_send_empty_ack
-<LI><a href="#[290]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_zero_window_probe
+<BR>[Called By]<UL><LI><a href="#[290]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_zero_window_probe
 <LI><a href="#[279]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_keepalive
+<LI><a href="#[276]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_send_empty_ack
 </UL>
 
 <P><STRONG><a name="[283]"></a>tcp_output_alloc_header_common</STRONG> (Thumb, 152 bytes, Stack size 40 bytes, tcp_out.o(i.tcp_output_alloc_header_common))
@@ -5865,22 +5865,22 @@ Local Symbols
 <LI><a href="#[165]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_htons
 <LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[27a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_alloc_header
-<LI><a href="#[25b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rst
+<BR>[Called By]<UL><LI><a href="#[25b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rst
+<LI><a href="#[27a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_alloc_header
 </UL>
 
 <P><STRONG><a name="[27c]"></a>tcp_output_control_segment</STRONG> (Thumb, 114 bytes, Stack size 48 bytes, tcp_out.o(i.tcp_output_control_segment))
 <BR><BR>[Stack]<UL><LI>Max Depth = 504<LI>Call Chain = tcp_output_control_segment &rArr; ip4_output_if &rArr; ip4_output_if_src &rArr; ip4_frag &rArr; pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; do_memp_free_pool &rArr; sys_arch_unprotect &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
 <BR>[Calls]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
-<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 <LI><a href="#[180]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_output_if
 <LI><a href="#[281]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_route
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[276]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_send_empty_ack
-<LI><a href="#[290]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_zero_window_probe
+<BR>[Called By]<UL><LI><a href="#[290]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_zero_window_probe
 <LI><a href="#[25b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rst
 <LI><a href="#[279]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_keepalive
+<LI><a href="#[276]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_send_empty_ack
 </UL>
 
 <P><STRONG><a name="[27b]"></a>tcp_output_fill_options</STRONG> (Thumb, 140 bytes, Stack size 32 bytes, tcp_out.o(i.tcp_output_fill_options))
@@ -5888,21 +5888,21 @@ Local Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[276]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_send_empty_ack
-<LI><a href="#[290]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_zero_window_probe
+<BR>[Called By]<UL><LI><a href="#[290]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_zero_window_probe
 <LI><a href="#[25b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rst
 <LI><a href="#[279]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_keepalive
+<LI><a href="#[276]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_send_empty_ack
 </UL>
 
 <P><STRONG><a name="[282]"></a>tcp_output_segment</STRONG> (Thumb, 372 bytes, Stack size 48 bytes, tcp_out.o(i.tcp_output_segment))
 <BR><BR>[Stack]<UL><LI>Max Depth = 504<LI>Call Chain = tcp_output_segment &rArr; ip4_output_if &rArr; ip4_output_if_src &rArr; ip4_frag &rArr; pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; do_memp_free_pool &rArr; sys_arch_unprotect &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
 <BR>[Calls]<UL><LI><a href="#[197]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_htonl
+<LI><a href="#[26b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_eff_send_mss_netif
 <LI><a href="#[165]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lwip_htons
-<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 <LI><a href="#[180]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_output_if
 <LI><a href="#[284]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_segment_busy
-<LI><a href="#[26b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_eff_send_mss_netif
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[1cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
 </UL>
@@ -5912,9 +5912,9 @@ Local Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[282]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_segment
+<BR>[Called By]<UL><LI><a href="#[28d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rexmit_rto_prepare
+<LI><a href="#[282]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_segment
 <LI><a href="#[289]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rexmit
-<LI><a href="#[28d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_rexmit_rto_prepare
 </UL>
 
 <P><STRONG><a name="[286]"></a>tcp_pbuf_prealloc</STRONG> (Thumb, 194 bytes, Stack size 40 bytes, tcp_out.o(i.tcp_pbuf_prealloc))
@@ -5929,8 +5929,8 @@ Local Symbols
 <P><STRONG><a name="[281]"></a>tcp_route</STRONG> (Thumb, 30 bytes, Stack size 16 bytes, tcp_out.o(i.tcp_route))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = tcp_route &rArr; ip4_route
 </UL>
-<BR>[Calls]<UL><LI><a href="#[268]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netif_get_by_index
-<LI><a href="#[181]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_route
+<BR>[Calls]<UL><LI><a href="#[181]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_route
+<LI><a href="#[268]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netif_get_by_index
 </UL>
 <BR>[Called By]<UL><LI><a href="#[1cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output
 <LI><a href="#[27c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_output_control_segment
@@ -5966,8 +5966,8 @@ Local Symbols
 <P><STRONG><a name="[c0]"></a>tcpip_tcp_timer</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, timeouts.o(i.tcpip_tcp_timer))
 <BR><BR>[Stack]<UL><LI>Max Depth = 704<LI>Call Chain = tcpip_tcp_timer &rArr; tcp_tmr &rArr; tcp_fasttmr &rArr; tcp_process_refused_data &rArr; tcp_recv_null &rArr; tcp_close &rArr; tcp_close_shutdown &rArr; tcp_pcb_remove &rArr; tcp_output &rArr; tcp_send_empty_ack &rArr; tcp_output_control_segment &rArr; ip4_output_if &rArr; ip4_output_if_src &rArr; ip4_frag &rArr; pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; do_memp_free_pool &rArr; sys_arch_unprotect &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
-<BR>[Calls]<UL><LI><a href="#[255]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_timeout
-<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_tmr
+<BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_tmr
+<LI><a href="#[255]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_timeout
 </UL>
 <BR>[Address Reference Count : 2]<UL><LI> timeouts.o(i.tcp_timer_needed)
 <LI> timeouts.o(i.tcpip_tcp_timer)
@@ -5989,8 +5989,8 @@ Local Symbols
 <P><STRONG><a name="[158]"></a>etharp_find_entry</STRONG> (Thumb, 514 bytes, Stack size 56 bytes, etharp.o(i.etharp_find_entry))
 <BR><BR>[Stack]<UL><LI>Max Depth = 288<LI>Call Chain = etharp_find_entry &rArr; etharp_free_entry &rArr; pbuf_free &rArr; memp_free &rArr; do_memp_free_pool &rArr; sys_arch_unprotect &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
-<BR>[Calls]<UL><LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
-<LI><a href="#[157]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_free_entry
+<BR>[Calls]<UL><LI><a href="#[157]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_free_entry
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[15e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_query
 <LI><a href="#[15a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_update_arp_entry
@@ -6011,8 +6011,8 @@ Local Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[160]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_request
 <LI><a href="#[15f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ethernet_output
-<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 <LI><a href="#[161]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_request_dst
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_output
 </UL>
@@ -6044,9 +6044,9 @@ Local Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
 <LI><a href="#[15f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ethernet_output
-<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
-<LI><a href="#[15c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_addr_isbroadcast_u32
 <LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_find_entry
+<LI><a href="#[15c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_addr_isbroadcast_u32
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[159]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;etharp_input
 </UL>
@@ -6056,10 +6056,10 @@ Local Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
 <LI><a href="#[182]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inet_chksum
-<LI><a href="#[164]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloc
-<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
-<LI><a href="#[180]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_output_if
 <LI><a href="#[181]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_route
+<LI><a href="#[164]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_alloc
+<LI><a href="#[180]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_output_if
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 <LI><a href="#[17e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
 <BR>[Called By]<UL><LI><a href="#[183]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_time_exceeded
@@ -6088,8 +6088,8 @@ Local Symbols
 <BR>[Calls]<UL><LI><a href="#[199]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memp_free
 <LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ipfrag_free_pbuf_custom
-<LI><a href="#[185]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_frag
+<BR>[Called By]<UL><LI><a href="#[185]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_frag
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ipfrag_free_pbuf_custom
 </UL>
 
 <P><STRONG><a name="[193]"></a>ip_reass_chain_frag_into_datagram_and_validate</STRONG> (Thumb, 530 bytes, Stack size 64 bytes, ip4_frag.o(i.ip_reass_chain_frag_into_datagram_and_validate))
@@ -6107,8 +6107,8 @@ Local Symbols
 <BR>[Calls]<UL><LI><a href="#[199]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memp_free
 <LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[19a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass_free_complete_datagram
-<LI><a href="#[18b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_reass
+<BR>[Called By]<UL><LI><a href="#[18b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_reass
+<LI><a href="#[19a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass_free_complete_datagram
 </UL>
 
 <P><STRONG><a name="[192]"></a>ip_reass_enqueue_new_datagram</STRONG> (Thumb, 80 bytes, Stack size 16 bytes, ip4_frag.o(i.ip_reass_enqueue_new_datagram))
@@ -6126,14 +6126,14 @@ Local Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 552<LI>Call Chain = ip_reass_free_complete_datagram &rArr; icmp_time_exceeded &rArr; icmp_send_response &rArr; ip4_output_if &rArr; ip4_output_if_src &rArr; ip4_frag &rArr; pbuf_alloc &rArr; pbuf_free &rArr; memp_free &rArr; do_memp_free_pool &rArr; sys_arch_unprotect &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
 <BR>[Calls]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
-<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 <LI><a href="#[190]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_clen
-<LI><a href="#[194]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass_dequeue_datagram
 <LI><a href="#[183]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_time_exceeded
+<LI><a href="#[194]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass_dequeue_datagram
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 <LI><a href="#[17e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
-<BR>[Called By]<UL><LI><a href="#[191]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass_remove_oldest_datagram
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass_tmr
+<BR>[Called By]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass_tmr
+<LI><a href="#[191]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass_remove_oldest_datagram
 </UL>
 
 <P><STRONG><a name="[191]"></a>ip_reass_remove_oldest_datagram</STRONG> (Thumb, 130 bytes, Stack size 40 bytes, ip4_frag.o(i.ip_reass_remove_oldest_datagram))
@@ -6141,16 +6141,16 @@ Local Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[19a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass_free_complete_datagram
 </UL>
-<BR>[Called By]<UL><LI><a href="#[192]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass_enqueue_new_datagram
-<LI><a href="#[18b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_reass
+<BR>[Called By]<UL><LI><a href="#[18b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_reass
+<LI><a href="#[192]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_reass_enqueue_new_datagram
 </UL>
 
 <P><STRONG><a name="[a9]"></a>ipfrag_free_pbuf_custom</STRONG> (Thumb, 76 bytes, Stack size 16 bytes, ip4_frag.o(i.ipfrag_free_pbuf_custom))
 <BR><BR>[Stack]<UL><LI>Max Depth = 240<LI>Call Chain = ipfrag_free_pbuf_custom &rArr; pbuf_free &rArr; memp_free &rArr; do_memp_free_pool &rArr; sys_arch_unprotect &rArr; osMutexRelease &rArr; xQueueGiveMutexRecursive &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
 <BR>[Calls]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
-<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 <LI><a href="#[187]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_frag_free_pbuf_custom_ref
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> ip4_frag.o(i.ip4_frag)
 </UL>
