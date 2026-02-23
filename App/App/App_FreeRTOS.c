@@ -8,18 +8,26 @@
 void StartDefaultTask(void *argument)
 {
   /* init code for LWIP */
-  MX_LWIP_Init();
+  
   /* USER CODE BEGIN 5 */
   /* Infinite loop */
   for(;;)
   {
-    send_data_tcp();   // ? safe place
-//	  RTT_Test();
-//	  counter_rtt++;
-//	  printf( "Hello from STM32H7 %u\r\n", counter++);
     osDelay(1000);
   }
   /* USER CODE END 5 */
+}
+
+void LwIPTask(void *argument)
+{
+  /* USER CODE BEGIN LwIPTask */
+	MX_LWIP_Init();
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(1);
+  }
+  /* USER CODE END LwIPTask */
 }
 
 void ledStartTask(void *argument)

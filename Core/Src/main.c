@@ -56,7 +56,7 @@ UART_HandleTypeDef huart1;
 osThreadId_t defaultTaskHandle;
 const osThreadAttr_t defaultTask_attributes = {
   .name = "defaultTask",
-  .stack_size = 2048 * 4,
+  .stack_size = 254 * 4,
   .priority = (osPriority_t) osPriorityNormal,
 };
 /* Definitions for ledTask */
@@ -64,6 +64,13 @@ osThreadId_t ledTaskHandle;
 const osThreadAttr_t ledTask_attributes = {
   .name = "ledTask",
   .stack_size = 256 * 4,
+  .priority = (osPriority_t) osPriorityLow,
+};
+/* Definitions for LwIPTaskName */
+osThreadId_t LwIPTaskNameHandle;
+const osThreadAttr_t LwIPTaskName_attributes = {
+  .name = "LwIPTaskName",
+  .stack_size = 2048 * 4,
   .priority = (osPriority_t) osPriorityLow,
 };
 /* USER CODE BEGIN PV */
@@ -79,6 +86,7 @@ static void MX_GPIO_Init(void);
 static void MX_USART1_UART_Init(void);
 void StartDefaultTask(void *argument);
 void ledStartTask(void *argument);
+void LwIPTask(void *argument);
 
 /* USER CODE BEGIN PFP */
 UBaseType_t uxHighWaterMark; 
@@ -260,6 +268,9 @@ int main(void)
   /* creation of ledTask */
   ledTaskHandle = osThreadNew(ledStartTask, NULL, &ledTask_attributes);
 
+  /* creation of LwIPTaskName */
+  LwIPTaskNameHandle = osThreadNew(LwIPTask, NULL, &LwIPTaskName_attributes);
+
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
   /* USER CODE END RTOS_THREADS */
@@ -432,7 +443,7 @@ static void MX_GPIO_Init(void)
 __weak void StartDefaultTask(void *argument)
 {
   /* init code for LWIP */
-  
+  MX_LWIP_Init();
   /* USER CODE BEGIN 5 */
   /* Infinite loop */
   for(;;)
@@ -459,6 +470,24 @@ __weak void ledStartTask(void *argument)
     osDelay(1000);
   }
   /* USER CODE END ledStartTask */
+}
+
+/* USER CODE BEGIN Header_LwIPTask */
+/**
+* @brief Function implementing the LwIPTaskName thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_LwIPTask */
+__weak void LwIPTask(void *argument)
+{
+  /* USER CODE BEGIN LwIPTask */
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(1);
+  }
+  /* USER CODE END LwIPTask */
 }
 
  /* MPU Configuration */

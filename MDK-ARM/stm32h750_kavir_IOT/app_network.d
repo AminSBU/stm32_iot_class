@@ -38,10 +38,10 @@ stm32h750_kavir_iot\app_network.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx
 stm32h750_kavir_iot\app_network.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h
 stm32h750_kavir_iot\app_network.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h
 stm32h750_kavir_iot\app_network.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h
-stm32h750_kavir_iot\app_network.o: ..\App\App\App.h
+stm32h750_kavir_iot\app_network.o: ../App/App/App.h
 stm32h750_kavir_iot\app_network.o: ../Core/Inc/main.h
-stm32h750_kavir_iot\app_network.o: ..\App\App\App_FreeRTOS.h
-stm32h750_kavir_iot\app_network.o: ..\App\App\App_Network.h
+stm32h750_kavir_iot\app_network.o: ../App/App/App_FreeRTOS.h
+stm32h750_kavir_iot\app_network.o: ../App/App/App_Network.h
 stm32h750_kavir_iot\app_network.o: ../LWIP/App/lwip.h
 stm32h750_kavir_iot\app_network.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/opt.h
 stm32h750_kavir_iot\app_network.o: ../LWIP/Target/lwipopts.h
